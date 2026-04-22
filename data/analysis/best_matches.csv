@@ -1,0 +1,101 @@
+poi_id,distance_to_building,match_type,confidence,names_left,basic_category,building_id_right
+8fba6f67-e94d-413d-ab01-4b9f0afcfb91,0.0,nearest,high,"{'common': None, 'primary': 'EvoComfort Shoes', 'rules': None}",,78c308a4-306e-4f0c-bd16-7e1d858d661d
+28d68cfc-bee1-435a-a140-3c4a22c8385e,0.0,nearest,high,"{'common': None, 'primary': 'Pearl Street Mall', 'rules': None}",historic_site,a68e68c7-ab22-410f-a37f-346df7e6752e
+a72f94b4-c4fb-41ec-8b31-9941712825aa,0.0,nearest,high,"{'common': None, 'primary': 'Bighorn Landscape Borders', 'rules': None}",home_service,037fb76d-d2db-4da1-b541-37f2669d056a
+b04e072e-3d2f-4f15-84e7-85f724075678,5.801347711985328e-07,nearest,high,"{'common': None, 'primary': 'Peter Maybee Real Estate', 'rules': None}",real_estate_service,40c1a6be-3b0e-48b9-97c2-01ce4559d6f0
+146d5ae2-535a-408c-98e5-1c6a2e59284c,0.007343044182482764,nearest,high,"{'common': None, 'primary': 'Basecamp Boulder', 'rules': None}",hotel,721a1c2e-76eb-44a8-a8ee-903a378821fd
+93fcc6a1-cfcc-4d05-a9cf-1cb27253410e,0.008033748597839264,nearest,high,"{'common': None, 'primary': 'Simple Startup', 'rules': None}",financial_service,10abe63d-c46a-4982-a1a7-ef845db227d0
+0b24d211-1f0c-4952-a7ba-f6314f80be8b,0.011677313460915585,nearest,high,"{'common': None, 'primary': 'Carlson Gymnasium', 'rules': None}",gym,70bacd1b-88f9-423f-90b8-d2772e89abbf
+411cd7f3-f833-4033-8819-b1788f811481,0.011937355804366515,nearest,high,"{'common': None, 'primary': 'Pine Street Church', 'rules': None}",christian_place_of_worship,931c7e66-5d00-4427-8063-f074b8a8ee53
+731527e7-637d-4f10-b392-41d0a71a4fab,0.01316055117490564,nearest,high,"{'common': None, 'primary': 'The Little Jewel', 'rules': None}",fashion_and_apparel_store,0f406893-e717-47d7-bb52-970bd49acfcf
+f6ae0546-8b8d-4b95-a921-751d04dcc2b8,0.016274078461357554,nearest,high,"{'common': None, 'primary': 'Amazon Locker - Idealmarket', 'rules': array([], dtype=object)}",storage_facility,41f402e2-3236-4701-8c16-6e64555a5024
+7f475c0f-b793-40f0-8f4b-284e9a29d121,0.022199065984257586,nearest,high,"{'common': None, 'primary': 'Aveda', 'rules': None}",,08dc8705-8b89-477d-ac81-6a044e508f22
+165696b4-108a-44ab-9b00-007e83da1210,0.029487939635368457,nearest,high,"{'common': None, 'primary': ""Illegal Pete's"", 'rules': None}",restaurant,f910024b-e0f8-4886-b0ed-c57b5022d29d
+9c81844e-ad61-4dcf-a51d-af3d80cc59ad,0.03662354610267644,nearest,high,"{'common': None, 'primary': 'Intravene Mobile IV Therapy', 'rules': None}",wellness_service,7957f272-d258-4fe6-a71c-5136c7ccf12c
+b2a9b2db-1180-4204-a673-0a314194cf10,0.04241764929605026,nearest,high,"{'common': None, 'primary': 'Warren Miller Entertainment', 'rules': None}",media_service,bc52c1b9-b81b-43c5-b284-bff0cdd14419
+4d3c4e4a-24dc-4dda-9a54-644ca5d4b3bb,0.04483661552053202,nearest,high,"{'common': None, 'primary': 'Front Range Anglers', 'rules': None}",sporting_goods_store,94a3930b-b834-4650-846a-b3e82951a112
+05adf7b0-94dc-42ae-ab24-5fd1b0fe5479,0.05703839618835716,nearest,high,"{'common': None, 'primary': 'HRMS Solutions', 'rules': None}",b2b_office_and_professional_service,b2464f13-7c0e-48a9-b8ee-0f5352059baf
+5d53c316-aabe-49cf-80cc-1f4bd3764793,0.059537730248938686,nearest,high,"{'common': None, 'primary': 'Karl Thompson - Colorado Lending Group', 'rules': None}",financial_service,f6e926ba-e6d7-4634-9aad-58696c2423dc
+ea121f27-142b-406f-97b2-785c4ae746d5,0.06333281691366555,nearest,high,"{'common': None, 'primary': 'World Beer Cup', 'rules': None}",social_or_community_service,881bd537-71cd-424a-8488-ff62649a3428
+a70c530e-0f1c-44d5-9fb5-8aa70b30886f,0.06960821924714257,nearest,high,"{'common': None, 'primary': 'BearPeak Technology Group', 'rules': None}",technical_service,81548bc7-ff20-4370-8498-aa2836ccdb99
+c8314a59-1b5a-4e92-9635-45220f3a1e3a,0.07044082979002357,nearest,high,"{'common': None, 'primary': 'Native Roots Marijuana Dispensary Boulder MED/REC', 'rules': None}",medical_service,711275e1-7db7-446a-8040-3fec5230b1e3
+7c5e2ccd-c890-457b-bac9-99e9275e5a58,0.07651620413412161,nearest,high,"{'common': None, 'primary': 'Westward Foundry', 'rules': None}",,db1805bc-27cf-4826-8cf4-4eebcd7b457b
+b4d6ff72-f4af-4b96-b2bc-5252c22e5032,0.07712264854221094,nearest,high,"{'common': None, 'primary': 'Sharla Macy Consulting', 'rules': None}",professional_service,5758580b-3292-4957-a4bd-984cde5a758d
+3c362b25-0799-4575-8b4f-79e0edaeeac4,0.0828979120522764,nearest,high,"{'common': None, 'primary': 'ONNO T-Shirt Company', 'rules': None}",fashion_and_apparel_store,297c55ad-5e83-42a1-9af9-7725faffa43b
+1512ded9-f1a2-4717-a7cb-21877468b664,0.08739819248678755,nearest,high,"{'common': None, 'primary': 'Michael C. Morphew, Attorney', 'rules': None}",attorney_or_law_firm,7c724ede-a94d-45d0-b511-50f29d18fe89
+18b5a93c-46ee-40ce-a2b5-24a005a19abb,0.09859272329436099,nearest,high,"{'common': None, 'primary': 'Häagen-Dazs', 'rules': None}",casual_eatery,711275e1-7db7-446a-8040-3fec5230b1e3
+340503b4-529f-4f02-b1d0-02e642f2dc21,0.0999533619833018,nearest,high,"{'common': None, 'primary': 'Brandi Numedahl | Compass Real Estate | Boulder', 'rules': None}",real_estate_service,7fef8d65-84a3-4c02-a7a9-5d83db0ae3c4
+c75d182e-dc29-47cd-b92e-16d1a2eb496f,0.10124830044101998,nearest,high,"{'common': None, 'primary': 'The Law Office of Care Enichen', 'rules': None}",attorney_or_law_firm,81548bc7-ff20-4370-8498-aa2836ccdb99
+f8bfd41f-ac7f-4b5e-ad7f-7704c8347b57,0.10568043577970458,nearest,high,"{'common': None, 'primary': 'Amazon Locker - Waffle', 'rules': array([], dtype=object)}",storage_facility,49c978d8-a74d-48f8-90f1-fd070dc2d973
+fe1ea0cd-cb98-4958-a9a5-91825001d53d,0.10901690786648935,nearest,high,"{'common': None, 'primary': 'Beehive', 'rules': None}",restaurant,3487b4e5-a148-4e9f-8994-c4977cb364fe
+2b47804f-cb35-47e7-9d82-132a7f06bd3e,0.10920067030462835,nearest,high,"{'common': None, 'primary': 'Latitude40 Real Estate', 'rules': None}",real_estate_service,0c8e1eef-a471-47c7-befd-a5c0b4f71e90
+1dd77ae3-92d3-464b-aa08-d767ea61e2a7,0.12999169112279602,nearest,high,"{'common': None, 'primary': 'Interior Work Psychotherapy', 'rules': None}",behavioral_or_mental_health_clinic,2904b4ff-f445-4a1b-be87-5f2258ca7019
+4606637c-ca2e-441c-b525-f053bc3a9141,0.13558567793528584,nearest,high,"{'common': None, 'primary': 'Colorado Sports Performance Therapy', 'rules': None}",complementary_and_alternative_medicine,767bfd46-8870-4b5f-a874-720446dbaa53
+3cdcb22f-2a4c-40fc-b735-3ca47a39178f,0.14109553625324667,nearest,high,"{'common': None, 'primary': 'Walnut Brewery', 'rules': None}",brewery,67eea4b6-aaec-4f33-bbdf-7128f35a4c7a
+024acc4d-6326-4588-97a2-aef7d08c89a1,0.14351756401278887,nearest,high,"{'common': None, 'primary': 'CU Engage', 'rules': None}",research_institute,2de34735-d10d-4689-b176-997032604433
+1147e723-ed1b-471f-8c50-76daa35a758b,0.14430147975051622,nearest,high,"{'common': None, 'primary': 'Guild Mortgage - Matthew Vohl', 'rules': None}",financial_service,fbff7a60-b4ac-4348-8dab-812a4f2bf63f
+f361c54e-e15f-458f-af64-3f79ec6d780f,0.14501135247963665,nearest,high,"{'common': None, 'primary': 'Sigma Alpha Epsilon - Colorado Chi', 'rules': None}",social_or_community_service,ddd00c14-a541-43b3-881e-9f611f4625d3
+2892bdf3-0f15-4ece-ae73-da7b832984d6,0.1498182421791745,nearest,high,"{'common': None, 'primary': 'Now & Zen', 'rules': None}",professional_service,4149fc95-ad2e-43d5-8df4-987f779e0045
+6b7d4edc-8d44-411d-8a2e-79e6758a3896,0.15096374428061787,nearest,high,"{'common': None, 'primary': 'Ruger Law Firm LLC', 'rules': None}",attorney_or_law_firm,81548bc7-ff20-4370-8498-aa2836ccdb99
+b17cbc42-4845-4efa-a3a5-ceae5b451c8b,0.15933197467130517,nearest,high,"{'common': None, 'primary': ""Rebecca's Herbal Apothecary and Supply"", 'rules': None}",food_and_beverage_store,4838ac94-5628-4db8-ad64-133bd5385a3c
+df2a5fbe-1189-4063-b9d8-ae6ea2597a86,0.16647764843206825,nearest,high,"{'common': None, 'primary': ""Jim's Patio"", 'rules': None}",fast_food_restaurant,f6de1a61-af01-43d7-b98a-5ab132153ffb
+45a7dc54-bebf-4cf1-9544-4d724c5486df,0.18334646177753336,nearest,high,"{'common': None, 'primary': 'Indie Salons', 'rules': None}",personal_or_beauty_service,e40ea9dd-9f6c-4fb6-a814-a283d4cc1d05
+423a50aa-bd02-4831-8f4d-6fd6d5130ba8,0.18359322397193162,nearest,high,"{'common': None, 'primary': 'Seeds Library Cafe', 'rules': None}",cafe,b4674090-59dc-41f5-b2a9-4dab77f1fd58
+4f6c3576-0591-4b08-b26c-044291190a73,0.21000094866171487,nearest,high,"{'common': None, 'primary': 'Rooted Craft Kitchen', 'rules': None}",restaurant,ec06e34f-f7db-4850-becd-a37b59888fde
+aa29c45a-63b7-4537-a476-7a1b2e0656e7,0.23061182671086042,nearest,high,"{'common': None, 'primary': ""Lolita's Market and Deli"", 'rules': None}",casual_eatery,05eba008-3369-4037-9398-abac5fe7a4c6
+dcb9fb41-f137-44c2-b066-088f8a48e3b7,0.24084702238806643,nearest,high,"{'common': None, 'primary': 'Masala Co-op', 'rules': None}",lodging,0012b709-4da6-4ccc-86c6-61cc7e3ee332
+93205ed4-d371-439f-bfe6-2bb2a942c706,0.24119150781293602,nearest,high,"{'common': None, 'primary': 'Santo', 'rules': None}",restaurant,12b08b83-bf52-4124-ba9b-510ad81872e9
+4aa82e41-d046-4bb3-96e8-010713ea9720,0.25053731238136434,nearest,high,"{'common': None, 'primary': 'AMR Digital Marketing', 'rules': None}",professional_service,35084252-373f-40cb-b70d-b1efbbda4271
+cf491840-ef43-422f-9095-ca365e9d0028,0.2511679618254025,nearest,high,"{'common': None, 'primary': 'Boulder Valley Plastic Surgery', 'rules': None}",surgery,41af104e-e8d1-4471-a00e-14a77d35aefc
+d31c3fac-19c7-4a83-810c-2ee67a900d8c,0.2531527470901278,nearest,high,"{'common': None, 'primary': 'The Richman Law Firm, PLLC', 'rules': None}",,c1ebc420-da9a-4e1d-b14c-30415424e823
+a35d8de4-3877-4cd9-89d9-a5292b4f156e,0.2630488549006811,nearest,high,"{'common': None, 'primary': 'Engineering Center ECCE 1B41', 'rules': None}",college_university,626673c2-6576-4ab5-ac79-ccd2eea9dc15
+b1cb1642-9cae-4785-bf11-4dd07d11fca6,0.282529100625022,nearest,high,"{'common': None, 'primary': 'Boulder Luxury Group - Leyla Steele', 'rules': None}",real_estate_service,4a015a32-d2c7-4c0d-9367-25a314e71c4a
+61428328-336b-4f03-8a0e-994652b6569c,0.28329809525867444,nearest,high,"{'common': None, 'primary': 'Hilltop Food Court', 'rules': None}",food_court,66629cca-3046-49c6-b7f9-a2f82f9e8a42
+16061876-8a06-47ca-a21e-a34b9a12afcb,0.2845656891612496,nearest,high,"{'common': None, 'primary': 'DELVE', 'rules': None}",professional_service,e122cc45-356c-4d1b-b8eb-2a221181731e
+750489f7-b864-4632-8609-6a125054379b,0.2884536629622809,nearest,high,"{'common': None, 'primary': 'Colorado Army National Guard Recruiting', 'rules': None}",professional_service,a52c9241-a2e8-401e-9ae6-031a4c29b289
+30177668-6065-4186-be02-1aa03fdc973f,0.29936272403882164,nearest,high,"{'common': None, 'primary': 'Velare', 'rules': None}",event_or_party_service,fbca34dc-7442-4bea-bbb5-a8a3af2195d4
+94bfe17f-b485-44ef-880f-4f951b6b1a8e,0.31561347431522246,nearest,high,"{'common': None, 'primary': 'Vickie Slade', 'rules': None}",real_estate_service,40c1a6be-3b0e-48b9-97c2-01ce4559d6f0
+bffeba89-a263-4a1f-8148-5a0202a906d1,0.32118078911100767,nearest,high,"{'common': None, 'primary': 'Sage Studio', 'rules': None}",personal_or_beauty_service,a9ea1b43-350f-4aef-955a-2f7f9679af95
+86c764dc-5ea8-492e-9392-2de1e88d04fc,0.3221853809408374,nearest,high,"{'common': None, 'primary': 'Boulder Community Treatment', 'rules': None}",housing_or_property_service,4afc834e-af8c-46cb-ab3a-2cc1ac83967f
+083d3f2b-a59a-4375-8fc4-fb3010539ba2,0.32249154801687546,nearest,high,"{'common': None, 'primary': 'Heddle Marketing', 'rules': None}",professional_service,35084252-373f-40cb-b70d-b1efbbda4271
+eba76d44-3c44-48b8-b761-33b5778a4c90,0.3312194804997757,nearest,high,"{'common': None, 'primary': ""Pasta Jay's"", 'rules': None}",restaurant,5e0aca37-6a8a-4909-ba07-0145be236a7f
+bff25716-13cc-4b1b-af54-f68dce9d67a8,0.33431476217022194,nearest,high,"{'common': None, 'primary': 'Art + Soul', 'rules': None}",art_gallery,954cb30c-1eb3-41e2-b7b0-f6640a4c3595
+9c6cbd81-146a-43f7-a6a7-019203665714,0.3393940270559715,nearest,high,"{'common': None, 'primary': 'DigiZen Marketing Group', 'rules': None}",professional_service,1b665619-8fdf-4ec5-92f1-5d65aa40a05a
+5cf7a826-4206-4709-9d93-6ccd0d7f1bec,0.34363538121382536,nearest,high,"{'common': None, 'primary': 'Ayuna Massage', 'rules': None}",wellness_service,1b665619-8fdf-4ec5-92f1-5d65aa40a05a
+afdf94d7-f6e9-4a0e-a86a-0f6ff4251ec7,0.3457850621854838,nearest,high,"{'common': None, 'primary': 'Schaller Hair', 'rules': None}",personal_or_beauty_service,25cb7fa8-adf9-452e-bd36-26563be132ff
+98534398-af02-450b-b416-335c0265eb1c,0.34897189837149784,nearest,high,"{'common': None, 'primary': 'Colorado Sports Physiotherapy', 'rules': None}",physical_medicine_and_rehabilitation,767bfd46-8870-4b5f-a874-720446dbaa53
+b8f04868-1b35-4a8a-8596-f4220838d344,0.3492275220842134,nearest,high,"{'common': None, 'primary': 'Halfway House', 'rules': None}",historic_site,765dfb50-b49f-4b71-8f4d-193a6cacf056
+63c050b7-5057-4cb4-916b-6dd1c8920d6a,0.34953930961663504,nearest,high,"{'common': None, 'primary': 'Frisco Tattoo', 'rules': None}",personal_or_beauty_service,5758580b-3292-4957-a4bd-984cde5a758d
+7e04cc5d-503f-4138-b2e3-2c0ecc346cf2,0.3529582016441995,nearest,high,"{'common': None, 'primary': 'Studio Arts Boulder', 'rules': None}",specialty_school,878f7b5f-3c99-448b-9856-add882119f1f
+a12c8d88-93d3-4e84-8295-17d7135a776f,0.35686384006845223,nearest,high,"{'common': None, 'primary': 'The Buff Restaurant', 'rules': None}",restaurant,9676ff50-40e7-435e-ae0d-828fa06129dd
+4133d3f8-32f4-4ef9-95a7-0b01a9390d28,0.3624257144408669,nearest,high,"{'common': None, 'primary': 'Ember & Ice', 'rules': None}",complementary_and_alternative_medicine,8d3f9749-38a3-48d4-864a-9eacd29c98b3
+4aa9c22b-08be-4760-a92c-ea31ea63f118,0.3835223728101843,nearest,high,"{'common': None, 'primary': 'Books of Discovery', 'rules': None}",media_service,06e76d2b-1730-4e85-b27b-efc244d5c788
+0eb01b2a-5d00-48f7-abc6-b8050bf9066b,0.3852305097111266,nearest,high,"{'common': None, 'primary': 'IDmission', 'rules': None}",technical_service,a3084ac9-cdfe-4f8b-b718-3ac03ffe9078
+44133e52-c5d7-44e5-9de6-8d20778aa4fb,0.3883805825229396,nearest,high,"{'common': None, 'primary': 'Energizing Touch', 'rules': None}",complementary_and_alternative_medicine,1b665619-8fdf-4ec5-92f1-5d65aa40a05a
+ef66925d-4363-436a-aa7a-d17fac48f9de,0.3954396675237186,nearest,high,"{'common': None, 'primary': 'Dushanbe Teahouse', 'rules': None}",non_alcoholic_beverage_venue,0c9de459-cd58-4d9a-a506-0ee3f5c8cd4a
+14774258-36dd-450e-bbb7-8e99afbe89a5,0.3985191167196587,nearest,high,"{'common': None, 'primary': 'Gypsy Jewel', 'rules': None}",fashion_and_apparel_store,3166849f-ec1b-493e-aafb-645802b77715
+d117e989-df9a-4cb6-b023-59b724e2a757,0.4035786268833459,nearest,high,"{'common': None, 'primary': 'Weekends', 'rules': None}",fashion_and_apparel_store,c9073cdc-0448-458e-9964-a2e6a344ecf8
+7e714059-1b43-4bdf-bc67-27fa50b85db6,0.4058912029730457,nearest,high,"{'common': None, 'primary': 'HW Home', 'rules': None}",hardware_home_and_garden_store,fae70b27-c221-496a-b786-ad983514f4d7
+0c282813-a069-45de-929a-0ad81b956af1,0.4145038448184823,nearest,high,"{'common': None, 'primary': 'Catwoman Pole Academy', 'rules': None}",sport_or_fitness_facility,9bd3f3ed-c4fa-4aa0-8692-5cd297955459
+fafa9dbe-51e8-4f53-8a0d-2ab60fb9442c,0.41756904568305014,nearest,high,"{'common': None, 'primary': 'Reach Boulder', 'rules': None}",christian_place_of_worship,ba34aed9-5fff-4433-ac45-9f76873012f6
+cb28275f-3545-4509-bf7e-8b415907f872,0.41822749021482014,nearest,high,"{'common': None, 'primary': 'Evoso', 'rules': None}",professional_service,ba34aed9-5fff-4433-ac45-9f76873012f6
+2464d2b6-2276-4a24-af7a-66d7de0f1f9e,0.4325432600518264,nearest,high,"{'common': None, 'primary': 'Piece Love and Chocolate', 'rules': None}",casual_eatery,0d848487-f337-4dca-a810-02d9e523df25
+2edfd1b8-15df-4ab7-aafd-2250bc39e7ab,0.4344585947122676,nearest,high,"{'common': None, 'primary': 'Watt Architecture', 'rules': None}",design_service,c9073cdc-0448-458e-9964-a2e6a344ecf8
+e893ce74-2608-4b1f-aa2d-6706cccb52d4,0.43784294029110504,nearest,high,"{'common': None, 'primary': 'YWCA Boulder County', 'rules': None}",social_or_community_service,5aeed1b0-f6e8-4be3-81c0-d0bf87d1b2c1
+da415d82-72e3-4f84-8128-84bb6cbc515f,0.44319959324188246,nearest,high,"{'common': None, 'primary': 'Contact Awareness Counseling LLC', 'rules': None}",behavioral_or_mental_health_clinic,73072a9c-d98b-4773-9b46-37cf77349b73
+8c9539da-0311-496d-97be-7710737ed4ce,0.4618219420472168,nearest,high,"{'common': None, 'primary': 'Cold Stone Creamery', 'rules': None}",casual_eatery,a4099567-0469-4b11-87c5-c72eae301d89
+c0c12a16-ab56-4d5e-8387-1cf94ab99860,0.475358637519974,nearest,high,"{'common': None, 'primary': ""Tra Ling's"", 'rules': None}",restaurant,11277e15-abde-4ebe-9932-1136995d0bcc
+d5a26745-a7b0-4ea2-9731-7b712830ff3f,0.4773897139094214,nearest,high,"{'common': None, 'primary': 'Sobo Homes', 'rules': None}",home_service,d300843a-4625-4534-8823-993c2ae13925
+7e3151f0-4110-4620-8d7d-241996c33ae8,0.48249829803683997,nearest,high,"{'common': None, 'primary': 'Comsearch', 'rules': None}",telecommunications_service,89851e69-12e3-4d2a-a3b2-f505378df113
+b3b6ce9c-ecb1-451a-a109-5b388b7ce032,0.4904123487082684,nearest,high,"{'common': None, 'primary': 'Chase Bank', 'rules': None}",bank_or_credit_union,e6e34868-72ba-4e66-b1ca-8385d928f787
+7eb77fc5-5854-43ce-801e-79905d883550,0.4920516294653694,nearest,high,"{'common': None, 'primary': 'Yoga Pearl', 'rules': None}",fitness_studio,05176007-c214-4563-a113-8111f3189c9a
+70ec5632-0e55-40c1-aa25-6f2f8f1e47a8,0.4949132034424979,nearest,high,"{'common': None, 'primary': 'MidFirst Bank', 'rules': None}",bank_or_credit_union,a6199265-7513-48d2-a89b-a4e7ecf39985
+1d2b073c-f569-4220-b475-3840b66afad5,0.4949132034424979,nearest,high,"{'common': None, 'primary': 'Boom Properties', 'rules': None}",real_estate_service,a6199265-7513-48d2-a89b-a4e7ecf39985
+efa1b6a9-3434-425b-8031-50354f732fd4,0.495578510315346,nearest,high,"{'common': None, 'primary': 'Goodacre & Company', 'rules': None}",real_estate_service,4961fa1a-af5b-498f-b07e-2a034465817f
+ac5cfc66-e91e-43fa-8a10-c2a59acee181,0.5050689937289926,nearest,high,"{'common': None, 'primary': 'Boulder Eyebrow Threading', 'rules': None}",personal_or_beauty_service,7575e6f4-c0d9-48cd-9735-67f1005fe1ba
+d55d8648-155d-46bd-81f4-f5dc0351a2c8,0.5151207508309702,nearest,high,"{'common': None, 'primary': 'The Bradley Boulder Inn', 'rules': None}",hotel,bca09434-db8d-45ff-8036-2a6596094791
+0bb95cfd-40ff-4ede-8e7d-ee848993c6fd,0.5215107046331586,nearest,high,"{'common': None, 'primary': 'Flex Gym Share', 'rules': None}",gym,35084252-373f-40cb-b70d-b1efbbda4271
+1df5e88a-c15d-4095-872c-191ee7af59a6,0.5262679991487463,nearest,high,"{'common': None, 'primary': 'New Vista High School', 'rules': None}",high_school,79f7a369-d4c9-439e-9eac-7396d2e8b354
+b3a996f6-f2e3-4b4b-9a36-06c2bf91e528,0.5298999596130132,nearest,high,"{'common': None, 'primary': 'Adventure Wellness', 'rules': None}",complementary_and_alternative_medicine,a43ba67f-bec7-4d99-83d5-fd7087c63315
+1d60de1a-800b-46bc-8d64-38bdc4b7e3bb,0.5493845543320428,nearest,high,"{'common': None, 'primary': 'Duggan Chiropractic', 'rules': None}",complementary_and_alternative_medicine,760b4458-2a88-4b18-b7fb-5b460018de24
+b045bbcd-e83d-4bf1-888f-fe9f6d09b901,0.5656507108112253,nearest,high,"{'common': None, 'primary': 'The Bar Method', 'rules': None}",fitness_studio,fb7b5411-551f-4df4-a279-a4ee9d254c6d

@@ -1,0 +1,101 @@
+poi_id,distance_to_building,match_type,confidence,names_left,basic_category,building_id_right
+d026341c-4964-4c1b-a262-92f455337768,168.9189580414571,nearest,low,"{'common': None, 'primary': 'Red Rock Spur', 'rules': None}",park,9cae19ff-d13a-40d8-8b29-70587dc51e4b
+fb8dbbce-6ab8-4476-95cb-beb2394e9921,161.06852164704887,nearest,low,"{'common': None, 'primary': 'Emilia Ceramics', 'rules': None}",hardware_home_and_garden_store,49ce77c4-faea-45c1-a14e-117025aef79f
+2fcf0a61-0251-482e-ac95-6d2435dba696,127.90346497394634,nearest,low,"{'common': None, 'primary': 'Red Rocks Trail Boulder', 'rules': None}",recreational_trail_or_path,9cae19ff-d13a-40d8-8b29-70587dc51e4b
+35df4e7c-f8bc-497c-a12c-8b13c7591063,124.75950295015534,nearest,low,"{'common': None, 'primary': 'Boulder Star', 'rules': None}",bar,765dfb50-b49f-4b71-8f4d-193a6cacf056
+4569639a-e5d2-4889-8efa-7c8cd150d786,112.03304695444218,nearest,low,"{'common': None, 'primary': 'Crown Rock Trailhead', 'rules': None}",recreational_trail_or_path,0ed7782e-54c6-47ad-a9b2-ca3a622e7fc5
+30acb079-0ac3-4b97-b891-43b05a8dbdcb,87.70623897834862,nearest,low,"{'common': None, 'primary': 'FedEx Office Print & Ship Center', 'rules': None}",shipping_or_delivery_service,6d84c3f3-f3a6-4127-ae20-80b7095b1e8b
+6ce2c722-1379-4a47-a84c-a71c617e28bf,87.70623897834862,nearest,low,"{'common': None, 'primary': 'SALVAGEDATA Recovery Services', 'rules': None}",technical_service,6d84c3f3-f3a6-4127-ae20-80b7095b1e8b
+24c30972-55dc-4378-971c-2d01479c812b,83.94938164671551,nearest,low,"{'common': None, 'primary': 'Republic Cycles', 'rules': None}",,fda2ae59-14ca-46d5-9ba5-46c30983a59b
+0a268d22-b702-4434-b0ad-cf2894eb7dc2,83.3510666895089,nearest,low,"{'common': None, 'primary': 'Columbia Cemetery', 'rules': None}",,c32ae4b2-064a-44e9-b3e9-7950f39f65b7
+13d4dc50-f16c-4337-b794-9364743f36bc,81.03503916544683,nearest,low,"{'common': None, 'primary': ""Settler's Park"", 'rules': None}",park,cfbd9550-b55a-49a4-94dc-56601ce3c50a
+8c6f77c8-3cfc-4142-8bcc-e31bca68ab64,77.16836563779546,nearest,low,"{'common': None, 'primary': 'Boulder Art Fair', 'rules': None}",,b4674090-59dc-41f5-b2a9-4dab77f1fd58
+2283b73a-dbe4-4928-b522-0a6471ed12e1,74.85028899266264,nearest,low,"{'common': None, 'primary': 'Bitcoin Depot - Bitcoin ATM', 'rules': None}",,fda2ae59-14ca-46d5-9ba5-46c30983a59b
+44ff6eeb-0318-4e23-b4ee-c5602c668f35,67.84285671148704,nearest,low,"{'common': None, 'primary': 'Boulder International Peace Garden', 'rules': None}",park,332d6626-1264-45f2-801c-eea9ca0845de
+09a38959-61e7-44b7-8a45-65faeeb59420,66.41495424156997,nearest,low,"{'common': None, 'primary': ""Evert Pierson Kids' Fishing Pond"", 'rules': None}",,10d4f9c2-b122-4ac5-b939-fe698e2249a7
+e07b0594-4dd2-4525-aff8-b32f0b9d9293,59.74117503191813,nearest,low,"{'common': None, 'primary': 'Eben G. Fine Park', 'rules': None}",park,00780f93-3d8d-4c5d-95c0-8e9d031363cf
+5edf7d90-4810-4943-95ff-6d29bd7cb349,58.25984567479251,nearest,low,"{'common': None, 'primary': 'Canyon Park', 'rules': None}",park,9931b3ea-1d8b-47e8-b3d5-9f99d7ed0652
+1b66ef8e-b07f-4eb0-8926-359194beee4a,57.90400298538596,nearest,low,"{'common': None, 'primary': 'Boulder Creek', 'rules': None}",river,f0072092-ab70-45d5-a8b1-6683238cad10
+93d6479a-f3ac-480b-8a10-0b1369cc2a51,51.642240206838416,nearest,low,"{'common': None, 'primary': 'Mount Sanitas Trailhead', 'rules': None}",recreational_trail_or_path,92f6175f-770f-4be4-8058-5c9b59009079
+b895125d-4a71-41d6-a056-819101f5e8e2,42.13716690481347,nearest,low,"{'common': None, 'primary': 'CU Book Store', 'rules': None}",books_music_and_video_store,283c1f49-37f1-4585-a216-d58e6ec2a0d2
+b08f73c0-343d-4a3e-96ed-51fec9883e74,42.13716690481347,nearest,low,"{'common': None, 'primary': 'Elevations Credit Union', 'rules': None}",bank_or_credit_union,283c1f49-37f1-4585-a216-d58e6ec2a0d2
+a6609d27-9ae3-4d94-b06c-426303fe6fdd,40.79090103568815,nearest,low,"{'common': None, 'primary': 'University of Colorado Boulder', 'rules': None}",college_university,b6f2fbbb-4e24-42e8-bb76-f046b8dfaa16
+fb498670-0c41-4b41-b497-830bbf5f59a8,40.76996775913838,nearest,low,"{'common': None, 'primary': 'Varsity Lake', 'rules': None}",lake,8b6a8ca6-354c-4899-871b-d77a9511646e
+f7e5196f-4c61-49e9-88a7-575221cbbb29,40.407441726924795,nearest,low,"{'common': None, 'primary': 'William A. Wise Law Library, University of Colorado Law School', 'rules': array([], dtype=object)}",library,78c308a4-306e-4f0c-bd16-7e1d858d661d
+b7a2a2d5-398d-4529-8268-c49593ecd287,39.086297769400986,nearest,low,"{'common': None, 'primary': 'Porchlight Therapy and Addiction', 'rules': None}",behavioral_or_mental_health_clinic,c9dd6811-6ce8-4d53-8bad-ae4cfe43766a
+f104f0f7-1e66-41b8-9587-99ffa620ac6e,37.792576301560544,nearest,low,"{'common': None, 'primary': 'Norlin Quadrangle', 'rules': None}",park,27175a45-6e91-4e6f-a400-30d085c7ef20
+25c4f610-04fa-43ae-a821-ef4d22d83e96,36.76531178891324,nearest,low,"{'common': None, 'primary': 'University of Colorado Boulder Family Programs', 'rules': None}",college_university,192c496a-f1ef-4541-9a03-6b7852f7a1e8
+0dc71ed5-f6ca-42e4-8ffe-475c6d20e9b7,36.47955563228732,nearest,low,"{'common': None, 'primary': 'The Peoples’ Crossing', 'rules': None}",recreational_trail_or_path,cfbd9550-b55a-49a4-94dc-56601ce3c50a
+c7d189b8-e91e-49d8-8c79-2d9a1f2761e7,35.819621197331124,nearest,low,"{'common': None, 'primary': 'Recht Field, Boulder', 'rules': None}",stadium_arena,b6bbd98e-9f94-42d1-af69-d1d2f2b1c019
+1fe3358f-b3ce-4833-8347-fa068f9223fc,34.77347634833343,nearest,low,"{'common': None, 'primary': 'Joel L Schaffer, DDS', 'rules': None}",dental_clinic,7f82cf7e-5389-4c9c-8d46-10466589b54d
+5d1e49aa-5c04-47e0-8f0b-3c2662837cc8,33.533983896990065,nearest,low,"{'common': None, 'primary': 'Plan Ahead Events Boulder', 'rules': None}",event_or_party_service,ccf162c6-c4e2-4075-bd88-7465a0a01c26
+f3236df8-2434-4610-b8c9-39c932196d13,33.533983896990065,nearest,low,"{'common': None, 'primary': 'Simon Mole Mediation, LLC', 'rules': None}",,ccf162c6-c4e2-4075-bd88-7465a0a01c26
+b7200a15-69af-48d8-b215-5cfaf9ec0823,33.533983896990065,nearest,low,"{'common': None, 'primary': ""Nest Children's Boutique in Boulder"", 'rules': None}",fashion_and_apparel_store,ccf162c6-c4e2-4075-bd88-7465a0a01c26
+8d61b3ca-bf2f-4df0-9209-d0d2796e86ac,33.53398389296181,nearest,low,"{'common': None, 'primary': 'Kumon Math & Reading Center of Boulder', 'rules': None}",tutoring_service,ccf162c6-c4e2-4075-bd88-7465a0a01c26
+781d78ed-95ab-47f0-bc99-42da8426d64b,33.19661726756685,nearest,low,"{'common': None, 'primary': 'Academy Mapleton Hill', 'rules': None}",,4ffa132c-5251-451c-94b2-202b43e27320
+c3ab958c-56e3-43af-a4f7-7ac55adc6d2d,33.19661726756685,nearest,low,"{'common': None, 'primary': 'CU Sports Medicine', 'rules': None}",specialized_health_care,4ffa132c-5251-451c-94b2-202b43e27320
+2975755b-ad34-4479-8619-4d5534d76a14,32.57499957920522,nearest,low,"{'common': None, 'primary': 'Wisdom of the Womb', 'rules': None}",,9d777fa7-1d4a-4ae8-a74a-f15cd500327c
+25bb67dd-ad97-4758-86a0-fd464aaf9ce6,32.47289839016331,nearest,low,"{'common': None, 'primary': 'Boulder Creek Path', 'rules': None}",park,b6bbd98e-9f94-42d1-af69-d1d2f2b1c019
+024b39b0-052e-4bf7-9e5a-d4a123ab3d2d,31.877853032956775,nearest,low,"{'common': None, 'primary': 'Greenleaf Park', 'rules': None}",park,150a7e78-5322-453d-9e83-b72fe0fc68d6
+96667818-bfc3-4f89-ae18-785534baa3fe,31.684643537478433,nearest,low,"{'common': None, 'primary': 'HeartMind Relationships', 'rules': None}",,0f43659b-2ae3-4d07-9b15-419c2a9479ba
+4528bdb4-9db3-4131-b2f0-3821b4daa236,31.519077706347158,nearest,low,"{'common': None, 'primary': 'North Boulder Park Baseball Field', 'rules': None}",park,8b17619f-e258-4409-8539-5874e1c3b096
+e04054b3-6869-4b57-81c6-25ee23d217cc,31.220908625993616,nearest,low,"{'common': None, 'primary': 'Wells Fargo', 'rules': array([], dtype=object)}",bank_or_credit_union,7ca54d8c-6e9d-4ca4-b823-1ec0434b4a04
+59a56712-b471-48a8-b896-e87bd4ee79f0,31.031453726114812,nearest,low,"{'common': None, 'primary': 'Enchanted Mesa Trail', 'rules': None}",park,b992d24a-b17a-4b42-b6a2-c4b94cbe25c5
+f5551a8c-1606-40ae-8252-e798064b5106,30.88811666420301,nearest,low,"{'common': None, 'primary': 'Christian Recht Field', 'rules': None}",,538718e4-a5e1-4933-b71d-9c0f8c30bf20
+d71aef7e-4f16-424c-a1ce-132517a817a3,30.666110087198994,nearest,low,"{'common': None, 'primary': 'Boulder National Park', 'rules': None}",park,2556b1dd-1a40-4228-8671-80b56e114700
+bc75727c-44b0-4f17-a297-e94903cde983,30.41873872644248,nearest,low,"{'common': None, 'primary': 'Dr. John Carsen - Cardiologist PhD Heart Health Advisory', 'rules': None}",,5bd7a203-02c3-4fee-8d9f-f89a315701ee
+6ba7c974-b068-4074-8152-be5ec96ddcb5,30.4020017817363,nearest,low,"{'common': None, 'primary': 'Jahn & Associates', 'rules': None}",attorney_or_law_firm,333be737-29b6-41bd-a7ab-e7105dc7dab3
+7e6a4bc0-960c-44e0-a35b-b76353d8c8d8,30.3984915623158,nearest,low,"{'common': None, 'primary': 'Mathnasium', 'rules': None}",specialty_store,348740c2-d4cd-4e8a-97bb-58990a0baae4
+06798867-315b-4c29-9ac4-d30969db5b58,30.3984915623158,nearest,low,"{'common': None, 'primary': 'Pak Mail', 'rules': None}",b2b_transportation_and_storage_service,348740c2-d4cd-4e8a-97bb-58990a0baae4
+1519ee10-fcc6-4ad9-88a4-6d945eca194f,30.3984915623158,nearest,low,"{'common': None, 'primary': ""Grandrabbit's Toy Shoppe"", 'rules': None}",toys_and_games_store,348740c2-d4cd-4e8a-97bb-58990a0baae4
+9cabdb6c-9edf-4dea-9b00-5652f044c695,30.3984915623158,nearest,low,"{'common': None, 'primary': 'Cured Nutrition', 'rules': None}",supplier_or_distributor,348740c2-d4cd-4e8a-97bb-58990a0baae4
+87df057a-0667-409e-a747-842e7ed8a81b,30.3984915623158,nearest,low,"{'common': None, 'primary': 'Boulder Colorado', 'rules': None}",,348740c2-d4cd-4e8a-97bb-58990a0baae4
+b6c22a8e-39f2-48aa-9f55-661ea870ab80,30.3984915623158,nearest,low,"{'common': None, 'primary': 'Planned Parenthood - Boulder Health Center', 'rules': None}",outpatient_care_facility,348740c2-d4cd-4e8a-97bb-58990a0baae4
+6ae9ab8f-f6ab-4120-adc8-47f22cb2ccd9,30.3984915623158,nearest,low,"{'common': None, 'primary': 'Core Progression Elite Personal Training', 'rules': None}",,348740c2-d4cd-4e8a-97bb-58990a0baae4
+31472f2a-7a7e-4f44-9109-2fb1a521339b,30.3984915623158,nearest,low,"{'common': None, 'primary': 'UPS Access Point location', 'rules': None}",shipping_or_delivery_service,348740c2-d4cd-4e8a-97bb-58990a0baae4
+2415fe1c-3b65-4bc5-ba74-64d4fdbb3494,30.3984915623158,nearest,low,"{'common': None, 'primary': 'Rocky Mountain Tennis Center / Tennis Center of The Rockies', 'rules': None}",,348740c2-d4cd-4e8a-97bb-58990a0baae4
+f03b9f0b-d4ed-4145-b11f-6dbee39f45bd,30.3984915623158,nearest,low,"{'common': None, 'primary': 'Boulder Ski Deals', 'rules': None}",sporting_goods_store,348740c2-d4cd-4e8a-97bb-58990a0baae4
+6b2040aa-e168-4d42-b594-a73d649d1373,30.3984915623158,nearest,low,"{'common': None, 'primary': 'barre3', 'rules': None}",fitness_studio,348740c2-d4cd-4e8a-97bb-58990a0baae4
+5b5ebc16-1e27-4933-8962-52113ca8a97a,30.3984915623158,nearest,low,"{'common': None, 'primary': 'UPS Authorized Shipping Outlet', 'rules': None}",shipping_or_delivery_service,348740c2-d4cd-4e8a-97bb-58990a0baae4
+187ea8ef-6ab1-4d63-98e0-f84fa4f851e7,30.3984915623158,nearest,low,"{'common': None, 'primary': 'Vail Resorts Retail', 'rules': None}",,348740c2-d4cd-4e8a-97bb-58990a0baae4
+e7652d26-d153-4868-b967-757fc5969f82,30.3984915623158,nearest,low,"{'common': None, 'primary': 'Dependable Cleaners', 'rules': None}",laundry_service,348740c2-d4cd-4e8a-97bb-58990a0baae4
+aa4c3aab-c57e-4f2f-b566-1a637badf013,30.338191638692354,nearest,low,"{'common': None, 'primary': 'Central Park', 'rules': None}",park,74596957-bb2c-460b-8244-0fa4f8c0552f
+9547a2da-c7c8-40a3-9625-0b393dad9fd4,30.236577348435265,nearest,low,"{'common': None, 'primary': 'Kittredge Lake', 'rules': None}",lake,a0309ac6-afa5-4e84-a75d-a5c3c2933c94
+bf8612ce-3e90-4447-832e-ef79d9de9a10,29.855541566555647,nearest,low,"{'common': None, 'primary': 'Mattress Firm', 'rules': None}",,a420ca4a-2b80-49fc-8df1-7b0e2b20ba71
+64e87d1b-f8e7-4afd-a21a-f3be17a24cf1,29.675479600554326,nearest,low,"{'common': None, 'primary': 'Boulder Creek Bike Path', 'rules': None}",park,332d6626-1264-45f2-801c-eea9ca0845de
+d9ccace1-e229-4af5-8156-58367a85c4e1,29.536213024166788,nearest,low,"{'common': None, 'primary': 'Farrand Field', 'rules': None}",sport_field,aae09af6-d182-4bec-aa9b-035e5b51aef7
+dc52ad24-1115-4ee6-a9ab-6539b560f9d2,29.315876029351887,nearest,low,"{'common': None, 'primary': 'Rocky Mountain Tech Team', 'rules': None}",telecommunications_service,a420ca4a-2b80-49fc-8df1-7b0e2b20ba71
+6ac84960-60b8-4ae6-b1a9-b48ea0312ee6,29.257418752961183,nearest,low,"{'common': None, 'primary': 'Halfway House Trailhead', 'rules': None}",recreational_trail_or_path,765dfb50-b49f-4b71-8f4d-193a6cacf056
+c0e41158-4fcc-4519-a436-d2b8e414a2b0,28.98766363686569,nearest,low,"{'common': None, 'primary': 'THC Urgent Care', 'rules': None}",urgent_care_center,943c1a84-716f-4e55-9444-4cb531745d42
+55a376d2-819d-4e20-9cc5-de902682f88f,28.98766363686569,nearest,low,"{'common': None, 'primary': ""Domino's Pizza"", 'rules': None}",restaurant,943c1a84-716f-4e55-9444-4cb531745d42
+dfa1be7e-88e3-46e7-9a6c-15d1c1ee9147,28.895383347033068,nearest,low,"{'common': None, 'primary': 'Platt Rogers Memorial Park', 'rules': None}",park,e122cc45-356c-4d1b-b8eb-2a221181731e
+9301bc0b-a355-4488-9472-c5a2247df91c,28.620891973362557,nearest,low,"{'common': None, 'primary': 'Norlin Quad', 'rules': None}",,ca258bbd-8bbc-4ae7-8d45-4ea03426aabb
+fd28db84-87b7-444a-8b91-c22e10fd8418,28.59799446489065,nearest,low,"{'common': None, 'primary': 'llcexpress.fr', 'rules': None}",home_service,3322630c-d628-4b42-830a-4b97c27dcc20
+03c6c465-c563-42b5-b484-21c7fc53afaa,28.345181484027723,nearest,low,"{'common': None, 'primary': 'DaVita Boulder Dialysis Center', 'rules': None}",specialized_medical_facility,7f82cf7e-5389-4c9c-8d46-10466589b54d
+b84dbd33-1944-4a06-9e9b-69283e289f68,28.34417254262105,nearest,low,"{'common': None, 'primary': 'Centennial Trailhead', 'rules': None}",recreational_trail_or_path,16858bb9-ef2c-40f2-acb3-49ea472fe3f8
+589bc644-8d4f-4bbd-af81-0c4fc73e83c0,28.309269820386767,nearest,low,"{'common': None, 'primary': 'Sanitas Valley Trail', 'rules': None}",recreational_trail_or_path,cc97253f-7a3c-4bfb-abbc-10c7420886ea
+af478fc3-ca2d-4b54-b53c-63ac28a83b0a,28.181897571864415,nearest,low,"{'common': None, 'primary': 'Barker Park', 'rules': None}",park,bb6ab86f-1a76-4a4d-9a3e-9338fb05e067
+5672ca18-cc9e-4018-a250-9597248da1b4,28.14219213634047,nearest,low,"{'common': None, 'primary': 'REMAX Of Boulder', 'rules': None}",real_estate_service,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+067f52d9-457f-4e96-95d4-c58b12e3c610,27.99761784872853,nearest,low,"{'common': None, 'primary': 'TrustJet', 'rules': None}",vehicle_service,71faca17-deff-4f71-b128-96fc16d7d1d9
+8d2e2df6-c17b-41b5-8a2c-b8d565ed2188,27.85713219403691,nearest,low,"{'common': None, 'primary': 'Folsom Field', 'rules': None}",stadium_arena,a52c9241-a2e8-401e-9ae6-031a4c29b289
+807f28d6-5a94-48fa-9540-859b3c332d86,27.49692852552291,nearest,low,"{'common': None, 'primary': 'PIRTEK', 'rules': None}",technical_service,b6f2fbbb-4e24-42e8-bb76-f046b8dfaa16
+be865895-fff8-4c52-9878-92f4b71b5846,27.45814684594654,nearest,low,"{'common': None, 'primary': 'Boulder Community Health', 'rules': None}",hospital,7f82cf7e-5389-4c9c-8d46-10466589b54d
+e8c4c02c-2d1f-4419-93a2-09d91bdbc82b,27.333275445550353,nearest,low,"{'common': None, 'primary': 'The Joint ...the chiropractic place', 'rules': None}",complementary_and_alternative_medicine,1e342865-6c19-4e8a-8682-6ca9eba30f1c
+e9e6a54f-1e4d-4b7e-976a-3ffee0051096,27.139003956291894,nearest,low,"{'common': None, 'primary': 'Aspen Eyewear', 'rules': None}",vision_or_eye_care_clinic,ab4dfacc-dead-40a2-a51f-69b99b3ef46f
+497a930e-4edd-46a5-abe7-7dffca2bb362,27.03012397602058,nearest,low,"{'common': None, 'primary': 'Andrews Arboretum', 'rules': None}",park,b094ce5d-81ed-42f1-b959-6a6bdd4d0c4b
+3b61ee29-735e-4298-b213-4496069deaf4,26.698129589591765,nearest,low,"{'common': None, 'primary': 'Colorado Lower Turf Field', 'rules': None}",,2d518abc-6cdd-4a0f-bd7b-b14e5e49f50a
+e41139f9-2499-4a07-8e0f-fdb4e385e147,25.93921277895367,nearest,low,"{'common': None, 'primary': 'Byron R. White Stadium Club', 'rules': None}",stadium_arena,a52c9241-a2e8-401e-9ae6-031a4c29b289
+9797e391-8505-4c6e-a07c-b363e7850dda,25.712563407127917,nearest,low,"{'common': None, 'primary': 'Gemini Contracting Inc.', 'rules': None}",home_service,3e485acd-f88a-49ee-a3c8-2c228f0f0e12
+f97f66e8-78f4-4558-9f11-2d36d0371143,25.22759556966368,nearest,low,"{'common': None, 'primary': 'Farmers Insurance', 'rules': None}",financial_service,e10c0c97-dd19-4132-aa51-654af46606c6
+292899e5-a7e5-4187-b0cd-aabe907d6dbb,24.923711507716217,nearest,low,"{'common': None, 'primary': 'University of Colorado at Boulder', 'rules': None}",college_university,c55a9a42-1442-4e29-8330-90a9744c0fbf
+5c883bfc-5ed2-456c-9cc7-ccb83bf8f47a,24.40531094829367,nearest,low,"{'common': None, 'primary': 'Sunrise Ampitheather', 'rules': None}",movie_theater,40ef71ba-0b46-48cb-a6a9-80964e6b8996
+ec33c6a6-834f-404f-989c-0c3e736f3176,24.041059005228483,nearest,low,"{'common': None, 'primary': 'Road to Growth Counseling', 'rules': None}",,a9df6e20-748f-4579-986d-c11e75b4b9aa
+3afbc18e-67a3-4623-91d3-ea1f236940c2,24.041059005228483,nearest,low,"{'common': None, 'primary': 'Psychiatric Empowerment Center', 'rules': None}",behavioral_or_mental_health_clinic,a9df6e20-748f-4579-986d-c11e75b4b9aa
+ccfdafa7-4a72-441c-93a3-837a14f0c256,24.041059005228483,nearest,low,"{'common': None, 'primary': 'Jeffrey Katowitz LMFT', 'rules': None}",,a9df6e20-748f-4579-986d-c11e75b4b9aa
+58f54391-fbf8-4d89-882d-2b73362d1141,23.721775203192156,nearest,low,"{'common': None, 'primary': 'DachyCharm', 'rules': None}",,037fb76d-d2db-4da1-b541-37f2669d056a
+a75c7636-0f6c-45aa-9b4c-3c4f6fd44fcd,23.721775203192156,nearest,low,"{'common': None, 'primary': 'Catholight', 'rules': None}",,037fb76d-d2db-4da1-b541-37f2669d056a
+d52eac41-e688-46aa-a6fb-c0aad177d353,23.721775203192156,nearest,low,"{'common': None, 'primary': 'BlitzPaws', 'rules': None}",animal_or_pet_service,037fb76d-d2db-4da1-b541-37f2669d056a
+07dbb33b-4d25-421a-beb3-3e19579f22d4,23.721775203192156,nearest,low,"{'common': None, 'primary': 'Gothistar.com', 'rules': None}",,037fb76d-d2db-4da1-b541-37f2669d056a
+ae660e84-eddc-4e9a-a23c-7ae7191245af,23.281108264486303,nearest,low,"{'common': None, 'primary': 'Farmers Insurance - Brian Dolan', 'rules': None}",,e10c0c97-dd19-4132-aa51-654af46606c6
+b6ae9f89-0320-43aa-877d-deb46c8086d7,23.105762557685967,nearest,low,"{'common': None, 'primary': 'Boulder Sports Clinic', 'rules': None}",specialized_health_care,de79b492-ca79-4493-90f0-c6c78760866a
+7771df18-4cdb-4538-ba12-ac5175bf4314,22.91992834271446,nearest,low,"{'common': None, 'primary': 'The Boulder Zoo', 'rules': None}",zoo,4bde867e-0c63-432b-af72-86bd2656637a
