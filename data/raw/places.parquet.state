@@ -1,0 +1,14 @@
+{
+  "last_release": "2026-04-15.0",
+  "last_run": "2026-04-16T22:28:53.409251+00:00",
+  "theme": "places",
+  "type": "place",
+  "bbox": {
+    "xmin": -105.3,
+    "ymin": 40.0,
+    "xmax": -105.26,
+    "ymax": 40.03
+  },
+  "backend": "geoparquet",
+  "output": "C:\\Gauri\\map-entity-conflation\\data\\raw\\places.parquet"
+}
