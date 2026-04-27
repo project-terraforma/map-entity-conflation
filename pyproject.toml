@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-zephr-baseline"
+version = "0.1.0"
+description = "Baseline geospatial conflation pipeline for Overture places, buildings, addresses, and roads."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "duckdb>=1.1.0",
+  "geopandas>=0.14.0",
+  "matplotlib>=3.8.0",
+  "numpy>=1.26.0",
+  "pandas>=2.2.0",
+  "pyarrow>=15.0.0",
+  "pyogrio>=0.7.0",
+  "pyyaml>=6.0.0",
+  "shapely>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "jupyter>=1.0.0",
+  "pytest>=8.0.0",
+]
+
+[project.scripts]
+zephr-baseline = "src.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

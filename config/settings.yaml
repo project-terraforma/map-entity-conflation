@@ -1,0 +1,76 @@
+study_area_path: ../boulder_louisville_sign_and_entrance_gt/boulder_medium.geojson
+reference_csv_paths:
+  - ../boulder_louisville_sign_and_entrance_gt/boulder_snips_gt_adjusted.csv
+
+target_crs: EPSG:26913
+
+inputs:
+  places_path: s3://overturemaps-us-west-2/release/2026-03-18.0/theme=places/type=place/*.parquet
+  buildings_path: s3://overturemaps-us-west-2/release/2026-03-18.0/theme=buildings/type=building/*.parquet
+  addresses_path: s3://overturemaps-us-west-2/release/2026-03-18.0/theme=addresses/type=address/*.parquet
+  roads_path: s3://overturemaps-us-west-2/release/2026-03-18.0/theme=transportation/type=segment/*.parquet
+  write_clipped_extracts: true
+
+candidate_generation:
+  address_building:
+    nearest_n: 3
+    max_distance_m: 60.0
+  place_building:
+    nearest_n: 3
+    max_distance_m: 80.0
+  building_street:
+    nearest_n: 3
+    max_distance_m: 100.0
+    frontage_buffer_m: 15.0
+  place_address:
+    nearest_n: 3
+    max_distance_m: 80.0
+
+scoring:
+  address_building:
+    containment_bonus: 0.6
+    polygon_distance_scale_m: 40.0
+    centroid_distance_scale_m: 80.0
+    building_area_cap_m2: 1500.0
+    address_density_penalty: 0.08
+    threshold: 0.45
+    high_threshold: 0.8
+    medium_threshold: 0.6
+  place_building:
+    containment_bonus: 0.55
+    polygon_distance_scale_m: 50.0
+    centroid_distance_scale_m: 90.0
+    linked_address_distance_scale_m: 35.0
+    nearby_place_penalty: 0.05
+    building_area_cap_m2: 2000.0
+    threshold: 0.42
+    high_threshold: 0.78
+    medium_threshold: 0.58
+  building_street:
+    distance_scale_m: 35.0
+    centroid_distance_scale_m: 60.0
+    frontage_bonus: 0.2
+    road_name_bonus: 0.2
+    corner_bonus: 0.1
+    threshold: 0.4
+    high_threshold: 0.75
+    medium_threshold: 0.55
+  place_address:
+    same_building_bonus: 0.45
+    shared_building_candidate_bonus: 0.1
+    distance_scale_m: 45.0
+    street_name_bonus: 0.2
+    house_number_bonus: 0.15
+    place_name_support_bonus: 0.1
+    threshold: 0.4
+    high_threshold: 0.75
+    medium_threshold: 0.55
+
+resolution:
+  min_score_gap: 0.1
+  allow_secondary_streets: true
+
+visualization:
+  figsize:
+    - 12
+    - 10
