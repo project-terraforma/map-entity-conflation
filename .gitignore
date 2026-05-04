@@ -1,0 +1,10 @@
+# Data files
+data/
+outputs/
+*.parquet
+*.geojson
+*.csv
+
+# Large artifacts
+*.zip
+*.tar
