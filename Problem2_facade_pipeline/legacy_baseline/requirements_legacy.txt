@@ -1,0 +1,7 @@
+geopandas
+pandas
+shapely
+pyproj
+fiona
+pyarrow
+overturemaps

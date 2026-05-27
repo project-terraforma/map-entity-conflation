@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# OS/editor
+.DS_Store
+.vscode/
+
+# Virtual environments and local secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Generated outputs
+outputs/
+**/outputs/
+
+# Raw or processed local data
+/data/
+**/data/raw/
+**/data/processed/
+*.parquet
+*.geojson
+
+# Keep data download/source scripts visible even inside data folders
+!**/data/
+!**/data/*.py
+
+# Large local benchmark/reference assets
+benchmark_dataset/reference_datasets/
+benchmark_dataset/review_packets/
+*.zip
+
+# Presentation-only docs are kept local for now
+README_PRESENTATION_EXPLANATION.md
+**/README_PRESENTATION_EXPLANATION.md
+Conflation_pipeline/Problem1_radmeexplaination
+Problem2_facade_pipeline/problem2_readme_explaiantion
+
+# Legacy per-folder placeholder exceptions, kept at root now
+!**/.gitkeep

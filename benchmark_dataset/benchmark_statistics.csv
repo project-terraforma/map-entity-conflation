@@ -1,0 +1,19 @@
+metric,group,count,percent
+total_candidates,all,137,100.0
+benchmark_type,strong_match,25,18.25
+benchmark_type,ambiguous_match,25,18.25
+benchmark_type,corner_or_close_facade_case,25,18.25
+benchmark_type,multi_tenant_or_shared_facade,25,18.25
+benchmark_type,likely_nonbuilding_poi,25,18.25
+benchmark_type,no_building_match_failure,12,8.76
+region,Boulder Pearl Street Mall,124,90.51
+region,unknown,13,9.49
+confidence_label,needs_review_multiple_close_facades,77,56.2
+confidence_label,high_confidence_nearest_facade,30,21.9
+confidence_label,medium_confidence_street_supported,17,12.41
+confidence_label,needs_review_no_building_match,13,9.49
+ambiguity_bucket,multiple_close_facades,77,56.2
+ambiguity_bucket,nearest_facade,30,21.9
+ambiguity_bucket,street_supported,17,12.41
+ambiguity_bucket,no_building_match,13,9.49
+ambiguity_rate,needs_review_multiple_close_facades,77,56.2

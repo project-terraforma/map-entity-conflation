@@ -14,6 +14,7 @@ from config import (
     ENABLE_SAMPLING,
     PLACES_INPUT_OPTIONS,
     RAW_DATA_DIR,
+    RAW_DATA_DIR_OPTIONS,
     SAMPLE_SIZE,
     STREETS_INPUT_OPTIONS,
 )
@@ -27,15 +28,19 @@ except ImportError:  # pragma: no cover - dependency is listed, fallback remains
 
 def find_input_file(options, layer_name, required=True):
     """Return the preferred available raw file for a layer."""
-    for option in options:
-        path = RAW_DATA_DIR / option
-        if path.exists():
-            return path
+    searched = []
+    for raw_dir in RAW_DATA_DIR_OPTIONS:
+        for option in options:
+            path = raw_dir / option
+            searched.append(path)
+            if path.exists():
+                return path
     if required:
         expected = " or ".join(options[:3])
+        searched_text = "\n".join(f"- {path}" for path in searched)
         raise FileNotFoundError(
-            f"Error: No {layer_name} file found in {RAW_DATA_DIR}. "
-            f"Please provide {expected}."
+            f"Error: No {layer_name} file found. Please provide {expected} in one of these locations:\n"
+            f"{searched_text}"
         )
     return None
 
@@ -233,6 +238,11 @@ def load_raw_layers():
     addresses_path = find_input_file(ADDRESSES_INPUT_OPTIONS, "addresses")
     buildings_path = find_input_file(BUILDINGS_INPUT_OPTIONS, "buildings")
     streets_path = find_input_file(STREETS_INPUT_OPTIONS, "streets/segments", required=False)
+
+    print(f"Using places input: {places_path}")
+    print(f"Using addresses input: {addresses_path}")
+    print(f"Using buildings input: {buildings_path}")
+    print(f"Using streets input: {streets_path if streets_path else 'not provided'}")
 
     places = standardize_places(load_table(places_path))
     addresses = standardize_addresses(load_table(addresses_path))

@@ -3,7 +3,13 @@
 from pathlib import Path
 
 V3_ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = V3_ROOT.parent
 RAW_DATA_DIR = V3_ROOT / "data" / "raw"
+RAW_DATA_DIR_OPTIONS = [
+    RAW_DATA_DIR,
+    REPO_ROOT / "Problem2_facade_pipeline" / "data" / "raw",
+    REPO_ROOT / "data" / "raw",
+]
 PROCESSED_DATA_DIR = V3_ROOT / "data" / "processed"
 OUTPUT_DIR = V3_ROOT / "outputs"
 
