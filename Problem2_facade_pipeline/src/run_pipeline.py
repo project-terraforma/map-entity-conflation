@@ -1,5 +1,6 @@
 """Run Problem 2 facade matching as an extension of Problem 1."""
 
+import json
 import math
 from pathlib import Path
 
@@ -18,19 +19,53 @@ from config import (
     CORNER_THRESHOLD_M,
     LONG_EDGE_REFERENCE_M,
     MATCHES_OUTPUT,
+    BEST_RERANKER_CONFIG_OUTPUT,
+    CORNER_PENALTY_WEIGHT,
+    DISTANCE_SCORE_WEIGHT,
+    EDGE_LENGTH_BONUS_WEIGHT,
+    ENABLE_SHARED_BUILDING_FACADE_LOGIC,
+    MAX_DISTANCE_RATIO_FOR_RERANK_OVERRIDE,
     NEEDS_REVIEW_BUILDING_LABELS,
     NEEDS_REVIEW_FINAL_LABELS,
+    NEAREST_FACADE_LOCKIN_DISTANCE_METERS,
     NOT_APPLICABLE_FINAL_LABELS,
     OUTPUT_DIR,
     PROBLEM1_OUTPUT,
+    PROXY_EVAL_INCLUDE_NEEDS_REVIEW,
     RAW_DATA_DIR_OPTIONS,
     SHARED_FACADE_PENALTY_THRESHOLD,
+    SHARED_FACADE_PENALTY_WEIGHT,
     STREET_ALIGNMENT_GOOD_DEGREES,
+    STREET_ALIGNMENT_BONUS_WEIGHT,
+    STREET_FACING_BONUS_WEIGHT,
     STREET_SEARCH_RADIUS_M,
     STREETS_INPUT_OPTIONS,
     SUMMARY_OUTPUT,
+    TUNE_FACADE_RERANKER,
     VALID_PROBLEM1_FINAL_LABELS,
 )
+
+PROBLEM2_EVAL_MODE = "proxy_permissive" if PROXY_EVAL_INCLUDE_NEEDS_REVIEW else "strict"
+
+
+def load_tuned_reranker_config():
+    """Load optional tuned reranker weights without changing default behavior."""
+    config = {
+        "distance_weight": DISTANCE_SCORE_WEIGHT,
+        "street_alignment_weight": STREET_ALIGNMENT_BONUS_WEIGHT,
+        "street_facing_weight": STREET_FACING_BONUS_WEIGHT,
+        "edge_length_weight": EDGE_LENGTH_BONUS_WEIGHT,
+        "corner_penalty_weight": CORNER_PENALTY_WEIGHT,
+        "shared_facade_penalty_weight": SHARED_FACADE_PENALTY_WEIGHT,
+        "lockin_distance_m": NEAREST_FACADE_LOCKIN_DISTANCE_METERS,
+        "max_distance_ratio_for_override": MAX_DISTANCE_RATIO_FOR_RERANK_OVERRIDE,
+        "strong_override_margin": 0.15,
+    }
+    if TUNE_FACADE_RERANKER and BEST_RERANKER_CONFIG_OUTPUT.exists():
+        with open(BEST_RERANKER_CONFIG_OUTPUT, "r", encoding="utf-8") as handle:
+            loaded = json.load(handle)
+        config.update({key: loaded[key] for key in config if key in loaded})
+    return config
 
 
 def is_missing(value):
@@ -168,9 +203,20 @@ def classify_problem2_row(row):
         return "no_building_match"
     if final_label in VALID_PROBLEM1_FINAL_LABELS and building_validation not in NEEDS_REVIEW_BUILDING_LABELS:
         return "facade_candidate"
+    if PROXY_EVAL_INCLUDE_NEEDS_REVIEW and final_label == "needs_review":
+        return "facade_candidate"
     if final_label in NEEDS_REVIEW_FINAL_LABELS or building_validation in NEEDS_REVIEW_BUILDING_LABELS:
         return "needs_review"
     return "needs_review"
+
+
+def proxy_eval_included_needs_review(row):
+    """Return True when a row was admitted only by permissive proxy evaluation mode."""
+    return bool(
+        PROXY_EVAL_INCLUDE_NEEDS_REVIEW
+        and str(row.get("final_label", "") or "") == "needs_review"
+        and row.get("problem2_status") == "facade_candidate"
+    )
 
 
 def polygon_parts(geometry):
@@ -311,12 +357,61 @@ def score_candidate(candidate, shared_count, street_available):
     return candidate
 
 
+def score_candidate_tuned(candidate, shared_count, street_available, reranker_config):
+    """Distance-dominant tuned score used only when TUNE_FACADE_RERANKER is enabled."""
+    shared_penalty = 0.10 if shared_count >= SHARED_FACADE_PENALTY_THRESHOLD else 0.0
+    candidate["shared_facade_penalty"] = shared_penalty
+    if not street_available:
+        candidate["selected_facade_score"] = distance_score(candidate["distance_m"])
+        return candidate
+
+    score = (
+        reranker_config["distance_weight"] * distance_score(candidate["distance_m"])
+        + reranker_config["street_alignment_weight"] * candidate["street_alignment_score"]
+        + reranker_config["street_facing_weight"] * candidate["street_facing_score"]
+        + reranker_config["edge_length_weight"] * candidate["edge_length_score"]
+        - reranker_config["corner_penalty_weight"] * candidate["corner_penalty"]
+        - reranker_config["shared_facade_penalty_weight"] * shared_penalty
+    )
+    candidate["selected_facade_score"] = round(float(score), 6)
+    return candidate
+
+
+def choose_selected_candidate(scored, nearest, street_available, reranker_config):
+    """Choose a facade candidate, preserving the existing reranker unless tuning is enabled."""
+    if not street_available:
+        return nearest
+    if not TUNE_FACADE_RERANKER:
+        return max(scored, key=lambda item: item["selected_facade_score"])
+
+    nearest_distance = max(float(nearest["distance_m"]), 0.001)
+    max_ratio = float(reranker_config["max_distance_ratio_for_override"])
+    eligible = [
+        candidate
+        for candidate in scored
+        if float(candidate["distance_m"]) <= nearest_distance * max_ratio
+    ]
+    selected = max(eligible or scored, key=lambda item: item["selected_facade_score"])
+
+    if nearest_distance <= float(reranker_config["lockin_distance_m"]):
+        margin = float(reranker_config.get("strong_override_margin", 0.15))
+        nearest_score = float(nearest["selected_facade_score"])
+        selected_score = float(selected["selected_facade_score"])
+        if selected["edge_id"] != nearest["edge_id"] and selected_score < nearest_score + margin:
+            return nearest
+    return selected
+
+
 def empty_output_row(row, status):
     """Return a Problem 2 row for records not sent to facade matching."""
+    included_needs_review = proxy_eval_included_needs_review(row)
     return {
         "poi_id": row.get("poi_id"),
         "poi_name": row.get("poi_name"),
         "problem1_final_label": row.get("final_label"),
+        "source_final_label": row.get("final_label"),
+        "problem2_eval_mode": PROBLEM2_EVAL_MODE,
+        "proxy_eval_included_needs_review": included_needs_review,
         "problem2_status": status,
         "building_id": row.get("matched_building_id"),
         "nearest_edge_id": None,
@@ -343,11 +438,15 @@ def build_summary(output_df, total_rows):
     status_counts = output_df["problem2_status"].value_counts().to_dict()
     method_counts = output_df["selected_method"].value_counts().to_dict()
     numeric = output_df[output_df["problem2_status"] == "facade_candidate"]
+    included_needs_review_count = int(output_df.get("proxy_eval_included_needs_review", pd.Series(dtype=bool)).fillna(False).astype(bool).sum())
     rows = [
         {"metric": "total_problem1_rows_consumed", "value": int(total_rows)},
+        {"metric": "problem2_eval_mode", "value": PROBLEM2_EVAL_MODE},
+        {"metric": "proxy_eval_include_needs_review", "value": bool(PROXY_EVAL_INCLUDE_NEEDS_REVIEW)},
         {"metric": "not_applicable_count", "value": int(status_counts.get("not_applicable", 0))},
         {"metric": "no_building_match_count", "value": int(status_counts.get("no_building_match", 0))},
         {"metric": "needs_review_count", "value": int(status_counts.get("needs_review", 0))},
+        {"metric": "proxy_eval_included_needs_review_count", "value": included_needs_review_count},
         {"metric": "facade_candidate_count", "value": int(status_counts.get("facade_candidate", 0))},
         {"metric": "nearest_edge_baseline_count", "value": int(method_counts.get("nearest_edge_baseline", 0))},
         {"metric": "street_aware_rerank_count", "value": int(method_counts.get("street_aware_rerank", 0))},
@@ -366,13 +465,19 @@ def run():
     buildings_m = buildings.to_crs(buildings.estimate_utm_crs() or "EPSG:3857")
     streets_m, street_path = load_streets(buildings_m.crs)
     street_available = streets_m is not None and not streets_m.empty
+    reranker_config = load_tuned_reranker_config()
 
     print(f"Loaded Problem 1 output: {PROBLEM1_OUTPUT} ({len(problem1)} rows)")
     print(f"Loaded buildings: {building_path} ({len(buildings)} rows)")
     print(f"Loaded streets: {street_path if street_path else 'not provided'} ({len(streets_m) if street_available else 0} rows)")
+    print(f"Problem 2 evaluation mode: {PROBLEM2_EVAL_MODE}")
+    print(f"Tuned facade reranker enabled: {bool(TUNE_FACADE_RERANKER)}")
+    if PROXY_EVAL_INCLUDE_NEEDS_REVIEW:
+        print("Permissive proxy evaluation is enabled: final_label=needs_review rows can receive facade candidates for benchmarking only.")
 
     problem1["problem2_status"] = problem1.apply(classify_problem2_row, axis=1)
     building_lookup = buildings_m.drop_duplicates("building_id").set_index("building_id")
+    building_poi_counts = problem1["matched_building_id"].astype(str).value_counts().to_dict()
 
     candidate_cache = {}
     output_rows = []
@@ -417,13 +522,35 @@ def run():
             continue
 
         row, candidates, nearest = cache_by_poi[poi_id]
-        scored = [score_candidate(candidate, shared_counts.get(candidate["edge_id"], 0), street_available) for candidate in candidates]
-        selected = max(scored, key=lambda item: item["selected_facade_score"]) if street_available else nearest
+        local_reranker_config = dict(reranker_config)
+        shared_building_count = int(building_poi_counts.get(str(row.get("matched_building_id")), 0))
+        shared_building_logic_used = bool(ENABLE_SHARED_BUILDING_FACADE_LOGIC and shared_building_count > 1)
+        if TUNE_FACADE_RERANKER and shared_building_logic_used:
+            local_reranker_config["street_alignment_weight"] = min(local_reranker_config["street_alignment_weight"], 0.03)
+            local_reranker_config["street_facing_weight"] = min(local_reranker_config["street_facing_weight"], 0.03)
+            local_reranker_config["distance_weight"] = max(local_reranker_config["distance_weight"], 0.85)
+            local_reranker_config["max_distance_ratio_for_override"] = min(local_reranker_config["max_distance_ratio_for_override"], 1.5)
+        scorer = score_candidate_tuned if TUNE_FACADE_RERANKER else score_candidate
+        if TUNE_FACADE_RERANKER:
+            scored = [
+                scorer(candidate, shared_counts.get(candidate["edge_id"], 0), street_available, local_reranker_config)
+                for candidate in candidates
+            ]
+        else:
+            scored = [scorer(candidate, shared_counts.get(candidate["edge_id"], 0), street_available) for candidate in candidates]
+        selected = choose_selected_candidate(scored, nearest, street_available, local_reranker_config)
         if not street_available:
             selected = score_candidate(selected, shared_counts.get(selected["edge_id"], 0), False)
 
-        method = "street_aware_rerank" if street_available else "nearest_edge_baseline"
+        method = "tuned_street_aware_rerank" if street_available and TUNE_FACADE_RERANKER else ("street_aware_rerank" if street_available else "nearest_edge_baseline")
         reason_parts = [f"nearest_edge_baseline={nearest['edge_id']}"]
+        included_needs_review = proxy_eval_included_needs_review(row)
+        if included_needs_review:
+            reason_parts.append("proxy evaluation mode included needs_review row; not production-confirmed")
+        if TUNE_FACADE_RERANKER:
+            reason_parts.append("distance-dominant tuned reranker and guardrails enabled")
+        if shared_building_logic_used:
+            reason_parts.append("shared-building experimental logic reduced street weights")
         if street_available:
             reason_parts.append("street geometry used for distance/alignment scoring")
         else:
@@ -438,6 +565,9 @@ def run():
                 "poi_id": row.get("poi_id"),
                 "poi_name": row.get("poi_name"),
                 "problem1_final_label": row.get("final_label"),
+                "source_final_label": row.get("final_label"),
+                "problem2_eval_mode": PROBLEM2_EVAL_MODE,
+                "proxy_eval_included_needs_review": included_needs_review,
                 "problem2_status": "facade_candidate",
                 "building_id": row.get("matched_building_id"),
                 "nearest_edge_id": nearest["edge_id"],
@@ -472,6 +602,21 @@ def run():
     print(output_df["problem2_status"].value_counts().to_string())
     print("\nSelected method counts:")
     print(output_df["selected_method"].value_counts().to_string())
+
+    try:
+        from proxy_benchmark_builder import build_proxy_candidates
+        from proxy_facade_evaluator import run_proxy_evaluation
+
+        print("\nStarting optional Louisville/Boulder entrance/sign proxy evaluation...")
+        proxy_candidates = build_proxy_candidates()
+        if proxy_candidates is None or proxy_candidates.empty:
+            print("Proxy evaluation skipped because no usable Louisville/Boulder proxy rows were available.")
+        else:
+            run_proxy_evaluation()
+    except FileNotFoundError as exc:
+        print(f"Proxy evaluation skipped: {exc}")
+    except Exception as exc:
+        print(f"Proxy evaluation skipped due to an unexpected error: {exc}")
 
 
 if __name__ == "__main__":

@@ -26,6 +26,7 @@ outputs/
 /data/
 **/data/raw/
 **/data/processed/
+**/data/proxy_overture/
 *.parquet
 *.geojson
 

@@ -1,15 +1,20 @@
 """Configuration for the standalone Problem 1 conflation pipeline."""
 
+import os
 from pathlib import Path
 
 V3_ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = V3_ROOT.parent
 RAW_DATA_DIR = V3_ROOT / "data" / "raw"
+USE_PROXY_AREA_OVERTURE_DATA = os.environ.get("USE_PROXY_AREA_OVERTURE_DATA", "").lower() in {"1", "true", "yes"}
+PROXY_OVERTURE_DATA_DIR = REPO_ROOT / "Problem2_facade_pipeline" / "data" / "proxy_overture"
 RAW_DATA_DIR_OPTIONS = [
     RAW_DATA_DIR,
     REPO_ROOT / "Problem2_facade_pipeline" / "data" / "raw",
     REPO_ROOT / "data" / "raw",
 ]
+if USE_PROXY_AREA_OVERTURE_DATA:
+    RAW_DATA_DIR_OPTIONS.insert(0, PROXY_OVERTURE_DATA_DIR)
 PROCESSED_DATA_DIR = V3_ROOT / "data" / "processed"
 OUTPUT_DIR = V3_ROOT / "outputs"
 
@@ -30,6 +35,11 @@ STREETS_INPUT_OPTIONS = [
     "streets/segments.geojson",
     "streets/segments.csv",
 ]
+if USE_PROXY_AREA_OVERTURE_DATA:
+    PLACES_INPUT_OPTIONS.insert(0, "proxy_area_places.parquet")
+    ADDRESSES_INPUT_OPTIONS.insert(0, "proxy_area_addresses.parquet")
+    BUILDINGS_INPUT_OPTIONS.insert(0, "proxy_area_buildings.parquet")
+    STREETS_INPUT_OPTIONS.insert(0, "proxy_area_segments.parquet")
 
 FINAL_OUTPUT = OUTPUT_DIR / "final_problem1_conflation.csv"
 SUMMARY_OUTPUT = OUTPUT_DIR / "problem1_summary.csv"
