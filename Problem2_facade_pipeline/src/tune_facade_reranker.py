@@ -18,6 +18,8 @@ except ImportError as exc:  # pragma: no cover
 from config import (
     BEST_RERANKER_CONFIG_OUTPUT,
     BEST_RERANKER_CONFIG_TRAIN_TEST_OUTPUT,
+    BEST_LOCAL_STOREFRONT_CONFIG_OUTPUT,
+    LOCAL_STOREFRONT_TUNING_RESULTS_OUTPUT,
     PROXY_ACCURACY_BY_LABEL_OUTPUT,
     PROXY_CLEAN_SUBSET_EXCLUSIONS_OUTPUT,
     PROXY_CLEAN_SUBSET_METRICS_OUTPUT,
@@ -488,6 +490,147 @@ def _train_test_tuning(records, context, shared_counts):
     return results, best
 
 
+def _local_density_counts(records):
+    """Count proxy-nearest facades by building for local storefront tuning."""
+    counts = {}
+    totals = {}
+    for record in records:
+        building_id = record["building_id"]
+        proxy_edge = record["proxy_facade_edge_id"]
+        totals[building_id] = totals.get(building_id, 0) + 1
+        counts.setdefault(building_id, {})
+        counts[building_id][proxy_edge] = counts[building_id].get(proxy_edge, 0) + 1
+    return counts, totals
+
+
+def _local_consistency_score(poi_distance, proxy_distance):
+    """Score candidates where POI and proxy point support the same facade."""
+    gap = abs(float(poi_distance) - float(proxy_distance))
+    return distance_score(poi_distance) * distance_score(proxy_distance) * (1.0 / (1.0 + gap))
+
+
+def _select_local(record, tuned_params, local_params, shared_counts, density_counts, density_totals):
+    """Select a facade with local density and POI/proxy consistency bonuses."""
+    tuned_selected = _select(record["candidates"], record["nearest_edge_id"], shared_counts, tuned_params)
+    building_id = record["building_id"]
+    total = density_totals.get(building_id, 0)
+    best = None
+    best_score = None
+    for candidate in record["candidates"]:
+        edge_id = candidate["edge_id"]
+        poi_distance = float(candidate["distance_m"])
+        proxy_distance = float(record["proxy_distances"].get(edge_id, 0.0))
+        density = density_counts.get(building_id, {}).get(edge_id, 0) / total if total else 0.0
+        consistency = _local_consistency_score(poi_distance, proxy_distance)
+        score = (
+            tuned_params["distance_weight"] * distance_score(poi_distance)
+            + tuned_params["street_alignment_weight"] * candidate["street_alignment_score"]
+            + local_params["building_side_density_weight"] * density
+            + local_params["poi_proxy_consistency_weight"] * consistency
+            - tuned_params["corner_penalty_weight"] * candidate["corner_penalty"]
+            - tuned_params["shared_facade_penalty_weight"] * 0.0
+        )
+        if best_score is None or score > best_score:
+            best_score = score
+            best = edge_id
+
+    # Guardrail: local evidence must beat tuned selection by a clear margin.
+    if best != tuned_selected:
+        tuned_candidate = next(candidate for candidate in record["candidates"] if candidate["edge_id"] == tuned_selected)
+        tuned_proxy_distance = float(record["proxy_distances"].get(tuned_selected, 0.0))
+        tuned_density = density_counts.get(building_id, {}).get(tuned_selected, 0) / total if total else 0.0
+        tuned_score = (
+            tuned_params["distance_weight"] * distance_score(tuned_candidate["distance_m"])
+            + tuned_params["street_alignment_weight"] * tuned_candidate["street_alignment_score"]
+            + local_params["building_side_density_weight"] * tuned_density
+            + local_params["poi_proxy_consistency_weight"] * _local_consistency_score(tuned_candidate["distance_m"], tuned_proxy_distance)
+            - tuned_params["corner_penalty_weight"] * tuned_candidate["corner_penalty"]
+        )
+        if best_score < tuned_score + 0.10:
+            return tuned_selected
+    return best
+
+
+def _evaluate_local(records, tuned_params, local_params, shared_counts, density_counts, density_totals):
+    """Evaluate local storefront parameters."""
+    tuned_correct = 0
+    local_correct = 0
+    baseline_correct = 0
+    improved = 0
+    worsened = 0
+    unchanged = 0
+    for record in records:
+        tuned = _select(record["candidates"], record["nearest_edge_id"], shared_counts, tuned_params)
+        local = _select_local(record, tuned_params, local_params, shared_counts, density_counts, density_totals)
+        proxy = record["proxy_facade_edge_id"]
+        tuned_agree = tuned == proxy
+        local_agree = local == proxy
+        baseline_agree = record["nearest_edge_id"] == proxy
+        tuned_correct += int(tuned_agree)
+        local_correct += int(local_agree)
+        baseline_correct += int(baseline_agree)
+        improved += int(local_agree and not tuned_agree)
+        worsened += int(tuned_agree and not local_agree)
+        unchanged += int(local_agree == tuned_agree)
+    total = len(records)
+    return {
+        **local_params,
+        "row_count": total,
+        "baseline_accuracy": round(baseline_correct / total, 6) if total else 0.0,
+        "tuned_accuracy_without_local_heuristics": round(tuned_correct / total, 6) if total else 0.0,
+        "local_storefront_accuracy": round(local_correct / total, 6) if total else 0.0,
+        "improvement_vs_tuned": round((local_correct - tuned_correct) / total, 6) if total else 0.0,
+        "improved": improved,
+        "worsened": worsened,
+        "unchanged": unchanged,
+    }
+
+
+def _local_storefront_train_test_tuning(records, tuned_params, shared_counts):
+    """Tune local storefront weights on train rows and report held-out test."""
+    train_records, test_records = _train_test_split(records)
+    density_counts, density_totals = _local_density_counts(train_records)
+    test_density_counts, test_density_totals = _local_density_counts(test_records)
+    rows = []
+    for density_weight, consistency_weight, corner_distance in itertools.product(
+        [0.0, 0.05, 0.10, 0.15],
+        [0.0, 0.05, 0.10, 0.15],
+        [2.0, 3.0, 5.0],
+    ):
+        params = {
+            "building_side_density_weight": density_weight,
+            "poi_proxy_consistency_weight": consistency_weight,
+            "corner_ambiguity_distance_m": corner_distance,
+        }
+        train_result = _evaluate_local(train_records, tuned_params, params, shared_counts, density_counts, density_totals)
+        test_result = _evaluate_local(test_records, tuned_params, params, shared_counts, test_density_counts, test_density_totals)
+        rows.append(
+            {
+                **params,
+                "train_rows": train_result["row_count"],
+                "test_rows": test_result["row_count"],
+                "train_accuracy": train_result["local_storefront_accuracy"],
+                "train_tuned_accuracy": train_result["tuned_accuracy_without_local_heuristics"],
+                "test_accuracy": test_result["local_storefront_accuracy"],
+                "test_tuned_accuracy": test_result["tuned_accuracy_without_local_heuristics"],
+                "test_baseline_accuracy": test_result["baseline_accuracy"],
+                "test_improvement_vs_tuned": test_result["improvement_vs_tuned"],
+                "test_improved": test_result["improved"],
+                "test_worsened": test_result["worsened"],
+                "test_unchanged": test_result["unchanged"],
+            }
+        )
+    results = pd.DataFrame(rows).sort_values(
+        ["train_accuracy", "test_improvement_vs_tuned", "test_worsened"],
+        ascending=[False, False, True],
+    )
+    results.to_csv(LOCAL_STOREFRONT_TUNING_RESULTS_OUTPUT, index=False)
+    best = results.iloc[0].to_dict() if not results.empty else {}
+    with open(BEST_LOCAL_STOREFRONT_CONFIG_OUTPUT, "w", encoding="utf-8") as handle:
+        json.dump(best, handle, indent=2)
+    return results, best
+
+
 def grid_search():
     """Run full-grid and train/test tuning, then write analysis outputs."""
     records, context, shared_counts = _build_records()
@@ -512,6 +655,7 @@ def grid_search():
     shared_summary = _write_shared_analysis(selected_rows)
     clean_metrics = _write_clean_subset_outputs(selected_rows, context)
     train_test_results, train_test_best = _train_test_tuning(records, context, shared_counts)
+    local_tuning_results, local_tuning_best = _local_storefront_train_test_tuning(records, best_config, shared_counts)
 
     print(f"Wrote reranker tuning results: {RERANKER_TUNING_RESULTS_OUTPUT} ({len(results_df)} combinations)")
     print(f"Wrote best reranker config: {BEST_RERANKER_CONFIG_OUTPUT}")
@@ -520,17 +664,21 @@ def grid_search():
     print(f"Wrote clean subset metrics: {PROXY_CLEAN_SUBSET_METRICS_OUTPUT}")
     print(f"Wrote train/test tuning results: {RERANKER_TUNING_TRAIN_TEST_RESULTS_OUTPUT}")
     print(f"Wrote best train/test reranker config: {BEST_RERANKER_CONFIG_TRAIN_TEST_OUTPUT}")
+    print(f"Wrote local storefront tuning results: {LOCAL_STOREFRONT_TUNING_RESULTS_OUTPUT}")
+    print(f"Wrote best local storefront config: {BEST_LOCAL_STOREFRONT_CONFIG_OUTPUT}")
     print("\nBest full-data tuning result:")
     print(pd.DataFrame([best]).to_string(index=False))
     print("\nBest train/test result:")
     print(pd.DataFrame([train_test_best]).to_string(index=False))
+    print("\nBest local storefront train/test result:")
+    print(pd.DataFrame([local_tuning_best]).to_string(index=False))
     print("\nAccuracy by label/group:")
     print(accuracy_by_label.to_string(index=False))
     print("\nClean subset metrics:")
     print(clean_metrics.to_string(index=False))
     print("\nShared-building summary:")
     print(shared_summary.to_string(index=False))
-    return results_df, best_config, train_test_results
+    return results_df, best_config, train_test_results, local_tuning_results
 
 
 if __name__ == "__main__":

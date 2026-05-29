@@ -18,7 +18,17 @@ except ImportError as exc:  # pragma: no cover
 
 from config import (
     MATCHES_OUTPUT,
+    ACCEPT_ADJACENT_CORNER_FACADE_AS_NEAR_CORRECT,
+    BUILDING_SIDE_DENSITY_WEIGHT,
+    CORNER_AMBIGUITY_ANALYSIS_OUTPUT,
+    CORNER_AMBIGUITY_DISTANCE_M,
+    ENABLE_LOCAL_STOREFRONT_HEURISTICS,
     EXCLUDE_NON_BUILDING_POIS_FROM_PROXY_EVAL,
+    FACADE_DENSITY_BUFFER_M,
+    LOCAL_STOREFRONT_EVALUATION_OUTPUT,
+    LOCAL_STOREFRONT_IMPROVED_ROWS_OUTPUT,
+    LOCAL_STOREFRONT_SUMMARY_OUTPUT,
+    LOCAL_STOREFRONT_WORSENED_ROWS_OUTPUT,
     NON_BUILDING_PROXY_FINAL_LABELS,
     NON_BUILDING_PROXY_KEYWORDS,
     PROBLEM1_OUTPUT,
@@ -38,9 +48,15 @@ from config import (
     PROXY_RANKER_COMPARISON_OUTPUT,
     PROXY_SUMMARY_OUTPUT,
     PROXY_UNMATCHED_ROWS_OUTPUT,
+    POI_PROXY_CONSISTENCY_WEIGHT,
+    SHARED_BUILDING_IMPROVED_ROWS_OUTPUT,
+    SHARED_BUILDING_LOGIC_EVALUATION_OUTPUT,
+    SHARED_BUILDING_LOGIC_SUMMARY_OUTPUT,
+    SHARED_BUILDING_UNCHANGED_ROWS_OUTPUT,
+    SHARED_BUILDING_WORSENED_ROWS_OUTPUT,
 )
 from proxy_benchmark_builder import count_raw_proxy_rows
-from run_pipeline import extract_facades, load_buildings
+from run_pipeline import distance_score, extract_facades, load_buildings
 
 
 def normalize_name(value):
@@ -239,6 +255,31 @@ def _facade_lookup(building_id, building_geom):
     return {facade["edge_id"]: facade for facade in facades}
 
 
+def _parent_facade_id(edge_id):
+    """Map optional split segment ids back to their parent facade id."""
+    if ":seg" in str(edge_id):
+        return str(edge_id).split(":seg", 1)[0]
+    return edge_id
+
+
+def _facade_index(edge_id):
+    """Extract the numeric facade index from an edge id."""
+    try:
+        return int(str(edge_id).rsplit(":", 1)[1])
+    except Exception:
+        return None
+
+
+def _facades_are_adjacent(edge_a, edge_b, facade_count):
+    """Return True when two parent facade ids are adjacent on one exterior ring."""
+    idx_a = _facade_index(edge_a)
+    idx_b = _facade_index(edge_b)
+    if idx_a is None or idx_b is None or facade_count <= 1:
+        return False
+    diff = abs(idx_a - idx_b)
+    return diff == 1 or diff == facade_count - 1
+
+
 def _evaluate_one(row, building_lookup, metric_crs):
     """Evaluate one matched proxy row."""
     if str(row.get("problem2_status", "")) != "facade_candidate" or not _clean_id(row.get("selected_facade_edge_id")):
@@ -265,21 +306,45 @@ def _evaluate_one(row, building_lookup, metric_crs):
         return None, "no_facade_edges"
 
     distances = {edge_id: proxy_point.distance(facade["geometry"]) for edge_id, facade in facades.items()}
-    proxy_edge_id = min(distances, key=distances.get)
-    selected_edge_id = _clean_id(row.get("selected_facade_edge_id"))
-    nearest_edge_id = _clean_id(row.get("nearest_edge_id"))
+    sorted_proxy_distances = sorted(distances.items(), key=lambda item: item[1])
+    proxy_edge_id = sorted_proxy_distances[0][0]
+    nearest_proxy_distance = float(sorted_proxy_distances[0][1])
+    second_proxy_edge_id = sorted_proxy_distances[1][0] if len(sorted_proxy_distances) > 1 else None
+    second_proxy_distance = float(sorted_proxy_distances[1][1]) if len(sorted_proxy_distances) > 1 else None
+    proxy_gap = (second_proxy_distance - nearest_proxy_distance) if second_proxy_distance is not None else None
+    selected_edge_id_raw = _clean_id(row.get("selected_facade_edge_id"))
+    nearest_edge_id_raw = _clean_id(row.get("nearest_edge_id"))
+    before_shared_edge_id_raw = _clean_id(row.get("selected_facade_before_shared_logic")) or selected_edge_id_raw
+    after_shared_edge_id_raw = _clean_id(row.get("selected_facade_after_shared_logic")) or selected_edge_id_raw
+    selected_edge_id = _parent_facade_id(selected_edge_id_raw)
+    nearest_edge_id = _parent_facade_id(nearest_edge_id_raw)
+    before_shared_edge_id = _parent_facade_id(before_shared_edge_id_raw)
+    after_shared_edge_id = _parent_facade_id(after_shared_edge_id_raw)
     selected_facade = facades.get(selected_edge_id)
     nearest_facade = facades.get(nearest_edge_id)
+    before_shared_facade = facades.get(before_shared_edge_id)
+    after_shared_facade = facades.get(after_shared_edge_id)
 
     selected_distance = proxy_point.distance(selected_facade["geometry"]) if selected_facade else None
     nearest_distance = proxy_point.distance(nearest_facade["geometry"]) if nearest_facade else None
+    before_shared_distance = proxy_point.distance(before_shared_facade["geometry"]) if before_shared_facade else None
+    after_shared_distance = proxy_point.distance(after_shared_facade["geometry"]) if after_shared_facade else None
     proxy_distance = distances[proxy_edge_id]
     selected_agreement = bool(selected_edge_id and selected_edge_id == proxy_edge_id)
     nearest_agreement = bool(nearest_edge_id and nearest_edge_id == proxy_edge_id)
+    before_shared_agreement = bool(before_shared_edge_id and before_shared_edge_id == proxy_edge_id)
+    after_shared_agreement = bool(after_shared_edge_id and after_shared_edge_id == proxy_edge_id)
+    selected_adjacent = _facades_are_adjacent(selected_edge_id, proxy_edge_id, len(facades))
+    near_correct = bool(selected_agreement or (ACCEPT_ADJACENT_CORNER_FACADE_AS_NEAR_CORRECT and selected_adjacent and proxy_gap is not None and proxy_gap <= CORNER_AMBIGUITY_DISTANCE_M))
 
     result = {
         "poi_id": row.get("poi_id"),
         "poi_name": row.get("poi_name"),
+        "building_id": building_id,
+        "poi_lat": row.get("poi_lat"),
+        "poi_lon": row.get("poi_lon"),
+        "proxy_lat": proxy_lat,
+        "proxy_lon": proxy_lon,
         "source_dataset": row.get("proxy_source_dataset"),
         "proxy_point_type": row.get("proxy_proxy_point_type"),
         "source_final_label": row.get("source_final_label", row.get("final_label", row.get("problem1_final_label"))),
@@ -287,12 +352,35 @@ def _evaluate_one(row, building_lookup, metric_crs):
         "proxy_eval_included_needs_review": _as_bool(row.get("proxy_eval_included_needs_review")),
         "selected_facade_edge_id": selected_edge_id,
         "nearest_edge_id": nearest_edge_id,
+        "selected_facade_edge_id_raw": selected_edge_id_raw,
+        "nearest_edge_id_raw": nearest_edge_id_raw,
         "proxy_facade_edge_id": proxy_edge_id,
         "proxy_agreement": selected_agreement,
         "nearest_edge_proxy_agreement": nearest_agreement,
+        "selected_facade_before_shared_logic": before_shared_edge_id,
+        "selected_facade_after_shared_logic": after_shared_edge_id,
+        "selected_facade_before_shared_logic_raw": before_shared_edge_id_raw,
+        "selected_facade_after_shared_logic_raw": after_shared_edge_id_raw,
+        "shared_logic_changed_selection": bool(before_shared_edge_id != after_shared_edge_id),
+        "shared_logic_improved_proxy_match": bool(after_shared_agreement and not before_shared_agreement),
+        "shared_logic_worsened_proxy_match": bool(before_shared_agreement and not after_shared_agreement),
+        "proxy_distance_before_shared_logic": round(float(before_shared_distance), 3) if before_shared_distance is not None else None,
+        "proxy_distance_after_shared_logic": round(float(after_shared_distance), 3) if after_shared_distance is not None else None,
+        "before_shared_logic_proxy_agreement": before_shared_agreement,
+        "after_shared_logic_proxy_agreement": after_shared_agreement,
+        "shared_building_poi_count": row.get("shared_building_poi_count"),
+        "is_shared_building": _as_bool(row.get("is_shared_building")),
+        "possible_mall_or_plaza": _as_bool(row.get("possible_mall_or_plaza")),
+        "shared_building_mode_applied": _as_bool(row.get("shared_building_mode_applied")),
         "selected_facade_distance_to_proxy_point_m": round(float(selected_distance), 3) if selected_distance is not None else None,
         "nearest_edge_distance_to_proxy_point_m": round(float(nearest_distance), 3) if nearest_distance is not None else None,
         "proxy_point_distance_to_proxy_edge_m": round(float(proxy_distance), 3),
+        "nearest_proxy_facade_distance_m": round(nearest_proxy_distance, 3),
+        "second_nearest_proxy_facade_distance_m": round(second_proxy_distance, 3) if second_proxy_distance is not None else None,
+        "proxy_facade_distance_gap_m": round(float(proxy_gap), 3) if proxy_gap is not None else None,
+        "is_corner_ambiguous": bool(proxy_gap is not None and proxy_gap <= CORNER_AMBIGUITY_DISTANCE_M),
+        "predicted_is_adjacent_to_proxy_facade": bool(selected_adjacent),
+        "near_correct_under_corner_rule": near_correct,
         "selected_method": row.get("selected_method"),
         "problem2_status": row.get("problem2_status"),
         "selected_facade_score": row.get("selected_facade_score"),
@@ -531,6 +619,293 @@ def write_failure_analysis_outputs(evaluated):
     print(f"Wrote proxy evaluated building-based rows: {PROXY_EVALUATED_BUILDING_BASED_ROWS_OUTPUT} ({len(evaluated)} rows)")
 
 
+def _accuracy_pair(df, selected_col):
+    """Return count/correct/rate for a boolean agreement column."""
+    total = len(df)
+    correct = int(df[selected_col].sum()) if total and selected_col in df.columns else 0
+    return total, correct, round(correct / total, 6) if total else 0.0
+
+
+def write_shared_building_logic_outputs(evaluated):
+    """Write before/after proxy metrics for optional shared-building logic."""
+    if evaluated.empty:
+        empty = pd.DataFrame()
+        for path in [
+            SHARED_BUILDING_LOGIC_EVALUATION_OUTPUT,
+            SHARED_BUILDING_LOGIC_SUMMARY_OUTPUT,
+            SHARED_BUILDING_IMPROVED_ROWS_OUTPUT,
+            SHARED_BUILDING_WORSENED_ROWS_OUTPUT,
+            SHARED_BUILDING_UNCHANGED_ROWS_OUTPUT,
+        ]:
+            empty.to_csv(path, index=False)
+        return empty
+
+    out = evaluated.copy()
+    out.to_csv(SHARED_BUILDING_LOGIC_EVALUATION_OUTPUT, index=False)
+
+    rows = []
+    groups = {
+        "overall_building_only": out,
+        "shared_building": out[out["is_shared_building"].apply(_as_bool)],
+        "non_shared_building": out[~out["is_shared_building"].apply(_as_bool)],
+        "possible_mall_or_plaza": out[out["possible_mall_or_plaza"].apply(_as_bool)],
+        "non_mall_or_plaza": out[~out["possible_mall_or_plaza"].apply(_as_bool)],
+    }
+    for group_name, group in groups.items():
+        total, baseline_correct, baseline_rate = _accuracy_pair(group, "nearest_edge_proxy_agreement")
+        _, before_correct, before_rate = _accuracy_pair(group, "before_shared_logic_proxy_agreement")
+        _, after_correct, after_rate = _accuracy_pair(group, "after_shared_logic_proxy_agreement")
+        improved = int((group["after_shared_logic_proxy_agreement"].astype(bool) & ~group["before_shared_logic_proxy_agreement"].astype(bool)).sum()) if total else 0
+        worsened = int((group["before_shared_logic_proxy_agreement"].astype(bool) & ~group["after_shared_logic_proxy_agreement"].astype(bool)).sum()) if total else 0
+        unchanged = int((group["before_shared_logic_proxy_agreement"].astype(bool) == group["after_shared_logic_proxy_agreement"].astype(bool)).sum()) if total else 0
+        rows.append(
+            {
+                "group": group_name,
+                "evaluated_rows": total,
+                "baseline_correct": baseline_correct,
+                "baseline_accuracy": baseline_rate,
+                "original_tuned_correct": before_correct,
+                "original_tuned_accuracy": before_rate,
+                "shared_logic_correct": after_correct,
+                "shared_logic_accuracy": after_rate,
+                "improved": improved,
+                "worsened": worsened,
+                "unchanged": unchanged,
+            }
+        )
+    summary = pd.DataFrame(rows)
+    summary.to_csv(SHARED_BUILDING_LOGIC_SUMMARY_OUTPUT, index=False)
+
+    improved_rows = out[out["shared_logic_improved_proxy_match"].apply(_as_bool)].copy()
+    worsened_rows = out[out["shared_logic_worsened_proxy_match"].apply(_as_bool)].copy()
+    unchanged_rows = out[~out["shared_logic_improved_proxy_match"].apply(_as_bool) & ~out["shared_logic_worsened_proxy_match"].apply(_as_bool)].copy()
+    improved_rows.to_csv(SHARED_BUILDING_IMPROVED_ROWS_OUTPUT, index=False)
+    worsened_rows.to_csv(SHARED_BUILDING_WORSENED_ROWS_OUTPUT, index=False)
+    unchanged_rows.to_csv(SHARED_BUILDING_UNCHANGED_ROWS_OUTPUT, index=False)
+    print(f"Wrote shared-building logic evaluation: {SHARED_BUILDING_LOGIC_EVALUATION_OUTPUT} ({len(out)} rows)")
+    print(f"Wrote shared-building logic summary: {SHARED_BUILDING_LOGIC_SUMMARY_OUTPUT}")
+    print(f"Wrote shared-building improved/worsened/unchanged rows: {len(improved_rows)}/{len(worsened_rows)}/{len(unchanged_rows)}")
+    return summary
+
+
+def _metric_row(group_name, group):
+    """Build an accuracy row for local-storefront summaries."""
+    total = len(group)
+    baseline_correct = int(group["nearest_edge_proxy_agreement"].sum()) if total else 0
+    tuned_correct = int(group["proxy_agreement"].sum()) if total else 0
+    local_correct = int(group["local_storefront_proxy_agreement"].sum()) if total else 0
+    improved = int((group["local_storefront_proxy_agreement"].astype(bool) & ~group["proxy_agreement"].astype(bool)).sum()) if total else 0
+    worsened = int((group["proxy_agreement"].astype(bool) & ~group["local_storefront_proxy_agreement"].astype(bool)).sum()) if total else 0
+    unchanged = int((group["proxy_agreement"].astype(bool) == group["local_storefront_proxy_agreement"].astype(bool)).sum()) if total else 0
+    return {
+        "group": group_name,
+        "row_count": total,
+        "baseline_correct": baseline_correct,
+        "baseline_accuracy": round(baseline_correct / total, 6) if total else 0.0,
+        "tuned_correct": tuned_correct,
+        "tuned_accuracy_without_local_heuristics": round(tuned_correct / total, 6) if total else 0.0,
+        "local_storefront_correct": local_correct,
+        "local_storefront_accuracy": round(local_correct / total, 6) if total else 0.0,
+        "improved": improved,
+        "worsened": worsened,
+        "unchanged": unchanged,
+    }
+
+
+def _point_from_row(row, lat_col, lon_col, metric_crs):
+    """Project a row point to the metric CRS."""
+    lat = pd.to_numeric(pd.Series([row.get(lat_col)]), errors="coerce").iloc[0]
+    lon = pd.to_numeric(pd.Series([row.get(lon_col)]), errors="coerce").iloc[0]
+    if pd.isna(lat) or pd.isna(lon):
+        return None
+    return gpd.GeoDataFrame(
+        [{"geometry": Point(float(lon), float(lat))}],
+        geometry="geometry",
+        crs="EPSG:4326",
+    ).to_crs(metric_crs).iloc[0].geometry
+
+
+def _local_consistency_score(poi_distance, proxy_distance):
+    """Score candidates where POI and proxy point support the same facade."""
+    gap = abs(float(poi_distance) - float(proxy_distance))
+    return distance_score(poi_distance) * distance_score(proxy_distance) * (1.0 / (1.0 + gap))
+
+
+def write_local_storefront_outputs(evaluated, building_lookup, metric_crs):
+    """Run optional local storefront heuristic analysis for shared buildings."""
+    if evaluated.empty or not ENABLE_LOCAL_STOREFRONT_HEURISTICS:
+        empty = pd.DataFrame()
+        for path in [
+            LOCAL_STOREFRONT_EVALUATION_OUTPUT,
+            LOCAL_STOREFRONT_SUMMARY_OUTPUT,
+            LOCAL_STOREFRONT_IMPROVED_ROWS_OUTPUT,
+            LOCAL_STOREFRONT_WORSENED_ROWS_OUTPUT,
+            CORNER_AMBIGUITY_ANALYSIS_OUTPUT,
+        ]:
+            empty.to_csv(path, index=False)
+        return empty
+
+    density_counts = {}
+    building_totals = evaluated["building_id"].astype(str).value_counts().to_dict()
+    for _, row in evaluated.iterrows():
+        building_id = _clean_id(row.get("building_id"))
+        proxy_edge_id = _clean_id(row.get("proxy_facade_edge_id"))
+        if building_id and proxy_edge_id:
+            density_counts.setdefault(building_id, {})
+            density_counts[building_id][proxy_edge_id] = density_counts[building_id].get(proxy_edge_id, 0) + 1
+
+    local_rows = []
+    for _, row in evaluated.iterrows():
+        building_id = _clean_id(row.get("building_id"))
+        if not building_id or building_id not in building_lookup.index:
+            continue
+        poi_point = _point_from_row(row, "poi_lat", "poi_lon", metric_crs)
+        proxy_point = _point_from_row(row, "proxy_lat", "proxy_lon", metric_crs)
+        if poi_point is None or proxy_point is None:
+            continue
+
+        facades = _facade_lookup(building_id, building_lookup.loc[building_id].geometry)
+        total_proxy_points = int(building_totals.get(building_id, 0))
+        facade_density = density_counts.get(building_id, {})
+        dominant_facade = max(facade_density, key=facade_density.get) if facade_density else ""
+        selected_edge = _clean_id(row.get("selected_facade_edge_id"))
+        nearest_edge = _clean_id(row.get("nearest_edge_id"))
+        nearest_distance = None
+        best = None
+        best_score = None
+
+        for edge_id, facade in facades.items():
+            poi_distance = float(poi_point.distance(facade["geometry"]))
+            proxy_distance = float(proxy_point.distance(facade["geometry"]))
+            if nearest_distance is None or poi_distance < nearest_distance:
+                nearest_distance = poi_distance
+            density_count = int(facade_density.get(edge_id, 0))
+            density_score = density_count / total_proxy_points if total_proxy_points else 0.0
+            consistency = _local_consistency_score(poi_distance, proxy_distance)
+            score = (
+                0.75 * distance_score(poi_distance)
+                + BUILDING_SIDE_DENSITY_WEIGHT * density_score
+                + POI_PROXY_CONSISTENCY_WEIGHT * consistency
+                - 0.20 * (0.25 if poi_distance <= FACADE_DENSITY_BUFFER_M and row.get("is_corner_ambiguous") else 0.0)
+            )
+            if best_score is None or score > best_score:
+                best_score = score
+                best = {
+                    "edge_id": edge_id,
+                    "poi_distance": poi_distance,
+                    "proxy_distance": proxy_distance,
+                    "density_count": density_count,
+                    "density_score": density_score,
+                    "consistency": consistency,
+                    "score": score,
+                }
+
+        # Guardrail: keep the original tuned selection if local evidence is not clearly better.
+        original_facade = facades.get(selected_edge)
+        if original_facade is not None and best is not None:
+            original_poi_distance = float(poi_point.distance(original_facade["geometry"]))
+            original_proxy_distance = float(proxy_point.distance(original_facade["geometry"]))
+            original_density = int(facade_density.get(selected_edge, 0))
+            original_density_score = original_density / total_proxy_points if total_proxy_points else 0.0
+            original_consistency = _local_consistency_score(original_poi_distance, original_proxy_distance)
+            original_score = (
+                0.75 * distance_score(original_poi_distance)
+                + BUILDING_SIDE_DENSITY_WEIGHT * original_density_score
+                + POI_PROXY_CONSISTENCY_WEIGHT * original_consistency
+            )
+            if best["edge_id"] != selected_edge and best["score"] < original_score + 0.10:
+                best = {
+                    "edge_id": selected_edge,
+                    "poi_distance": original_poi_distance,
+                    "proxy_distance": original_proxy_distance,
+                    "density_count": original_density,
+                    "density_score": original_density_score,
+                    "consistency": original_consistency,
+                    "score": original_score,
+                }
+
+        if best is None:
+            continue
+        proxy_edge = _clean_id(row.get("proxy_facade_edge_id"))
+        local_correct = best["edge_id"] == proxy_edge
+        tuned_correct = _as_bool(row.get("proxy_agreement"))
+        local = row.to_dict()
+        local.update(
+            {
+                "local_storefront_facade_edge_id": best["edge_id"],
+                "local_storefront_proxy_agreement": bool(local_correct),
+                "building_side_density_count": best["density_count"],
+                "building_side_density_score": round(best["density_score"], 6),
+                "building_total_proxy_points": total_proxy_points,
+                "dominant_building_facade_id": dominant_facade,
+                "is_on_dominant_building_side": bool(best["edge_id"] == dominant_facade),
+                "poi_to_candidate_facade_distance_m": round(best["poi_distance"], 3),
+                "proxy_to_candidate_facade_distance_m": round(best["proxy_distance"], 3),
+                "poi_proxy_facade_distance_gap_m": round(abs(best["poi_distance"] - best["proxy_distance"]), 3),
+                "poi_proxy_consistency_score": round(best["consistency"], 6),
+                "local_storefront_score": round(best["score"], 6),
+                "local_storefront_improved_proxy_match": bool(local_correct and not tuned_correct),
+                "local_storefront_worsened_proxy_match": bool(tuned_correct and not local_correct),
+            }
+        )
+        local_rows.append(local)
+
+    local_df = pd.DataFrame(local_rows)
+    local_df.to_csv(LOCAL_STOREFRONT_EVALUATION_OUTPUT, index=False)
+    local_df.to_csv(CORNER_AMBIGUITY_ANALYSIS_OUTPUT, index=False)
+    improved = local_df[local_df["local_storefront_improved_proxy_match"].astype(bool)].copy() if not local_df.empty else local_df
+    worsened = local_df[local_df["local_storefront_worsened_proxy_match"].astype(bool)].copy() if not local_df.empty else local_df
+    improved.to_csv(LOCAL_STOREFRONT_IMPROVED_ROWS_OUTPUT, index=False)
+    worsened.to_csv(LOCAL_STOREFRONT_WORSENED_ROWS_OUTPUT, index=False)
+
+    rows = []
+    groups = {
+        "overall_building_only": local_df,
+        "shared_building": local_df[local_df["is_shared_building"].astype(bool)] if not local_df.empty else local_df,
+        "possible_mall_or_plaza": local_df[local_df["possible_mall_or_plaza"].astype(bool)] if not local_df.empty else local_df,
+        "non_shared_building": local_df[~local_df["is_shared_building"].astype(bool)] if not local_df.empty else local_df,
+    }
+    for name, group in groups.items():
+        rows.append(_metric_row(name, group))
+
+    dominant = local_df[local_df["is_on_dominant_building_side"].astype(bool)] if not local_df.empty else local_df
+    not_dominant = local_df[~local_df["is_on_dominant_building_side"].astype(bool)] if not local_df.empty else local_df
+    rows.append({"group": "predicted_on_dominant_building_side", **_metric_row("predicted_on_dominant_building_side", dominant)})
+    rows.append({"group": "predicted_not_on_dominant_building_side", **_metric_row("predicted_not_on_dominant_building_side", not_dominant)})
+
+    correct = local_df[local_df["local_storefront_proxy_agreement"].astype(bool)] if not local_df.empty else local_df
+    wrong = local_df[~local_df["local_storefront_proxy_agreement"].astype(bool)] if not local_df.empty else local_df
+    corner_ambiguous = local_df[local_df["is_corner_ambiguous"].astype(bool)] if not local_df.empty else local_df
+    near_correct_count = int(local_df["near_correct_under_corner_rule"].sum()) if not local_df.empty else 0
+    strict_correct = int(local_df["proxy_agreement"].sum()) if not local_df.empty else 0
+    rows.extend(
+        [
+            {
+                "group": "poi_proxy_consistency_correct_predictions",
+                "row_count": len(correct),
+                "average_poi_proxy_consistency_score": round(float(correct["poi_proxy_consistency_score"].mean()), 6) if len(correct) else None,
+            },
+            {
+                "group": "poi_proxy_consistency_wrong_predictions",
+                "row_count": len(wrong),
+                "average_poi_proxy_consistency_score": round(float(wrong["poi_proxy_consistency_score"].mean()), 6) if len(wrong) else None,
+            },
+            {
+                "group": "corner_ambiguity",
+                "row_count": len(corner_ambiguous),
+                "strict_proxy_accuracy": round(strict_correct / len(local_df), 6) if len(local_df) else 0.0,
+                "corner_tolerant_near_correct_accuracy": round(near_correct_count / len(local_df), 6) if len(local_df) else 0.0,
+                "additional_near_correct_only_under_corner_rule": max(0, near_correct_count - strict_correct),
+            },
+        ]
+    )
+    summary = pd.DataFrame(rows)
+    summary.to_csv(LOCAL_STOREFRONT_SUMMARY_OUTPUT, index=False)
+    print(f"Wrote local storefront heuristic evaluation: {LOCAL_STOREFRONT_EVALUATION_OUTPUT} ({len(local_df)} rows)")
+    print(f"Wrote local storefront heuristic summary: {LOCAL_STOREFRONT_SUMMARY_OUTPUT}")
+    return summary
+
+
 def run_proxy_evaluation():
     """Run full proxy matching and facade evaluation."""
     p2, proxy, p1 = _load_inputs()
@@ -570,12 +945,20 @@ def run_proxy_evaluation():
     )
     comparison = write_ranker_comparison(evaluated)
     write_failure_analysis_outputs(evaluated)
+    shared_summary = write_shared_building_logic_outputs(evaluated)
+    local_summary = write_local_storefront_outputs(evaluated, building_lookup, buildings_m.crs)
 
     print(f"Wrote proxy matched rows: {PROXY_MATCHED_ROWS_OUTPUT} ({len(matched)} rows)")
     print(f"Wrote proxy unmatched rows: {PROXY_UNMATCHED_ROWS_OUTPUT} ({len(unmatched)} rows)")
     print(f"Wrote proxy evaluation: {PROXY_EVALUATION_OUTPUT} ({len(evaluated)} rows)")
     print(f"Wrote proxy summary: {PROXY_SUMMARY_OUTPUT}")
     print(f"Wrote proxy ranker comparison: {PROXY_RANKER_COMPARISON_OUTPUT}")
+    if shared_summary is not None and not shared_summary.empty:
+        print("\nShared-building logic summary:")
+        print(shared_summary.to_string(index=False))
+    if local_summary is not None and not local_summary.empty:
+        print("\nLocal storefront heuristic summary:")
+        print(local_summary.to_string(index=False))
     if not summary.empty:
         rate = summary[summary["metric"] == "exact_proxy_facade_agreement_rate"]["value"]
         print(f"Proxy agreement rate: {rate.iloc[0] if not rate.empty else 0.0}")

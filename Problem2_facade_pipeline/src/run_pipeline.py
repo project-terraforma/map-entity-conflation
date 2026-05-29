@@ -24,6 +24,7 @@ from config import (
     DISTANCE_SCORE_WEIGHT,
     EDGE_LENGTH_BONUS_WEIGHT,
     ENABLE_SHARED_BUILDING_FACADE_LOGIC,
+    FACADE_SEGMENT_LENGTH_METERS,
     MAX_DISTANCE_RATIO_FOR_RERANK_OVERRIDE,
     NEEDS_REVIEW_BUILDING_LABELS,
     NEEDS_REVIEW_FINAL_LABELS,
@@ -33,8 +34,13 @@ from config import (
     PROBLEM1_OUTPUT,
     PROXY_EVAL_INCLUDE_NEEDS_REVIEW,
     RAW_DATA_DIR_OPTIONS,
+    MALL_OR_PLAZA_POI_THRESHOLD,
+    SHARED_BUILDING_DISTANCE_WEIGHT,
+    SHARED_BUILDING_MIN_POIS,
     SHARED_FACADE_PENALTY_THRESHOLD,
     SHARED_FACADE_PENALTY_WEIGHT,
+    SHARED_BUILDING_STREET_WEIGHT,
+    SPLIT_LONG_FACADES_FOR_SHARED_BUILDINGS,
     STREET_ALIGNMENT_GOOD_DEGREES,
     STREET_ALIGNMENT_BONUS_WEIGHT,
     STREET_FACING_BONUS_WEIGHT,
@@ -46,6 +52,22 @@ from config import (
 )
 
 PROBLEM2_EVAL_MODE = "proxy_permissive" if PROXY_EVAL_INCLUDE_NEEDS_REVIEW else "strict"
+MALL_OR_PLAZA_KEYWORDS = {
+    "mall",
+    "plaza",
+    "shopping center",
+    "center",
+    "outlet",
+    "market",
+    "square",
+    "suite",
+    "unit",
+    "store",
+    "shops",
+    "village",
+    "commons",
+    "marketplace",
+}
 
 
 def load_tuned_reranker_config():
@@ -270,6 +292,40 @@ def extract_facades(building_id, geometry):
     return facades
 
 
+def split_facade_segments(facades):
+    """Split long facade edges into smaller segment candidates for experiments."""
+    segments = []
+    for facade in facades:
+        line = facade["geometry"]
+        segment_count = max(1, math.ceil(float(facade["length_m"]) / FACADE_SEGMENT_LENGTH_METERS))
+        if segment_count == 1:
+            item = dict(facade)
+            item["segment_id"] = item["edge_id"]
+            item["parent_facade_id"] = item["edge_id"]
+            item["segment_index"] = 0
+            item["segment_length_m"] = item["length_m"]
+            segments.append(item)
+            continue
+        for idx in range(segment_count):
+            start = line.interpolate(idx / segment_count, normalized=True)
+            end = line.interpolate((idx + 1) / segment_count, normalized=True)
+            segment = LineString([start, end])
+            edge_id = f"{facade['edge_id']}:seg{idx}"
+            segments.append(
+                {
+                    "edge_id": edge_id,
+                    "geometry": segment,
+                    "length_m": float(segment.length),
+                    "bearing": line_bearing(segment),
+                    "segment_id": edge_id,
+                    "parent_facade_id": facade["edge_id"],
+                    "segment_index": idx,
+                    "segment_length_m": float(segment.length),
+                }
+            )
+    return segments
+
+
 def nearest_street_info(streets_gdf, edge_geom):
     """Return nearest street distance and bearing for a facade edge."""
     if streets_gdf is None or streets_gdf.empty:
@@ -377,6 +433,20 @@ def score_candidate_tuned(candidate, shared_count, street_available, reranker_co
     return candidate
 
 
+def score_candidate_shared(candidate, shared_count, street_available, reranker_config):
+    """Shared-building score: local distance dominates; street is a small bonus."""
+    shared_penalty = 0.10 if shared_count >= SHARED_FACADE_PENALTY_THRESHOLD else 0.0
+    candidate["shared_facade_penalty"] = shared_penalty
+    score = SHARED_BUILDING_DISTANCE_WEIGHT * distance_score(candidate["distance_m"])
+    if street_available:
+        score += SHARED_BUILDING_STREET_WEIGHT * candidate["street_alignment_score"]
+        score += SHARED_BUILDING_STREET_WEIGHT * candidate["street_facing_score"]
+    score -= reranker_config["corner_penalty_weight"] * candidate["corner_penalty"]
+    score -= reranker_config["shared_facade_penalty_weight"] * shared_penalty
+    candidate["selected_facade_score"] = round(float(score), 6)
+    return candidate
+
+
 def choose_selected_candidate(scored, nearest, street_available, reranker_config):
     """Choose a facade candidate, preserving the existing reranker unless tuning is enabled."""
     if not street_available:
@@ -430,7 +500,26 @@ def empty_output_row(row, status):
         "facade_edge_bearing": None,
         "corner_penalty": None,
         "shared_facade_penalty": None,
+        "shared_building_poi_count": None,
+        "is_shared_building": False,
+        "possible_mall_or_plaza": False,
+        "shared_building_mode_applied": False,
+        "selected_facade_before_shared_logic": None,
+        "selected_facade_after_shared_logic": None,
+        "shared_logic_changed_selection": False,
+        "shared_logic_improved_proxy_match": None,
+        "shared_logic_worsened_proxy_match": None,
+        "proxy_distance_before_shared_logic": None,
+        "proxy_distance_after_shared_logic": None,
     }
+
+
+def is_possible_mall_or_plaza(row, shared_building_count):
+    """Detect possible mall/plaza/shared-commercial cases using real POI text."""
+    if shared_building_count >= MALL_OR_PLAZA_POI_THRESHOLD:
+        return True
+    text = " ".join(str(row.get(col, "") or "").lower() for col in ["poi_name", "poi_types", "poi_address_input"])
+    return any(keyword in text for keyword in MALL_OR_PLAZA_KEYWORDS)
 
 
 def build_summary(output_df, total_rows):
@@ -477,7 +566,7 @@ def run():
 
     problem1["problem2_status"] = problem1.apply(classify_problem2_row, axis=1)
     building_lookup = buildings_m.drop_duplicates("building_id").set_index("building_id")
-    building_poi_counts = problem1["matched_building_id"].astype(str).value_counts().to_dict()
+    building_poi_counts = problem1[problem1["problem2_status"] == "facade_candidate"]["matched_building_id"].astype(str).value_counts().to_dict()
 
     candidate_cache = {}
     output_rows = []
@@ -500,7 +589,11 @@ def run():
             geometry="geometry",
             crs="EPSG:4326",
         ).to_crs(buildings_m.crs).iloc[0].geometry
+        shared_building_count = int(building_poi_counts.get(str(building_id), 0))
+        is_shared_building = shared_building_count >= SHARED_BUILDING_MIN_POIS
         facades = extract_facades(building_id, building_lookup.loc[building_id].geometry)
+        if SPLIT_LONG_FACADES_FOR_SHARED_BUILDINGS and ENABLE_SHARED_BUILDING_FACADE_LOGIC and is_shared_building:
+            facades = split_facade_segments(facades)
         candidates = [edge_candidate(row, poi, facade, streets_m) for facade in facades]
         if not candidates:
             output_rows.append(empty_output_row(row, "no_building_match"))
@@ -524,7 +617,9 @@ def run():
         row, candidates, nearest = cache_by_poi[poi_id]
         local_reranker_config = dict(reranker_config)
         shared_building_count = int(building_poi_counts.get(str(row.get("matched_building_id")), 0))
-        shared_building_logic_used = bool(ENABLE_SHARED_BUILDING_FACADE_LOGIC and shared_building_count > 1)
+        is_shared_building = shared_building_count >= SHARED_BUILDING_MIN_POIS
+        possible_mall_or_plaza = is_possible_mall_or_plaza(row, shared_building_count)
+        shared_building_logic_used = bool(ENABLE_SHARED_BUILDING_FACADE_LOGIC and is_shared_building)
         if TUNE_FACADE_RERANKER and shared_building_logic_used:
             local_reranker_config["street_alignment_weight"] = min(local_reranker_config["street_alignment_weight"], 0.03)
             local_reranker_config["street_facing_weight"] = min(local_reranker_config["street_facing_weight"], 0.03)
@@ -538,7 +633,14 @@ def run():
             ]
         else:
             scored = [scorer(candidate, shared_counts.get(candidate["edge_id"], 0), street_available) for candidate in candidates]
-        selected = choose_selected_candidate(scored, nearest, street_available, local_reranker_config)
+        original_selected = choose_selected_candidate(scored, nearest, street_available, reranker_config)
+        selected = original_selected
+        if shared_building_logic_used:
+            shared_scored = [
+                score_candidate_shared(dict(candidate), shared_counts.get(candidate["edge_id"], 0), street_available, local_reranker_config)
+                for candidate in candidates
+            ]
+            selected = choose_selected_candidate(shared_scored, nearest, street_available, local_reranker_config)
         if not street_available:
             selected = score_candidate(selected, shared_counts.get(selected["edge_id"], 0), False)
 
@@ -586,6 +688,17 @@ def run():
                 "facade_edge_bearing": round(selected["edge_bearing"], 3) if selected["edge_bearing"] is not None else None,
                 "corner_penalty": selected["corner_penalty"],
                 "shared_facade_penalty": selected["shared_facade_penalty"],
+                "shared_building_poi_count": shared_building_count,
+                "is_shared_building": bool(is_shared_building),
+                "possible_mall_or_plaza": bool(possible_mall_or_plaza),
+                "shared_building_mode_applied": bool(shared_building_logic_used),
+                "selected_facade_before_shared_logic": original_selected["edge_id"],
+                "selected_facade_after_shared_logic": selected["edge_id"],
+                "shared_logic_changed_selection": bool(original_selected["edge_id"] != selected["edge_id"]),
+                "shared_logic_improved_proxy_match": None,
+                "shared_logic_worsened_proxy_match": None,
+                "proxy_distance_before_shared_logic": None,
+                "proxy_distance_after_shared_logic": None,
             }
         )
 

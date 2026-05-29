@@ -39,11 +39,5 @@ benchmark_dataset/reference_datasets/
 benchmark_dataset/review_packets/
 *.zip
 
-# Presentation-only docs are kept local for now
-README_PRESENTATION_EXPLANATION.md
-**/README_PRESENTATION_EXPLANATION.md
-Conflation_pipeline/Problem1_radmeexplaination
-Problem2_facade_pipeline/problem2_readme_explaiantion
-
 # Legacy per-folder placeholder exceptions, kept at root now
 !**/.gitkeep
