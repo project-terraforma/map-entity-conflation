@@ -1,0 +1,919 @@
+poi_id,match_type,score,address_score,final_score,match_label,names,basic_category,building_id,building_id_right
+a72f94b4-c4fb-41ec-8b31-9941712825aa,nearest,1.0,0.0,1.0,needs_review,"{'common': None, 'primary': 'Limelight Boulder', 'rules': None}",home_service,,037fb76d-d2db-4da1-b541-37f2669d056a
+b04e072e-3d2f-4f15-84e7-85f724075678,nearest,0.9999999806621743,0.0,0.9999999806621743,needs_review,,real_estate_service,,40c1a6be-3b0e-48b9-97c2-01ce4559d6f0
+146d5ae2-535a-408c-98e5-1c6a2e59284c,nearest,0.9997552318605839,0.0,0.9997552318605839,needs_review,"{'common': None, 'primary': 'Basecamp Boulder', 'rules': None}",hotel,,721a1c2e-76eb-44a8-a8ee-903a378821fd
+93fcc6a1-cfcc-4d05-a9cf-1cb27253410e,nearest,0.999732208380072,0.0,0.999732208380072,needs_review,,financial_service,,10abe63d-c46a-4982-a1a7-ef845db227d0
+0b24d211-1f0c-4952-a7ba-f6314f80be8b,nearest,0.9996107562179695,0.0,0.9996107562179695,needs_review,"{'common': None, 'primary': 'Carlson Gymnasium', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'CARL', 'variant': 'short'}],
+      dtype=object)}",gym,,70bacd1b-88f9-423f-90b8-d2772e89abbf
+731527e7-637d-4f10-b392-41d0a71a4fab,nearest,0.9995613149608364,0.0,0.9995613149608364,needs_review,,fashion_and_apparel_store,,0f406893-e717-47d7-bb52-970bd49acfcf
+165696b4-108a-44ab-9b00-007e83da1210,nearest,0.999017068678821,0.0,0.999017068678821,needs_review,"{'common': None, 'primary': 'Gelato Boy', 'rules': None}",restaurant,,f910024b-e0f8-4886-b0ed-c57b5022d29d
+9c81844e-ad61-4dcf-a51d-af3d80cc59ad,nearest,0.9987792151299107,0.0,0.9987792151299107,needs_review,,wellness_service,,7957f272-d258-4fe6-a71c-5136c7ccf12c
+b2a9b2db-1180-4204-a673-0a314194cf10,nearest,0.9985860783567984,0.0,0.9985860783567984,needs_review,,media_service,,bc52c1b9-b81b-43c5-b284-bff0cdd14419
+4d3c4e4a-24dc-4dda-9a54-644ca5d4b3bb,nearest,0.9985054461493156,0.0,0.9985054461493156,needs_review,"{'common': None, 'primary': 'Fly shop', 'rules': None}",sporting_goods_store,,94a3930b-b834-4650-846a-b3e82951a112
+5d53c316-aabe-49cf-80cc-1f4bd3764793,nearest,0.998015408991702,0.0,0.998015408991702,needs_review,,financial_service,,f6e926ba-e6d7-4634-9aad-58696c2423dc
+ea121f27-142b-406f-97b2-785c4ae746d5,nearest,0.9978889061028778,0.0,0.9978889061028778,needs_review,,social_or_community_service,,881bd537-71cd-424a-8488-ff62649a3428
+a70c530e-0f1c-44d5-9fb5-8aa70b30886f,nearest,0.9976797260250952,0.0,0.9976797260250952,needs_review,,technical_service,,81548bc7-ff20-4370-8498-aa2836ccdb99
+b4d6ff72-f4af-4b96-b2bc-5252c22e5032,nearest,0.997429245048593,0.0,0.997429245048593,needs_review,,professional_service,,5758580b-3292-4957-a4bd-984cde5a758d
+3c362b25-0799-4575-8b4f-79e0edaeeac4,nearest,0.9972367362649242,0.0,0.9972367362649242,needs_review,,fashion_and_apparel_store,,297c55ad-5e83-42a1-9af9-7725faffa43b
+1512ded9-f1a2-4717-a7cb-21877468b664,nearest,0.9970867269171071,0.0,0.9970867269171071,needs_review,,attorney_or_law_firm,,7c724ede-a94d-45d0-b511-50f29d18fe89
+18b5a93c-46ee-40ce-a2b5-24a005a19abb,nearest,0.9967135758901879,0.0,0.9967135758901879,needs_review,,casual_eatery,,711275e1-7db7-446a-8040-3fec5230b1e3
+340503b4-529f-4f02-b1d0-02e642f2dc21,nearest,0.9966682212672233,0.0,0.9966682212672233,needs_review,,real_estate_service,,7fef8d65-84a3-4c02-a7a9-5d83db0ae3c4
+c75d182e-dc29-47cd-b92e-16d1a2eb496f,nearest,0.996625056651966,0.0,0.996625056651966,needs_review,,attorney_or_law_firm,,81548bc7-ff20-4370-8498-aa2836ccdb99
+fe1ea0cd-cb98-4958-a9a5-91825001d53d,nearest,0.9963661030711171,0.0,0.9963661030711171,needs_review,,restaurant,,3487b4e5-a148-4e9f-8994-c4977cb364fe
+2b47804f-cb35-47e7-9d82-132a7f06bd3e,nearest,0.9963599776565124,0.0,0.9963599776565124,needs_review,,real_estate_service,,0c8e1eef-a471-47c7-befd-a5c0b4f71e90
+1dd77ae3-92d3-464b-aa08-d767ea61e2a7,nearest,0.9956669436292401,0.0,0.9956669436292401,needs_review,,behavioral_or_mental_health_clinic,,2904b4ff-f445-4a1b-be87-5f2258ca7019
+4606637c-ca2e-441c-b525-f053bc3a9141,nearest,0.9954804774021572,0.0,0.9954804774021572,needs_review,,complementary_and_alternative_medicine,,767bfd46-8870-4b5f-a874-720446dbaa53
+1147e723-ed1b-471f-8c50-76daa35a758b,nearest,0.9951899506749828,0.0,0.9951899506749828,needs_review,,financial_service,,fbff7a60-b4ac-4348-8dab-812a4f2bf63f
+f361c54e-e15f-458f-af64-3f79ec6d780f,nearest,0.9951662882506788,0.0,0.9951662882506788,needs_review,"{'common': array([array(['en', 'Sigma Alpha Epsilon'], dtype=object)], dtype=object), 'primary': 'Sigma Alpha Epsilon', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'ΣΑΕ', 'variant': 'short'}],
+      dtype=object)}",social_or_community_service,,ddd00c14-a541-43b3-881e-9f611f4625d3
+2892bdf3-0f15-4ece-ae73-da7b832984d6,nearest,0.9950060585940275,0.0,0.9950060585940275,needs_review,,professional_service,,4149fc95-ad2e-43d5-8df4-987f779e0045
+6b7d4edc-8d44-411d-8a2e-79e6758a3896,nearest,0.9949678751906461,0.0,0.9949678751906461,needs_review,,attorney_or_law_firm,,81548bc7-ff20-4370-8498-aa2836ccdb99
+b17cbc42-4845-4efa-a3a5-ceae5b451c8b,nearest,0.9946889341776232,0.0,0.9946889341776232,needs_review,,food_and_beverage_store,,4838ac94-5628-4db8-ad64-133bd5385a3c
+df2a5fbe-1189-4063-b9d8-ae6ea2597a86,nearest,0.9944507450522644,0.0,0.9944507450522644,needs_review,,fast_food_restaurant,,f6de1a61-af01-43d7-b98a-5ab132153ffb
+45a7dc54-bebf-4cf1-9544-4d724c5486df,nearest,0.9938884512740822,0.0,0.9938884512740822,needs_review,"{'common': None, 'primary': 'Boulder Marriott', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'Boulder Marriott', 'variant': 'alternate'}],
+      dtype=object)}",personal_or_beauty_service,,e40ea9dd-9f6c-4fb6-a814-a283d4cc1d05
+423a50aa-bd02-4831-8f4d-6fd6d5130ba8,nearest,0.9938802258676023,0.0,0.9938802258676023,needs_review,"{'common': None, 'primary': 'Boulder Public Library - Main Branch', 'rules': None}",cafe,,b4674090-59dc-41f5-b2a9-4dab77f1fd58
+4f6c3576-0591-4b08-b26c-044291190a73,nearest,0.9929999683779428,0.0,0.9929999683779428,needs_review,,restaurant,,ec06e34f-f7db-4850-becd-a37b59888fde
+aa29c45a-63b7-4537-a476-7a1b2e0656e7,nearest,0.992312939109638,0.0,0.992312939109638,needs_review,,casual_eatery,,05eba008-3369-4037-9398-abac5fe7a4c6
+93205ed4-d371-439f-bfe6-2bb2a942c706,nearest,0.9919602830729022,0.0,0.9919602830729022,needs_review,,restaurant,,12b08b83-bf52-4124-ba9b-510ad81872e9
+4aa82e41-d046-4bb3-96e8-010713ea9720,nearest,0.9916487562539545,0.0,0.9916487562539545,needs_review,,professional_service,,35084252-373f-40cb-b70d-b1efbbda4271
+a35d8de4-3877-4cd9-89d9-a5292b4f156e,nearest,0.9912317048366439,0.0,0.9912317048366439,needs_review,"{'common': None, 'primary': 'Stores & Labs', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'ECSL', 'variant': 'short'}],
+      dtype=object)}",college_university,,626673c2-6576-4ab5-ac79-ccd2eea9dc15
+b1cb1642-9cae-4785-bf11-4dd07d11fca6,nearest,0.9905823633124993,0.0,0.9905823633124993,needs_review,,real_estate_service,,4a015a32-d2c7-4c0d-9367-25a314e71c4a
+16061876-8a06-47ca-a21e-a34b9a12afcb,nearest,0.9905144770279584,0.0,0.9905144770279584,needs_review,"{'common': None, 'primary': 'Canyon Center', 'rules': None}",professional_service,,e122cc45-356c-4d1b-b8eb-2a221181731e
+750489f7-b864-4632-8609-6a125054379b,nearest,0.9903848779012573,0.0,0.9903848779012573,needs_review,"{'common': None, 'primary': 'Folsom Field', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'STAD', 'variant': 'short'}],
+      dtype=object)}",professional_service,,a52c9241-a2e8-401e-9ae6-031a4c29b289
+94bfe17f-b485-44ef-880f-4f951b6b1a8e,nearest,0.9894795508561592,0.0,0.9894795508561592,needs_review,,real_estate_service,,40c1a6be-3b0e-48b9-97c2-01ce4559d6f0
+bffeba89-a263-4a1f-8148-5a0202a906d1,nearest,0.9892939736962998,0.0,0.9892939736962998,needs_review,,personal_or_beauty_service,,a9ea1b43-350f-4aef-955a-2f7f9679af95
+083d3f2b-a59a-4375-8fc4-fb3010539ba2,nearest,0.9892502817327709,0.0,0.9892502817327709,needs_review,,professional_service,,35084252-373f-40cb-b70d-b1efbbda4271
+eba76d44-3c44-48b8-b761-33b5778a4c90,nearest,0.9889593506500075,0.0,0.9889593506500075,needs_review,,restaurant,,5e0aca37-6a8a-4909-ba07-0145be236a7f
+bff25716-13cc-4b1b-af54-f68dce9d67a8,nearest,0.988856174594326,0.0,0.988856174594326,needs_review,,art_gallery,,954cb30c-1eb3-41e2-b7b0-f6640a4c3595
+9c6cbd81-146a-43f7-a6a7-019203665714,nearest,0.9886868657648009,0.0,0.9886868657648009,needs_review,,professional_service,,1b665619-8fdf-4ec5-92f1-5d65aa40a05a
+5cf7a826-4206-4709-9d93-6ccd0d7f1bec,nearest,0.9885454872928725,0.0,0.9885454872928725,needs_review,,wellness_service,,1b665619-8fdf-4ec5-92f1-5d65aa40a05a
+afdf94d7-f6e9-4a0e-a86a-0f6ff4251ec7,nearest,0.9884738312604838,0.0,0.9884738312604838,needs_review,,personal_or_beauty_service,,25cb7fa8-adf9-452e-bd36-26563be132ff
+63c050b7-5057-4cb4-916b-6dd1c8920d6a,nearest,0.9883486896794454,0.0,0.9883486896794454,needs_review,,personal_or_beauty_service,,5758580b-3292-4957-a4bd-984cde5a758d
+a12c8d88-93d3-4e84-8295-17d7135a776f,nearest,0.988104538664385,0.0,0.988104538664385,needs_review,,restaurant,,9676ff50-40e7-435e-ae0d-828fa06129dd
+4133d3f8-32f4-4ef9-95a7-0b01a9390d28,nearest,0.9879191428519711,0.0,0.9879191428519711,needs_review,,complementary_and_alternative_medicine,,8d3f9749-38a3-48d4-864a-9eacd29c98b3
+4aa9c22b-08be-4760-a92c-ea31ea63f118,nearest,0.9872159209063271,0.0,0.9872159209063271,needs_review,,media_service,,06e76d2b-1730-4e85-b27b-efc244d5c788
+0eb01b2a-5d00-48f7-abc6-b8050bf9066b,nearest,0.9871589830096291,0.0,0.9871589830096291,needs_review,,technical_service,,a3084ac9-cdfe-4f8b-b718-3ac03ffe9078
+44133e52-c5d7-44e5-9de6-8d20778aa4fb,nearest,0.9870539805825687,0.0,0.9870539805825687,needs_review,,complementary_and_alternative_medicine,,1b665619-8fdf-4ec5-92f1-5d65aa40a05a
+14774258-36dd-450e-bbb7-8e99afbe89a5,nearest,0.986716029442678,0.0,0.986716029442678,needs_review,,fashion_and_apparel_store,,3166849f-ec1b-493e-aafb-645802b77715
+d117e989-df9a-4cb6-b023-59b724e2a757,nearest,0.9865473791038885,0.0,0.9865473791038885,needs_review,,fashion_and_apparel_store,,c9073cdc-0448-458e-9964-a2e6a344ecf8
+7e714059-1b43-4bdf-bc67-27fa50b85db6,nearest,0.9864702932342319,0.0,0.9864702932342319,needs_review,,hardware_home_and_garden_store,,fae70b27-c221-496a-b786-ad983514f4d7
+cb28275f-3545-4509-bf7e-8b415907f872,nearest,0.986059083659506,0.0,0.986059083659506,needs_review,"{'common': None, 'primary': '11th & Walnut', 'rules': None}",professional_service,,ba34aed9-5fff-4433-ac45-9f76873012f6
+2464d2b6-2276-4a24-af7a-66d7de0f1f9e,nearest,0.9855818913316058,0.0,0.9855818913316058,needs_review,,casual_eatery,,0d848487-f337-4dca-a810-02d9e523df25
+2edfd1b8-15df-4ab7-aafd-2250bc39e7ab,nearest,0.9855180468429244,0.0,0.9855180468429244,needs_review,,design_service,,c9073cdc-0448-458e-9964-a2e6a344ecf8
+e893ce74-2608-4b1f-aa2d-6706cccb52d4,nearest,0.9854052353236298,0.0,0.9854052353236298,needs_review,,social_or_community_service,,5aeed1b0-f6e8-4be3-81c0-d0bf87d1b2c1
+da415d82-72e3-4f84-8128-84bb6cbc515f,nearest,0.9852266802252706,0.0,0.9852266802252706,needs_review,,behavioral_or_mental_health_clinic,,73072a9c-d98b-4773-9b46-37cf77349b73
+8c9539da-0311-496d-97be-7710737ed4ce,nearest,0.9846059352650928,0.0,0.9846059352650928,needs_review,,casual_eatery,,a4099567-0469-4b11-87c5-c72eae301d89
+c0c12a16-ab56-4d5e-8387-1cf94ab99860,nearest,0.9841547120826676,0.0,0.9841547120826676,needs_review,,restaurant,,11277e15-abde-4ebe-9932-1136995d0bcc
+d5a26745-a7b0-4ea2-9731-7b712830ff3f,nearest,0.9840870095363526,0.0,0.9840870095363526,needs_review,,home_service,,d300843a-4625-4534-8823-993c2ae13925
+b3b6ce9c-ecb1-451a-a109-5b388b7ce032,nearest,0.9836529217097244,0.0,0.9836529217097244,needs_review,"{'common': None, 'primary': 'Chase', 'rules': None}",bank_or_credit_union,,e6e34868-72ba-4e66-b1ca-8385d928f787
+7eb77fc5-5854-43ce-801e-79905d883550,nearest,0.983598279017821,0.0,0.983598279017821,needs_review,,fitness_studio,,05176007-c214-4563-a113-8111f3189c9a
+1d2b073c-f569-4220-b475-3840b66afad5,nearest,0.9835028932185834,0.0,0.9835028932185834,needs_review,,real_estate_service,,a6199265-7513-48d2-a89b-a4e7ecf39985
+70ec5632-0e55-40c1-aa25-6f2f8f1e47a8,nearest,0.9835028932185834,0.0,0.9835028932185834,needs_review,,bank_or_credit_union,,a6199265-7513-48d2-a89b-a4e7ecf39985
+efa1b6a9-3434-425b-8031-50354f732fd4,nearest,0.9834807163228217,0.0,0.9834807163228217,needs_review,,real_estate_service,,4961fa1a-af5b-498f-b07e-2a034465817f
+ac5cfc66-e91e-43fa-8a10-c2a59acee181,nearest,0.9831643668757002,0.0,0.9831643668757002,needs_review,,personal_or_beauty_service,,7575e6f4-c0d9-48cd-9735-67f1005fe1ba
+d55d8648-155d-46bd-81f4-f5dc0351a2c8,nearest,0.9828293083056343,0.0,0.9828293083056343,needs_review,,hotel,,bca09434-db8d-45ff-8036-2a6596094791
+0bb95cfd-40ff-4ede-8e7d-ee848993c6fd,nearest,0.9826163098455614,0.0,0.9826163098455614,needs_review,,gym,,35084252-373f-40cb-b70d-b1efbbda4271
+b3a996f6-f2e3-4b4b-9a36-06c2bf91e528,nearest,0.9823366680128995,0.0,0.9823366680128995,needs_review,,complementary_and_alternative_medicine,,a43ba67f-bec7-4d99-83d5-fd7087c63315
+1d60de1a-800b-46bc-8d64-38bdc4b7e3bb,nearest,0.9816871815222652,0.0,0.9816871815222652,needs_review,,complementary_and_alternative_medicine,,760b4458-2a88-4b18-b7fb-5b460018de24
+b045bbcd-e83d-4bf1-888f-fe9f6d09b901,nearest,0.9811449763062925,0.0,0.9811449763062925,needs_review,,fitness_studio,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+b10d0af4-66c3-44bc-bdab-f84cfbf1d52d,nearest,0.9809237554578845,0.0,0.9809237554578845,needs_review,,sporting_goods_store,,e4d316bb-2976-4b38-aa7d-1b83b65d8962
+9f73cbed-869c-41b0-833b-2cb2fb80385c,nearest,0.9805476871155814,0.0,0.9805476871155814,needs_review,,professional_service,,c9073cdc-0448-458e-9964-a2e6a344ecf8
+ca1bbc02-45aa-4ec6-ad43-a77e44d7c3d0,nearest,0.9803146989018846,0.0,0.9803146989018846,needs_review,,fashion_and_apparel_store,,943c1a84-716f-4e55-9444-4cb531745d42
+3e7a0397-bddf-4b9a-a670-e7c7aee385bd,nearest,0.9797205765615293,0.0,0.9797205765615293,needs_review,,professional_service,,06e76d2b-1730-4e85-b27b-efc244d5c788
+412b6715-b08e-499d-9f06-e9b21bbd2875,nearest,0.9796309062876878,0.0,0.9796309062876878,needs_review,,financial_service,,5758580b-3292-4957-a4bd-984cde5a758d
+f06ae0bd-22e3-410c-bc1c-98cac9cfa32a,nearest,0.9794907903442128,0.0,0.9794907903442128,needs_review,,restaurant,,a4099567-0469-4b11-87c5-c72eae301d89
+078415c6-f825-4c50-b237-e446d9f1a67a,nearest,0.9790151112686257,0.0,0.9790151112686257,needs_review,,personal_or_beauty_service,,c9e4e92c-55cd-48f3-8951-b94d32c5f634
+cef2d6b1-0a7b-40f5-99ac-bcae21339de1,nearest,0.9783923909341693,0.0,0.9783923909341693,needs_review,,gym,,5463dd1a-ca58-42c9-b710-f79ceb13c8cf
+77041197-aa66-46f1-b5cd-d1117665f05b,nearest,0.9783517242755431,0.0,0.9783517242755431,needs_review,,real_estate_service,,a632b160-01f2-4ace-885a-3ca62f79b8fd
+2022cdd1-23b5-4df4-ad8f-4d9c91abda31,nearest,0.9782228675755144,0.0,0.9782228675755144,needs_review,,flowers_and_gifts_store,,0333da50-ea4d-4862-83eb-d4a851f0a690
+889e6ecc-57c5-41fd-b34b-f8426a8fee11,nearest,0.9781582515666266,0.0,0.9781582515666266,needs_review,,fashion_and_apparel_store,,bcb2a963-56d7-4e93-8f33-5bcb09775040
+7f38d5a0-3a79-414f-9772-e8e6e64042b0,nearest,0.9775632938013842,0.0,0.9775632938013842,needs_review,,home_service,,d48e14fd-3b63-4347-ad1f-5796616a95f4
+6db9fa94-915a-4d39-9585-5ce49f3d273f,nearest,0.9773304001741282,0.0,0.9773304001741282,needs_review,"{'common': None, 'primary': 'Community Plaza', 'rules': None}",wellness_service,,5709e83a-db7b-4695-b416-2fff49fccf9c
+79e5df0b-74dc-4a80-98eb-4871fe183dd7,nearest,0.9769023231959765,0.0,0.9769023231959765,needs_review,,design_service,,0c8e1eef-a471-47c7-befd-a5c0b4f71e90
+f8c0dc6e-fa07-457d-9ce2-f5e22368c95a,nearest,0.9763477145503806,0.0,0.9763477145503806,needs_review,,fashion_and_apparel_store,,711275e1-7db7-446a-8040-3fec5230b1e3
+61a85988-239a-465b-8a04-fb027b8bccdf,nearest,0.9754049893818773,0.0,0.9754049893818773,needs_review,,real_estate_service,,a632b160-01f2-4ace-885a-3ca62f79b8fd
+705bd769-a040-434b-80ff-43e787322909,nearest,0.9751527887114959,0.0,0.9751527887114959,needs_review,,casual_eatery,,1e342865-6c19-4e8a-8682-6ca9eba30f1c
+3f5a0863-4b9f-44cb-9fa8-13807e87b4d0,nearest,0.9740566736194491,0.0,0.9740566736194491,needs_review,,food_and_beverage_store,,3173068c-451c-43c4-b115-71f7cdd7342c
+e1ef9f69-b1ff-484c-899c-52bca187dd79,nearest,0.9739660282603826,0.0,0.9739660282603826,needs_review,,hotel,,a6812988-9b40-4563-9c17-a5969795af4c
+5066a1ad-c1dd-4b40-b2cc-9b32e90a11d9,nearest,0.973285133071051,0.0,0.973285133071051,needs_review,,real_estate_service,,6b8fe0f6-74e6-465d-88d0-1cfd2f0438a1
+b1a33a6e-a61a-449e-93e9-de7e1e1d51fe,nearest,0.9731873223551935,0.0,0.9731873223551935,needs_review,,real_estate_service,,4a015a32-d2c7-4c0d-9367-25a314e71c4a
+a6bcad90-343e-41b3-88e8-372ab3f2a5e2,nearest,0.9729389907963041,0.0,0.9729389907963041,needs_review,"{'common': None, 'primary': 'Circle K', 'rules': None}",convenience_store,,368f819c-e5ee-475e-98db-1780065b8ee1
+969fe712-f401-4c9f-9348-391a7bc518ef,nearest,0.9726241456502583,0.0,0.9726241456502583,needs_review,,home_service,,9ee0fe78-3108-4253-8818-99241bef433d
+c39fd243-5c88-4e63-bff5-37ff28306f67,nearest,0.9724215854650584,0.0,0.9724215854650584,needs_review,"{'common': None, 'primary': 'Cox Corner', 'rules': None}",specialized_health_care,,41af104e-e8d1-4471-a00e-14a77d35aefc
+c102eaf9-56de-4d95-a5d5-9026cff715b0,nearest,0.9723638589378608,0.0,0.9723638589378608,needs_review,,restaurant,,1ca28b6a-458c-4cca-bf27-6236a8dc009e
+a2c6593c-ecef-4ad5-931c-034d0f33d1c1,nearest,0.9723274714893697,0.0,0.9723274714893697,needs_review,,real_estate_service,,7fef8d65-84a3-4c02-a7a9-5d83db0ae3c4
+d0927f14-8a85-474d-b821-50d1f2d912de,nearest,0.9711710624684057,0.0,0.9711710624684057,needs_review,,restaurant,,fc299bd5-b8b2-4764-ac99-1f62cffd028f
+fa13c4f7-3381-4459-962d-97cdd0126407,nearest,0.9701968986962832,0.0,0.9701968986962832,needs_review,,attorney_or_law_firm,,1b665619-8fdf-4ec5-92f1-5d65aa40a05a
+e83f3aac-22d9-4202-a84a-dabf0e3de2ff,nearest,0.9698356673068439,0.0,0.9698356673068439,needs_review,"{'common': None, 'primary': 'Lincoln Building', 'rules': None}",cafe,,ffca6459-376a-472c-ab9a-1a92160e3f83
+892eda56-64db-42a4-be4d-2eab3c239a49,nearest,0.9693972123807534,0.0,0.9693972123807534,needs_review,,home_service,,11277e15-abde-4ebe-9932-1136995d0bcc
+2607dec8-d263-4c06-8f4c-e42e00759c7b,nearest,0.9684589796035937,0.0,0.9684589796035937,needs_review,,corporate_or_business_office,,c9073cdc-0448-458e-9964-a2e6a344ecf8
+c25dd762-5df6-4937-a4cd-d6f7d0b2095c,nearest,0.9681382362474211,0.0,0.9681382362474211,needs_review,,sporting_goods_store,,bc52c1b9-b81b-43c5-b284-bff0cdd14419
+8bf9b933-61bb-4700-85cf-690a7b45a2f8,nearest,0.9672580463078996,0.0,0.9672580463078996,needs_review,"{'common': None, 'primary': 'Limelight Boulder', 'rules': None}",hotel,,037fb76d-d2db-4da1-b541-37f2669d056a
+cbd7c886-7398-4b18-a071-8a9814ea8d21,nearest,0.9672407470097072,0.0,0.9672407470097072,needs_review,,casual_eatery,,466e653f-f300-4023-bd92-f155c1ff4292
+aab48ecd-7142-4803-aeb1-7edda62f949f,nearest,0.9671890348457188,0.0,0.9671890348457188,needs_review,,coffee_shop,,07290cc6-afd4-4f36-b2b1-b12f44975888
+7bc647c5-bd38-413b-b8e2-b68f2aaaa732,nearest,0.9663656808962404,0.0,0.9663656808962404,needs_review,"{'common': None, 'primary': 'University Memorial Center', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'UMC', 'variant': 'short'}],
+      dtype=object)}",corporate_or_business_office,,283c1f49-37f1-4585-a216-d58e6ec2a0d2
+c79a4cae-03ba-4203-8469-7e56df3149c8,nearest,0.9663106725188267,0.0,0.9663106725188267,needs_review,,real_estate_service,,4a015a32-d2c7-4c0d-9367-25a314e71c4a
+daee423c-ffb7-4e49-9483-daa1e4fe4d0c,nearest,0.9662269490220494,0.0,0.9662269490220494,needs_review,,bank_or_credit_union,,90c189f1-dbef-4fac-a4dc-b51d71c96025
+a05ad71e-ef33-43fb-a30f-897cf93c8135,nearest,0.9655240570344027,0.0,0.9655240570344027,needs_review,,media_service,,2097f214-1a4e-424e-9dc3-40a5055da77b
+8a5d3d2d-e0f3-4c3e-aed5-a1d82757ce8d,nearest,0.9654660802336307,0.0,0.9654660802336307,needs_review,,professional_service,,c9073cdc-0448-458e-9964-a2e6a344ecf8
+23fe0953-e861-48ee-bdbd-115670b46b1c,nearest,0.9648197884684181,0.0,0.9648197884684181,needs_review,,behavioral_or_mental_health_clinic,,3aba4ac2-3161-4205-a064-df2f3c93f423
+9afad2b5-a8cf-4b0d-b36f-929db597cffb,nearest,0.9646809607758319,0.0,0.9646809607758319,needs_review,"{'common': None, 'primary': 'Moxy Boulder', 'rules': None}",cafe,,341b56e2-52a3-4839-8176-0dc01b22b35e
+9f2c0e7e-36af-4781-96fe-dacd8bb96657,nearest,0.9642373016645926,0.0,0.9642373016645926,needs_review,,personal_or_beauty_service,,6b8fe0f6-74e6-465d-88d0-1cfd2f0438a1
+d6599ae3-e0b4-4ef6-a685-7416d90d9f48,nearest,0.964128672021278,0.0,0.964128672021278,needs_review,,real_estate_service,,4a015a32-d2c7-4c0d-9367-25a314e71c4a
+40bcdc59-76ad-483e-bb46-d592bebab36f,nearest,0.9637698535297269,0.0,0.9637698535297269,needs_review,"{'common': None, 'primary': 'Folsom Field', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'STAD', 'variant': 'short'}],
+      dtype=object)}",real_estate_service,,a52c9241-a2e8-401e-9ae6-031a4c29b289
+584103b8-366c-4bd8-bb6d-6fe00818d4fb,nearest,0.9635456972753148,0.0,0.9635456972753148,needs_review,,government_office,,643b9c33-10f4-4ee6-9fb4-6aa1fd14c0de
+d11993e6-039a-41c1-9c71-238e7e434151,nearest,0.9632661905096096,0.0,0.9632661905096096,needs_review,,restaurant,,7575e6f4-c0d9-48cd-9735-67f1005fe1ba
+278131f2-b357-496d-910d-cad2a0829365,nearest,0.9631371259237943,0.0,0.9631371259237943,needs_review,,real_estate_service,,a632b160-01f2-4ace-885a-3ca62f79b8fd
+f24c9054-1c50-43c7-9329-737e1096fab5,nearest,0.9631053186912102,0.0,0.9631053186912102,needs_review,,real_estate_service,,a632b160-01f2-4ace-885a-3ca62f79b8fd
+ce417383-5c2a-40d2-99ac-d1fb4a63c5bb,nearest,0.9630997705830647,0.0,0.9630997705830647,needs_review,"{'common': None, 'primary': 'Colorado Building', 'rules': None}",home_service,,08e9d7c9-1c95-4865-894e-39f9237b3674
+77133eac-0cc7-460b-b8e4-8242b9b4c857,nearest,0.962437932805517,0.0,0.962437932805517,needs_review,,social_or_community_service,,4a015a32-d2c7-4c0d-9367-25a314e71c4a
+c73b7685-9dac-40ca-ba92-f9f191498633,nearest,0.9622587408527719,0.0,0.9622587408527719,needs_review,,fashion_and_apparel_store,,e54ecec8-1770-4ce9-9221-5d6c598ac430
+edf3a721-5956-48d4-8bc4-230dc0241251,nearest,0.9617389914416726,0.0,0.9617389914416726,needs_review,"{'common': None, 'primary': 'Cox Corner', 'rules': None}",fitness_studio,,41af104e-e8d1-4471-a00e-14a77d35aefc
+2003ac1b-6430-4bdf-8eef-4e246caf58f0,nearest,0.9614760319367994,0.0,0.9614760319367994,needs_review,"{'common': None, 'primary': 'Moxy Boulder', 'rules': None}",bar,,341b56e2-52a3-4839-8176-0dc01b22b35e
+e0e69ee7-2d76-4a5d-9d70-ced1c181ca18,nearest,0.9612132475284165,0.0,0.9612132475284165,needs_review,,hardware_home_and_garden_store,,2cc16a91-b185-4689-a4a6-51f8bb34f08d
+c66fdcd3-d7b8-4481-826b-f8b6fdbd1945,nearest,0.960956895666217,0.0,0.960956895666217,needs_review,"{'common': None, 'primary': 'West Boulder Senior Center', 'rules': None}",social_or_community_service,,bcc9dd5d-fdfc-4846-9cdd-bf569b5dcbf4
+a3254819-7cf2-43ed-bce0-611376435378,nearest,0.960726862725606,0.0,0.960726862725606,needs_review,,sporting_goods_store,,bd54f41a-5f44-47de-8c69-99debac78817
+fc4c482a-9dc1-4e9a-a37d-49f0cc5bb467,nearest,0.9603795870378942,0.0,0.9603795870378942,needs_review,,professional_service,,ebcc7be6-0dfc-4a10-9aea-9f92088424fd
+2562bf86-4da0-4fe1-a863-3904fe7f6e96,nearest,0.9598800623502765,0.0,0.9598800623502765,needs_review,,home_service,,4a015a32-d2c7-4c0d-9367-25a314e71c4a
+adddd08b-23b1-41ee-9cc4-fbb1bbf470bf,nearest,0.9596355569333255,0.0,0.9596355569333255,needs_review,,restaurant,,6959bd6e-6c80-4ebc-9e94-9104fc3fb283
+d6f18d34-7f8e-44d2-bbe4-3422e42ffb14,nearest,0.9592685672727397,0.0,0.9592685672727397,needs_review,,real_estate_service,,4a015a32-d2c7-4c0d-9367-25a314e71c4a
+5c3737d3-d779-4ee0-803a-ff70cfe755a6,nearest,0.959048713619831,0.0,0.959048713619831,needs_review,,restaurant,,d661159e-04f0-4494-b9fe-131d83993b40
+2dcc8d5f-1918-4de2-b087-3a82e58ea82e,nearest,0.9585552990499682,0.0,0.9585552990499682,needs_review,,casual_eatery,,08235734-bb23-4208-800e-1e043ab17586
+fb0d86fa-b2c7-4a8a-89d4-eae9366b9fd2,nearest,0.9580568265212409,0.0,0.9580568265212409,needs_review,,restaurant,,466e653f-f300-4023-bd92-f155c1ff4292
+58fe69e7-01c4-4077-bbda-29ef24d5ffc7,nearest,0.9580482064183135,0.0,0.9580482064183135,needs_review,"{'common': None, 'primary': 'Hellems Arts and Sciences', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'HLMS', 'variant': 'short'}],
+      dtype=object)}",college_university,,4ee168d1-1c61-4434-8cd1-f2c7fad647b3
+62cf8c9a-1b1a-4510-9524-33f9f60e825a,nearest,0.9579348838473747,0.0,0.9579348838473747,needs_review,"{'common': None, 'primary': 'University Memorial Center', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'UMC', 'variant': 'short'}],
+      dtype=object)}",social_or_community_service,,283c1f49-37f1-4585-a216-d58e6ec2a0d2
+d070e2fa-f9fc-4896-b1c1-7a714aad32ce,nearest,0.9576148990481084,0.0,0.9576148990481084,needs_review,"{'common': None, 'primary': 'Baker Hall Ancillary Building', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'TB75', 'variant': 'short'}],
+      dtype=object)}",college_university,,9a91902c-57fc-4ed7-a02a-d9a336a9bcd6
+772af232-93c8-458c-b23c-c5dbb51192d2,nearest,0.9575546420902956,0.0,0.9575546420902956,needs_review,"{'common': None, 'primary': 'Colorado Building', 'rules': None}",attorney_or_law_firm,,08e9d7c9-1c95-4865-894e-39f9237b3674
+6342da20-1f21-4b4d-993b-4d574b5a32ea,nearest,0.9571354762243197,0.0,0.9571354762243197,needs_review,"{'common': None, 'primary': 'St Julien Hotel & Spa', 'rules': None}",hotel,,145a4637-9496-483d-aedf-2534caa1302f
+d1b55365-cbf6-4789-8531-4ceb2005ac51,nearest,0.9569763131990994,0.0,0.9569763131990994,needs_review,,real_estate_service,,9aa12952-4644-496a-80bb-9cc09ee41a47
+270961e2-9504-4c81-a319-7dd11d494d44,nearest,0.9569596827127884,0.0,0.9569596827127884,needs_review,"{'common': None, 'primary': 'The Post Brewing Co.', 'rules': None}",casual_eatery,,816c76e7-521e-415e-9acd-16ce6d7e91e5
+1d85c951-15ac-4d8c-9892-b81ae2986bde,nearest,0.9567770454200184,0.0,0.9567770454200184,needs_review,,flowers_and_gifts_store,,b045bba2-8f24-47c0-b811-a4855fe2dbc7
+2fc99178-6dfd-4b8c-bd8e-ae70b17f66bc,nearest,0.9561085640757749,0.0,0.9561085640757749,needs_review,,behavioral_or_mental_health_clinic,,e9417681-673d-4bfd-aa91-397e14221224
+5975b590-2cdf-403d-8a2e-41ffb29eb110,nearest,0.9559038529981186,0.0,0.9559038529981186,needs_review,,sporting_goods_store,,c226521d-74ff-4c1d-9108-a0a8be8080fe
+ea57a08d-2b8a-4af4-872e-198173778194,nearest,0.9557943948927845,0.0,0.9557943948927845,needs_review,,attorney_or_law_firm,,5f6cea5e-331b-4db9-9248-74017083ce40
+60ca2e6d-cd81-4244-b7c1-85d53f70775b,nearest,0.9554555519616191,0.0,0.9554555519616191,needs_review,,restaurant,,77a4f62b-9109-419c-aec2-3532a682bdce
+850ed5b5-9897-4f42-988b-e1a2f1df4e7b,nearest,0.9548936629495577,0.0,0.9548936629495577,needs_review,,restaurant,,f1dba74f-9f93-4ddc-a042-c84ae722ed41
+5c29a559-dd1a-4167-82d7-c7c5a9ff4d7a,nearest,0.954443996348894,0.0,0.954443996348894,needs_review,,fashion_and_apparel_store,,07290cc6-afd4-4f36-b2b1-b12f44975888
+e1603c28-175d-4160-b192-a39c75c628aa,nearest,0.9538248765770873,0.0,0.9538248765770873,needs_review,,restaurant,,943c1a84-716f-4e55-9444-4cb531745d42
+15225c54-36a8-4aaa-8fe0-02bdc6bb6c1a,nearest,0.9538136390691321,0.0,0.9538136390691321,needs_review,,restaurant,,f080d651-fd0c-401a-a555-b837befac931
+7035829d-1359-431c-9790-2ed504edad14,nearest,0.9534677386898237,0.0,0.9534677386898237,needs_review,,casual_eatery,,4da98352-a0f6-462e-8f1f-b5372a129927
+e7aa64ce-e51b-4e26-a9b6-601a4285c884,nearest,0.9530698819645129,0.0,0.9530698819645129,needs_review,,attorney_or_law_firm,,5e0aca37-6a8a-4909-ba07-0145be236a7f
+814f384f-3d30-426c-b276-2c06291939bc,nearest,0.9529284907814691,0.0,0.9529284907814691,needs_review,"{'common': None, 'primary': 'Eaton Humanities', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'HUMN', 'variant': 'short'}],
+      dtype=object)}",college_university,,9ba0bc1b-c6a6-4fcb-8c1a-e94ed721476e
+3c72d1db-bb22-4232-b8c6-07d23be406d3,nearest,0.9525729382253815,0.0,0.9525729382253815,needs_review,,fashion_and_apparel_store,,5a1dbb17-972e-4966-b564-7f89e666140d
+f18cc4b8-bf77-4e52-bf48-13728aa1b832,nearest,0.9521400622949593,0.0,0.9521400622949593,needs_review,"{'common': None, 'primary': 'Performing Arts Center (PAC)', 'rules': None}",sporting_goods_store,,4a877e6c-7643-429f-b39a-b5e7587d9d47
+66454613-c9c2-433f-8e1d-f0dd782bbcd9,nearest,0.9507708670700665,0.0,0.9507708670700665,needs_review,,behavioral_or_mental_health_clinic,,e4e04640-cdba-47d9-a2ab-cbb6e1ec8da1
+76dae1a8-c885-4c2f-ac91-686d310187e0,nearest,0.950615517510147,0.0,0.950615517510147,needs_review,,restaurant,,03673284-605b-40c4-af4f-3a2e234f89f9
+7796f373-d739-439d-aa02-afa957073365,nearest,0.9506002651452745,0.0,0.9506002651452745,needs_review,,fashion_and_apparel_store,,b0abfadd-1afa-4a8e-9d1f-a8a5f3fb8f74
+0a4c75a1-2331-46ba-8990-9386a91837fe,nearest,0.9504814999712181,0.0,0.9504814999712181,needs_review,,flowers_and_gifts_store,,24ae5648-8cdb-4062-ad1e-fd30deb4c299
+35fea01d-0505-4cc1-9b82-b025eda73b9f,nearest,0.9504546086924512,0.0,0.9504546086924512,needs_review,,social_or_community_service,,c91ab130-c4f7-49f6-bb31-d7fdcce604fe
+14e12a6b-df53-4865-a2ce-1671b84d8cf9,nearest,0.9497965526884284,0.0,0.9497965526884284,needs_review,,real_estate_service,,a632b160-01f2-4ace-885a-3ca62f79b8fd
+9bcb88d6-1f6c-4948-89f3-57b9bdbdc1fa,nearest,0.9497307568791014,0.0,0.9497307568791014,needs_review,,behavioral_or_mental_health_clinic,,4844ef5d-83e3-44e4-96dd-b604637fed93
+8606b363-4ffb-4160-bfad-f4c41396b175,nearest,0.949078096177597,0.0,0.949078096177597,needs_review,,real_estate_service,,a632b160-01f2-4ace-885a-3ca62f79b8fd
+db27995b-03c9-4bb3-b97a-7c5adfe0f88e,nearest,0.9489982280313652,0.0,0.9489982280313652,needs_review,,personal_or_beauty_service,,9bfa65a9-9d38-4aa8-876b-dc2d1d5eaace
+603ec0c5-60a3-40d6-b1b9-bec9292d443b,nearest,0.9486323940338509,0.0,0.9486323940338509,needs_review,"{'common': None, 'primary': 'Rollnick Building', 'rules': None}",personal_or_beauty_service,,6c0aa798-286b-4cce-b783-dd8f5fc9971e
+8b2a3f13-9e26-4ac6-ba09-fafea520ad44,nearest,0.9485639408553512,0.0,0.9485639408553512,needs_review,,financial_service,,8dfc1256-3120-4fac-9591-de8c82a68f9d
+5292ba16-2aee-4368-bcf3-941314dcc22a,nearest,0.9485639408553512,0.0,0.9485639408553512,needs_review,,financial_service,,8dfc1256-3120-4fac-9591-de8c82a68f9d
+e6cfc6b0-0e0a-4ba2-b825-5f3654bf9085,nearest,0.9485639408553512,0.0,0.9485639408553512,needs_review,,financial_service,,8dfc1256-3120-4fac-9591-de8c82a68f9d
+bec8f66f-a3dc-4dd8-a79a-377ad2459396,nearest,0.9485639408553512,0.0,0.9485639408553512,needs_review,,outpatient_care_facility,,8dfc1256-3120-4fac-9591-de8c82a68f9d
+712937a0-43ef-437e-8f27-212fa2cb85f5,nearest,0.9485639408553512,0.0,0.9485639408553512,needs_review,,financial_service,,8dfc1256-3120-4fac-9591-de8c82a68f9d
+47e54f53-58d8-44fe-9979-7c81915db855,nearest,0.9485639408553512,0.0,0.9485639408553512,needs_review,,financial_service,,8dfc1256-3120-4fac-9591-de8c82a68f9d
+d31e5e32-62d9-4b38-985e-db2350065393,nearest,0.9485571381900828,0.0,0.9485571381900828,needs_review,"{'common': None, 'primary': 'Boulder Marriott', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'Boulder Marriott', 'variant': 'alternate'}],
+      dtype=object)}",personal_or_beauty_service,,e40ea9dd-9f6c-4fb6-a814-a283d4cc1d05
+6f946c02-0cfe-4d46-9d1d-aa52bfc6224e,nearest,0.9481500752379766,0.0,0.9481500752379766,needs_review,,media_service,,0d7c373a-7f23-4851-9ea5-20e808b41eae
+32852481-ee75-4355-a32e-6d5c28ef95db,nearest,0.9479648994360015,0.0,0.9479648994360015,needs_review,,home_service,,99b6616b-9e50-4a92-94bd-d988fc05b05a
+ae9bcd1c-32c9-43e3-ba43-33648adf8368,nearest,0.9476557172090178,0.0,0.9476557172090178,needs_review,"{'common': None, 'primary': 'Institute of Behavioral Sci 1', 'rules': None}",coffee_shop,,83e2d669-8941-46d7-8f55-0f2faa8b1260
+6eb6d008-277a-42b4-9ac6-c488e65bd881,nearest,0.9473612795011452,0.0,0.9473612795011452,needs_review,,fashion_and_apparel_store,,2cc16a91-b185-4689-a4a6-51f8bb34f08d
+8a00f37d-74a0-48e1-82df-f1358f174ef0,nearest,0.9473434700116371,0.0,0.9473434700116371,needs_review,,real_estate_service,,a24610db-bfab-479c-b31b-67c3c677e904
+4206c741-1cd6-4fa8-b237-8149ac617c9d,nearest,0.9466139932220826,0.0,0.9466139932220826,needs_review,,restaurant,,57aee387-578f-4c15-80d5-2d1cb234dfc0
+4b8b5de8-7cb7-475a-be8b-4fb4dc01ceb6,nearest,0.9465366719936938,0.0,0.9465366719936938,needs_review,,restaurant,,c226521d-74ff-4c1d-9108-a0a8be8080fe
+409f3c6b-b995-457b-bfa8-340e2a096198,nearest,0.9458549150169155,0.0,0.9458549150169155,needs_review,"{'common': None, 'primary': 'Wolf Law', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'WLAW', 'variant': 'short'}],
+      dtype=object)}",college_university,,fda2ae59-14ca-46d5-9ba5-46c30983a59b
+aae95293-b07e-492d-bb6c-4cd19f298475,nearest,0.9453848171437071,0.0,0.9453848171437071,needs_review,"{'common': None, 'primary': 'Highland School Building', 'rules': None}",financial_service,,ab259b7d-1dc9-4ae8-8796-b6a8d5500dfc
+8c82e33a-2c82-4b64-8032-ba74899f2b32,nearest,0.9449179428271554,0.0,0.9449179428271554,needs_review,,real_estate_service,,a632b160-01f2-4ace-885a-3ca62f79b8fd
+38c9bee3-e39a-4908-8b34-0e85e2c98eab,nearest,0.9448594989653201,0.0,0.9448594989653201,needs_review,,casual_eatery,,466e653f-f300-4023-bd92-f155c1ff4292
+603b9b11-cf2e-4a81-8f74-28820b43c74e,nearest,0.9434219520611629,0.0,0.9434219520611629,needs_review,,design_service,,767bfd46-8870-4b5f-a874-720446dbaa53
+2da9ffa5-f6e6-4727-b364-187088359b8c,nearest,0.943261686142359,0.0,0.943261686142359,needs_review,"{'common': None, 'primary': 'Snarfburger', 'rules': None}",restaurant,,419df728-165e-4a07-98eb-592512bab58a
+da4ccf69-8975-4b45-a28d-15e99cc02a9c,nearest,0.9426564054815729,0.0,0.9426564054815729,needs_review,,restaurant,,2df1582b-11f9-4cf1-a969-eeb3a126224a
+cdbb6650-3e97-4bb4-ad6c-9f06401e132b,nearest,0.9415832511128807,0.0,0.9415832511128807,needs_review,,wellness_service,,c02a8c40-33c5-40e5-b301-f20a57fd8b1c
+9c149ce2-49e2-438b-9c11-65ff67e6cc6f,nearest,0.9415525226167332,0.0,0.9415525226167332,needs_review,,casual_eatery,,ec0ddc54-f378-4f73-b405-fd9a9528cb4e
+782a8d64-c955-4aab-91ce-2c06eedc3928,nearest,0.9411214776022593,0.0,0.9411214776022593,needs_review,"{'common': None, 'primary': 'Canyon Center', 'rules': None}",financial_service,,e122cc45-356c-4d1b-b8eb-2a221181731e
+7801179d-6d77-4ce7-9407-e7f8d7f4b500,nearest,0.9396962938209084,0.0,0.9396962938209084,needs_review,,food_and_beverage_store,,41de29c4-04d7-460f-84cf-f645cc70a68a
+ed485ed7-a13c-4d6c-9dfc-24165523716b,nearest,0.9396879492367759,0.0,0.9396879492367759,needs_review,,behavioral_or_mental_health_clinic,,c0c52b07-5a99-453b-ab69-24dd19fd162f
+bdcea451-da52-4380-85eb-daff1e6a2ab2,nearest,0.939260749898403,0.0,0.939260749898403,needs_review,,technical_service,,53a3a1e9-46f4-4e47-ab5a-81a3bd139f37
+9c80d252-dc14-4501-a621-8f920d504538,nearest,0.9383059267228839,0.0,0.9383059267228839,needs_review,"{'common': None, 'primary': 'Boulder Marriott', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'Boulder Marriott', 'variant': 'alternate'}],
+      dtype=object)}",personal_or_beauty_service,,e40ea9dd-9f6c-4fb6-a814-a283d4cc1d05
+b1ce93e2-dd66-472d-948c-b173709e9042,nearest,0.9377365032323327,0.0,0.9377365032323327,needs_review,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+165b113c-a9c8-4327-9726-d5f369860365,nearest,0.9374321427964009,0.0,0.9374321427964009,needs_review,,real_estate_service,,a632b160-01f2-4ace-885a-3ca62f79b8fd
+4f96136c-d419-4db7-91d8-5f5a8357ce0f,nearest,0.9371934669804796,0.0,0.9371934669804796,needs_review,,attorney_or_law_firm,,213255c2-d375-4b5b-8c0c-290593267711
+b8d44b11-46df-444c-9e46-5c47b36c9b0b,nearest,0.9370588231222319,0.0,0.9370588231222319,needs_review,,real_estate_service,,a632b160-01f2-4ace-885a-3ca62f79b8fd
+22566f99-412d-4174-823d-e5101ac06f1a,nearest,0.9370159467071622,0.0,0.9370159467071622,needs_review,,restaurant,,adf5bf5c-0c69-4b82-8382-59de26d48185
+3d0fcfe3-f0cd-40c9-a53e-f43b3f2fdf7e,nearest,0.9369570690182965,0.0,0.9369570690182965,needs_review,"{'common': None, 'primary': 'Colorado Building', 'rules': None}",professional_service,,08e9d7c9-1c95-4865-894e-39f9237b3674
+f47f49b4-0522-4368-81a8-8254b543eea6,nearest,0.9365336471302389,0.0,0.9365336471302389,needs_review,,fashion_and_apparel_store,,77c5bda3-5c8c-43c5-a5b3-c8c11ca32119
+dc0f8cef-902f-4892-b7ef-a0266be0cf1a,nearest,0.936492872284316,0.0,0.936492872284316,needs_review,,casual_eatery,,ece9b307-e803-4b21-ad27-d5f2c8ca32d9
+0855a1f1-9f36-4482-af3e-521260e5ccb9,nearest,0.9359352629088924,0.0,0.9359352629088924,needs_review,,real_estate_service,,7fef8d65-84a3-4c02-a7a9-5d83db0ae3c4
+ab955e7a-2cd5-4e0c-beea-55a827b6bcff,nearest,0.9357926974993727,0.0,0.9357926974993727,needs_review,"{'common': None, 'primary': 'Kappa Alpha Theta', 'rules': None}",college_university,,5d2b1c54-2010-433d-9df7-4d42ed5864d5
+b173ae1c-deb9-4a0a-b3b9-d993fb96038a,nearest,0.9350365593237436,0.0,0.9350365593237436,needs_review,,fashion_and_apparel_store,,bd54f41a-5f44-47de-8c69-99debac78817
+d6ce6b6b-aacb-4a5e-812c-7806e6c83f46,nearest,0.9349664673141526,0.0,0.9349664673141526,needs_review,"{'common': None, 'primary': 'Community Plaza', 'rules': None}",restaurant,,5709e83a-db7b-4695-b416-2fff49fccf9c
+eb90c2b3-b866-454f-8d2b-9d77921ca3b6,nearest,0.9343514407232405,0.0,0.9343514407232405,needs_review,,restaurant,,78353c93-69d6-40ef-a46d-f06ac76e65fc
+4ecb671a-43c6-4213-958e-f037816b8a30,nearest,0.9341256810447351,0.0,0.9341256810447351,needs_review,,social_or_community_service,,fe8b06bd-0f1d-4ef8-b419-5d3f3b1e283d
+e8608a69-28e9-4db4-84fb-0cce21ad37a7,nearest,0.9341120371569243,0.0,0.9341120371569243,needs_review,,personal_or_beauty_service,,b045bba2-8f24-47c0-b811-a4855fe2dbc7
+961edfb0-f488-4383-b20f-e58b459e6bb2,nearest,0.9338297014344075,0.0,0.9338297014344075,needs_review,"{'common': None, 'primary': 'Melissa A. Cohen Insurance Agency, Inc.', 'rules': None}",gym,,a5000fe1-c7b6-47e3-8614-d9aefa231876
+bb3b7c00-f057-4078-8050-33c889e54ed7,nearest,0.9333148834395049,0.0,0.9333148834395049,needs_review,"{'common': None, 'primary': 'Boulder Chamber and Visitor Center', 'rules': None}",social_or_community_service,,df981511-07de-4456-9427-4821fe802ba9
+60d21374-64cf-4046-b627-c874dfa21f6d,nearest,0.933215164023762,0.0,0.933215164023762,needs_review,,personal_or_beauty_service,,b045bba2-8f24-47c0-b811-a4855fe2dbc7
+430a68b7-72df-4878-a506-49901deb4c4b,nearest,0.93317377996556,0.0,0.93317377996556,needs_review,,outpatient_care_facility,,6b8fe0f6-74e6-465d-88d0-1cfd2f0438a1
+40bd64cd-2d34-4d79-b26f-208b57cad42c,nearest,0.9326204647178916,0.0,0.9326204647178916,needs_review,"{'common': None, 'primary': 'Hallet Hall', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'HLET', 'variant': 'short'}],
+      dtype=object)}",cafe,,ea44f9a5-6752-4b28-a80b-331891cc4b60
+a8ed146d-107e-4537-92f5-4ceb69415d1e,nearest,0.9323014806548116,0.0,0.9323014806548116,needs_review,,wellness_service,,df2e93be-bd06-494c-8c04-986998303161
+b0d3d308-ffe5-452e-93ce-23f5d3ede460,nearest,0.9320735626598097,0.0,0.9320735626598097,needs_review,,personal_or_beauty_service,,07290cc6-afd4-4f36-b2b1-b12f44975888
+612fffb8-fe5c-43dc-8974-fb117d53e32f,nearest,0.9313832391742107,0.0,0.9313832391742107,needs_review,,restaurant,,1e342865-6c19-4e8a-8682-6ca9eba30f1c
+98e2bac3-110e-4501-9af2-06076622ace6,nearest,0.9313150626038176,0.0,0.9313150626038176,needs_review,,social_or_community_service,,a9df6e20-748f-4579-986d-c11e75b4b9aa
+9bb35ae3-d7d9-46f9-a010-96c64bd18cf2,nearest,0.9312436749735054,0.0,0.9312436749735054,needs_review,"{'common': None, 'primary': 'Hast & Company', 'rules': None}",attorney_or_law_firm,,623a97c1-6c46-4931-a5fb-e81a36ac4ff0
+090fc00c-c168-4ed2-a224-37daea5e7dd2,nearest,0.9310886986745897,0.0,0.9310886986745897,needs_review,,personal_or_beauty_service,,8e60ae4d-854b-48d0-8de6-6b1a7efdf2d4
+f7670553-289b-47eb-af2e-f1235dca118c,nearest,0.9307471205114564,0.0,0.9307471205114564,needs_review,,real_estate_service,,a2bd44d6-25be-429a-887d-ff17b3885c07
+98ea2379-3aca-44ff-8f4f-660e8aa7880f,nearest,0.9306530974325483,0.0,0.9306530974325483,needs_review,,real_estate_service,,c9073cdc-0448-458e-9964-a2e6a344ecf8
+5c48c9c1-ce18-404e-8f03-dbb8b78ba56f,nearest,0.9306199920344114,0.0,0.9306199920344114,needs_review,"{'common': None, 'primary': 'Kittredge Central', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'KCEN', 'variant': 'short'}],
+      dtype=object)}",college_university,,69a90f5c-0c82-4d5e-bcd5-88a26c87d159
+54e4eb85-4c3b-4a12-81e3-49b08bffe4cb,nearest,0.930340965033764,0.0,0.930340965033764,needs_review,,restaurant,,adf5bf5c-0c69-4b82-8382-59de26d48185
+020c4e6f-b6c4-465f-96a0-fab8eb54795a,nearest,0.9296370249584128,0.0,0.9296370249584128,needs_review,,fashion_and_apparel_store,,53a3a1e9-46f4-4e47-ab5a-81a3bd139f37
+c58a9916-5339-406d-8afd-502c95eed4b2,nearest,0.9295965832580508,0.0,0.9295965832580508,needs_review,,fashion_and_apparel_store,,10a38177-e196-4b23-b174-aba3e0db3a55
+8c91dedc-c563-4c48-8e6a-076bcb6adf54,nearest,0.9293692202605283,0.0,0.9293692202605283,needs_review,,attorney_or_law_firm,,b7db961c-4109-4916-8bc5-960a40df7af6
+4a4531f6-7d0b-4622-b149-2972a24a4e3f,nearest,0.9282824723683707,0.0,0.9282824723683707,needs_review,,casual_eatery,,90270419-bbfc-4948-a72c-2cdc9de9851f
+53b3455e-2133-42e3-b106-6ec31d4e0464,nearest,0.9281757647100668,0.0,0.9281757647100668,needs_review,,personal_or_beauty_service,,c9dd6811-6ce8-4d53-8bad-ae4cfe43766a
+629af682-082a-48bc-962a-57ee3a0cbe17,nearest,0.9279560832762791,0.0,0.9279560832762791,needs_review,"{'common': None, 'primary': 'Community Plaza', 'rules': None}",casual_eatery,,5709e83a-db7b-4695-b416-2fff49fccf9c
+375c0761-463d-4271-8679-f261d8152e97,nearest,0.9278577556441323,0.0,0.9278577556441323,needs_review,,real_estate_service,,a632b160-01f2-4ace-885a-3ca62f79b8fd
+e94987af-d1b9-4b6a-9930-df13f22b90e5,nearest,0.9274679605872564,0.0,0.9274679605872564,needs_review,,fashion_and_apparel_store,,954cb30c-1eb3-41e2-b7b0-f6640a4c3595
+92545abb-cbd2-4192-9be6-a3d2d6086c0d,nearest,0.9273876649389421,0.0,0.9273876649389421,needs_review,,sporting_goods_store,,df2e93be-bd06-494c-8c04-986998303161
+5e443787-8c20-4000-8946-9d50ef236143,nearest,0.9273659353148023,0.0,0.9273659353148023,needs_review,,coffee_shop,,09cf49be-5a5b-4550-ac59-ace85a38b108
+e05d44c8-b811-4a59-982f-869581a38f2b,nearest,0.9273644290316085,0.0,0.9273644290316085,needs_review,,real_estate_service,,7fef8d65-84a3-4c02-a7a9-5d83db0ae3c4
+f7d9f825-1af9-4e23-8a7f-3f25919aed45,nearest,0.9270285117148807,0.0,0.9270285117148807,needs_review,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+6fe464c3-f625-41e8-95e8-1f6aee3d6fc4,nearest,0.9269309946500437,0.0,0.9269309946500437,needs_review,,flowers_and_gifts_store,,a9e1cc82-e147-4256-88eb-78be4aea3000
+172c37ad-61f5-4e05-a39d-d89e0bef8210,nearest,0.9266316309581717,0.0,0.9266316309581717,needs_review,,corporate_or_business_office,,a24610db-bfab-479c-b31b-67c3c677e904
+07e4aee1-5f4b-4161-89e0-7d4185a72421,nearest,0.9264226294624156,0.0,0.9264226294624156,needs_review,,casual_eatery,,5dc5cae9-042a-4cbf-a494-ef71f65b3058
+781ba55e-4d36-4605-aaeb-ab24999d9fe3,nearest,0.9261985372139429,0.0,0.9261985372139429,needs_review,,behavioral_or_mental_health_clinic,,04a9cbc8-6511-4f79-ac09-312b763ed682
+b763d850-2fd9-4ac8-92a5-8044968ee6e0,nearest,0.9257253374194766,0.0,0.9257253374194766,needs_review,,real_estate_service,,7fef8d65-84a3-4c02-a7a9-5d83db0ae3c4
+0fa42ef6-9957-4565-8f73-4e5d3921ef29,nearest,0.9244035768302523,0.0,0.9244035768302523,needs_review,,wellness_service,,f628db0e-f306-49cb-909a-c0a033838cae
+4e723a10-00ac-4825-8b5d-941905a72250,nearest,0.9236328221565355,0.0,0.9236328221565355,needs_review,"{'common': None, 'primary': 'Boulder Guest House', 'rules': None}",hotel,,86d1f78a-f598-4608-ba79-ef9cf2d5431d
+e0d6ef25-1d6c-439a-85ff-de215c27fd92,nearest,0.9235235427041504,0.0,0.9235235427041504,needs_review,,personal_or_beauty_service,,9676ff50-40e7-435e-ae0d-828fa06129dd
+43602777-47da-4e22-b8e6-9448ba228236,nearest,0.9233857315901288,0.0,0.9233857315901288,needs_review,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+10438663-7a31-4dfd-8bb3-42a6eb7143a4,nearest,0.9219460269361549,0.0,0.9219460269361549,needs_review,,real_estate_service,,6b8fe0f6-74e6-465d-88d0-1cfd2f0438a1
+bbd51dee-0567-480d-a318-e81ba71cc56c,nearest,0.9218345364299869,0.0,0.9218345364299869,needs_review,,financial_service,,0cfd8a16-1c35-4c34-a100-9201483b2cee
+0092de00-78f1-4c18-ad0e-04141d3ddfa5,nearest,0.9216695347835043,0.0,0.9216695347835043,needs_review,,hardware_home_and_garden_store,,bbb013be-cb2a-4c9b-bc50-4ad31c94dca5
+7bb7a6d3-af73-4790-897e-569e74a98d12,nearest,0.9214752205975036,0.0,0.9214752205975036,needs_review,,coffee_shop,,7c2af838-2c2a-4f69-86aa-0b2b8f0f24e5
+a90dc13c-a4e3-4c5f-b6db-290578f7f6e2,nearest,0.9202486573450122,0.0,0.9202486573450122,needs_review,"{'common': None, 'primary': 'Kittredge Central', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'KCEN', 'variant': 'short'}],
+      dtype=object)}",design_service,,69a90f5c-0c82-4d5e-bcd5-88a26c87d159
+54d7ab41-8c51-4359-9e74-19e623f509dd,nearest,0.9201398662900904,0.0,0.9201398662900904,needs_review,,fashion_and_apparel_store,,a9e1cc82-e147-4256-88eb-78be4aea3000
+caa094c4-a647-4022-8d03-85d8e7f6332c,nearest,0.9199192451303754,0.0,0.9199192451303754,needs_review,,professional_service,,6f8c5247-be8e-4a81-bb56-d4d8fc779119
+f2842d2d-43ec-4293-84d3-e23664aa05a4,nearest,0.9197492821285205,0.0,0.9197492821285205,needs_review,,casual_eatery,,7aff0141-892a-425c-865d-a45716b1f9e8
+80ad4aa6-fbd9-4eb8-8232-a283098cc929,nearest,0.9196756967105705,0.0,0.9196756967105705,needs_review,,personal_or_beauty_service,,6e014141-c39e-4e24-a0b9-4e1ab9bf4952
+795376dc-d1a4-4893-8188-f4fa28ea0c3e,nearest,0.9193720698416967,0.0,0.9193720698416967,needs_review,,restaurant,,f080d651-fd0c-401a-a555-b837befac931
+17adf49f-7ba0-4356-b5d5-b7f7417d02e6,nearest,0.9187538963669892,0.0,0.9187538963669892,needs_review,,casual_eatery,,b045bba2-8f24-47c0-b811-a4855fe2dbc7
+2bb7a762-3bec-4779-a0e7-050577f201ec,nearest,0.9185543550442595,0.0,0.9185543550442595,needs_review,,restaurant,,35084252-373f-40cb-b70d-b1efbbda4271
+56a30c6b-a33f-4b7b-9357-a1fdbc1eea3f,nearest,0.9185498426982173,0.0,0.9185498426982173,needs_review,"{'common': None, 'primary': 'Backcountry Pizza & Tap House', 'rules': None}",bar,,6e6ee2b7-eeb4-433d-a51f-353143f33295
+4b8e0caf-84e4-482d-92a3-0abc7949cc01,nearest,0.9184646925442324,0.0,0.9184646925442324,needs_review,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+e33227b4-30e6-43a4-8dd8-1033111f6021,nearest,0.9184237134497371,0.0,0.9184237134497371,needs_review,"{'common': None, 'primary': 'Boulder County Courthouse', 'rules': None}",government_office,,187961f7-c1f6-422d-8d01-9be992d5418e
+b2ce3f1c-6e94-438b-aa47-6644c1916550,nearest,0.9183900543032844,0.0,0.9183900543032844,needs_review,"{'common': None, 'primary': 'The Hungry Toad', 'rules': None}",bar,,764e3c90-dc8a-4535-910e-8a8c2c45dc3a
+d5985ba8-866b-4a6c-9e75-87292f7a32cd,nearest,0.9175869718886519,0.0,0.9175869718886519,needs_review,,real_estate_service,,a632b160-01f2-4ace-885a-3ca62f79b8fd
+a7d58f8c-0846-4576-83fc-f0852a40bce4,nearest,0.9173861869536342,0.0,0.9173861869536342,needs_review,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+aabd5957-e2e6-48dc-a66d-844ef045d761,nearest,0.9172999586234347,0.0,0.9172999586234347,needs_review,,real_estate_service,,6b8fe0f6-74e6-465d-88d0-1cfd2f0438a1
+639a877e-8f02-4403-84b8-e33be659d298,nearest,0.9169003415052381,0.0,0.9169003415052381,needs_review,,fashion_and_apparel_store,,6959bd6e-6c80-4ebc-9e94-9104fc3fb283
+66a9ec44-124f-45d9-8f9b-a086b95b8817,nearest,0.9167892859106603,0.0,0.9167892859106603,needs_review,,bar,,365b6615-3674-4b24-a09d-dc6f30d580a2
+76f502fb-b767-4d60-b101-4470590c206d,nearest,0.9165325313785482,0.0,0.9165325313785482,needs_review,,food_and_beverage_store,,97f4c9f4-f66a-4cc0-952e-5f5e916feeb5
+b86a3d48-bb0c-4043-9d44-7de65dbc4f55,nearest,0.9164138005476585,0.0,0.9164138005476585,needs_review,,technical_service,,162ec042-dcd0-4ab5-9f95-01cba22390a5
+e2a87e88-1bbf-429a-861c-3b141eab0c56,nearest,0.914960073079233,0.0,0.914960073079233,needs_review,,personal_or_beauty_service,,07290cc6-afd4-4f36-b2b1-b12f44975888
+dd115750-c976-479e-b949-c23b82b73e93,nearest,0.9148379295841524,0.0,0.9148379295841524,needs_review,,social_or_community_service,,a7c41b64-ce37-4577-971b-12160caac151
+b2438fb5-7727-405a-9fc7-e6e444355604,nearest,0.914311366939478,0.0,0.914311366939478,needs_review,,personal_or_beauty_service,,af520217-2701-46e1-b6ac-e0304eec409a
+c3c00416-c07b-4d6e-a2ce-967da9b03492,nearest,0.914241520318356,0.0,0.914241520318356,needs_review,"{'common': None, 'primary': 'Wardenburg Health Center', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'WARD', 'variant': 'short'}],
+      dtype=object)}",outpatient_care_facility,,987cd7be-007a-47c3-b1ed-97c8ce8b4541
+40ffba9e-9e96-4ccf-93fa-cccc923d7d5e,nearest,0.9141984952936638,0.0,0.9141984952936638,needs_review,,flowers_and_gifts_store,,2cc16a91-b185-4689-a4a6-51f8bb34f08d
+6c054867-5304-4afb-ab00-5d08bac7f312,nearest,0.9124830784131802,0.0,0.9124830784131802,needs_review,,real_estate_service,,5419d0c8-ef7f-48c0-b56c-ea934eb3164d
+bf7934e0-76f1-4d65-9586-c7d614ce00f3,nearest,0.9123120271114523,0.0,0.9123120271114523,needs_review,,home_service,,6f8c5247-be8e-4a81-bb56-d4d8fc779119
+24a9e72e-a811-4050-b35e-5350a9450e9f,nearest,0.9121386399254869,0.0,0.9121386399254869,needs_review,,casual_eatery,,718f4030-0622-4356-bb3c-46eb1ba73ccc
+63cf585e-6459-4ee1-a3bc-d3b63355839d,nearest,0.9116061207014741,0.0,0.9116061207014741,needs_review,,casual_eatery,,b7e0d738-62c6-4d03-8d61-284a4fb47ca6
+33c8ca73-eb56-4065-8da8-916c3b0af751,nearest,0.9115689869007125,0.0,0.9115689869007125,needs_review,,wellness_service,,05c5b7e4-a70d-421d-bfe1-c865ca5f2bf2
+33f81ec8-2d3d-411b-bf36-3eed04cd9355,nearest,0.9115229346947545,0.0,0.9115229346947545,needs_review,,fashion_and_apparel_store,,bcb2a963-56d7-4e93-8f33-5bcb09775040
+8865073b-3643-4454-b596-26e0e83bb2a8,nearest,0.9112916048918368,0.0,0.9112916048918368,needs_review,,real_estate_service,,40c1a6be-3b0e-48b9-97c2-01ce4559d6f0
+abb2eaa5-d5f9-4752-bcad-fded36e0aef0,nearest,0.9111903771958567,0.0,0.9111903771958567,needs_review,"{'common': None, 'primary': 'Boulder Public Library - Main Branch', 'rules': None}",cafe,,b4674090-59dc-41f5-b2a9-4dab77f1fd58
+4c9543ec-c9be-4967-bf2b-230b26529aba,nearest,0.9104501988226803,0.0,0.9104501988226803,needs_review,,restaurant,,88b4d4b9-5815-4f1d-b76b-7abcc6f8f9cb
+18a5f2d7-0443-4828-bcda-cfd95493553c,nearest,0.9104501988226803,0.0,0.9104501988226803,needs_review,,professional_service,,88b4d4b9-5815-4f1d-b76b-7abcc6f8f9cb
+2424b82d-a3ea-42b3-92db-11fd311c9e0f,nearest,0.9096927878808685,0.0,0.9096927878808685,needs_review,,media_service,,18c8ed00-4374-471a-a475-64b9e7598863
+aa0cc12d-26d3-4662-922e-d769e8796cf7,nearest,0.9090431258448936,0.0,0.9090431258448936,needs_review,,art_gallery,,c91ab130-c4f7-49f6-bb31-d7fdcce604fe
+35be0c04-035d-48ee-a253-a2cb83ddc681,nearest,0.9089957747250483,0.0,0.9089957747250483,needs_review,,social_or_community_service,,0307fcb0-b294-449e-ae57-87b02efc94d1
+e59ff46d-cbe5-4841-8722-9d0c6ad57943,nearest,0.9084427278245971,0.0,0.9084427278245971,needs_review,"{'common': None, 'primary': 'Boulder Marriott', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'Boulder Marriott', 'variant': 'alternate'}],
+      dtype=object)}",personal_or_beauty_service,,e40ea9dd-9f6c-4fb6-a814-a283d4cc1d05
+4c6e3646-9b6a-4fe7-9362-d784a3e770af,nearest,0.9081475571768401,0.0,0.9081475571768401,needs_review,,personal_or_beauty_service,,4a015a32-d2c7-4c0d-9367-25a314e71c4a
+1d49caa7-6248-4f30-bd75-8ebf4fb8a11d,nearest,0.9074704227256754,0.0,0.9074704227256754,needs_review,,bar,,3487b4e5-a148-4e9f-8994-c4977cb364fe
+83a4c512-c68d-4181-a256-b29b5e7c570f,nearest,0.9070946718337122,0.0,0.9070946718337122,needs_review,,college_university,,5d681462-2790-4e2c-b7ff-d69df676b583
+aad67edf-20f4-4eb4-9d87-8ba85f77577c,nearest,0.9067003166015423,0.0,0.9067003166015423,needs_review,,dental_clinic,,582a8726-ea2f-4b68-84f0-7264e16856db
+7a6e0c66-0f0d-4865-bed8-975f6190330d,nearest,0.9062356134127725,0.0,0.9062356134127725,needs_review,,real_estate_service,,7fef8d65-84a3-4c02-a7a9-5d83db0ae3c4
+637c3fbf-b9f4-4499-9600-096d1a45a330,nearest,0.9062216880548541,0.0,0.9062216880548541,needs_review,,social_or_community_service,,f61c4184-d69c-4fc7-b873-1d42d8b69c8e
+8e3c731f-508c-4dc6-b66f-abaa3c7a47c7,nearest,0.9053797708771922,0.0,0.9053797708771922,needs_review,"{'common': None, 'primary': 'Civil & Environmental Wing', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'ECCE', 'variant': 'short'}],
+      dtype=object)}",college_university,,21eee2b7-2850-41b3-845c-0567862bfd85
+f882a206-63d0-4fd0-9be5-2e5d440e85ae,nearest,0.9047371135572375,0.0,0.9047371135572375,needs_review,,behavioral_or_mental_health_clinic,,a9df6e20-748f-4579-986d-c11e75b4b9aa
+9f5a6ea1-e9cf-4cc2-909a-d9b92b4a7e8f,nearest,0.9041423373787679,0.0,0.9041423373787679,needs_review,,restaurant,,11d15d05-8d41-4df7-bf7f-7bd0a65afa27
+2da44c1c-bb50-4e31-9ab3-bbdb6aee7339,nearest,0.9033638962995078,0.0,0.9033638962995078,needs_review,,art_gallery,,63cde0a3-87df-4ed5-a4f7-418c4a7b2739
+4b6859f1-cb73-4389-b275-8d03dd22a1c2,nearest,0.9027778178047371,0.0,0.9027778178047371,needs_review,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+839489ab-6af2-4849-855c-3b295bb8a7e0,nearest,0.9026563254916568,0.0,0.9026563254916568,needs_review,,home_service,,bb6ab86f-1a76-4a4d-9a3e-9338fb05e067
+c94ec889-0131-4bad-8857-b3d6db4fedd8,nearest,0.9024430754501976,0.0,0.9024430754501976,needs_review,,professional_service,,92ff2d16-0817-435c-817c-facb074caf71
+caf86f4e-0675-4f55-82d1-36b9e068b8c9,nearest,0.9023794099022975,0.0,0.9023794099022975,needs_review,,art_gallery,,1d26c089-29e8-41e3-8760-a923eb5388da
+d1b3a633-cc3d-4504-b539-d517ea52616f,nearest,0.9023248889286682,0.0,0.9023248889286682,needs_review,,coffee_shop,,bd54f41a-5f44-47de-8c69-99debac78817
+5e43e3d0-ad83-468c-87f5-c434a176b806,nearest,0.9021346846864982,0.0,0.9021346846864982,needs_review,,real_estate_service,,0c8e1eef-a471-47c7-befd-a5c0b4f71e90
+bf3a17cd-e36e-4bd0-a40c-33664b6f0aa2,nearest,0.9021161431689119,0.0,0.9021161431689119,needs_review,,coffee_shop,,a5b1e449-215a-4dfb-a182-2f8fd496085a
+80c34748-196d-486e-996e-ff5722e48d48,nearest,0.9010009893133241,0.0,0.9010009893133241,needs_review,,casual_eatery,,718f4030-0622-4356-bb3c-46eb1ba73ccc
+0bfa7285-89cd-4195-beab-f2b1006616d4,nearest,0.9006621654192213,0.0,0.9006621654192213,needs_review,,fashion_and_apparel_store,,12b08b83-bf52-4124-ba9b-510ad81872e9
+9709df17-0df5-452d-a6ee-36d76653f684,nearest,0.9004742993069474,0.0,0.9004742993069474,needs_review,,restaurant,,95609ad8-a59b-4d5c-89cd-24b15199eb3e
+54dab91c-86b6-4026-98d7-c8e28457bee9,nearest,0.9004023368119263,0.0,0.9004023368119263,needs_review,"{'common': None, 'primary': '11th & Walnut', 'rules': None}",attorney_or_law_firm,,ba34aed9-5fff-4433-ac45-9f76873012f6
+52075dd2-07c6-44bd-87ed-a13c9fb83cf1,nearest,0.9000189771185526,0.0,0.9000189771185526,needs_review,,fashion_and_apparel_store,,c226521d-74ff-4c1d-9108-a0a8be8080fe
+3faf58fa-a546-4826-b7c3-95e84d379f2f,nearest,0.8996128485761989,0.0,0.8996128485761989,needs_review,,restaurant,,0d848487-f337-4dca-a810-02d9e523df25
+a996f0b6-3dee-4d2b-bc4a-5a6f0e6caee2,nearest,0.8992101111778237,0.0,0.8992101111778237,needs_review,,behavioral_or_mental_health_clinic,,73072a9c-d98b-4773-9b46-37cf77349b73
+99ce432a-56d8-4f34-aedc-d47d86a4b7be,nearest,0.8990868705361745,0.0,0.8990868705361745,needs_review,,bar,,c81b3a34-4c35-4d76-9019-5a0f11d68497
+1c15aa0f-4a3a-40e9-b26e-76b4997043f6,nearest,0.8987630279941571,0.0,0.8987630279941571,needs_review,,coffee_shop,,07290cc6-afd4-4f36-b2b1-b12f44975888
+d948c65b-edf1-4850-a8ea-4b68b574246d,nearest,0.8986743555652198,0.0,0.8986743555652198,needs_review,,wellness_service,,d94c9eee-73f5-4696-8198-848aaf3f2062
+bbb79854-c7f3-4325-bab5-64b23e2158ce,nearest,0.8984146345690767,0.0,0.8984146345690767,needs_review,,restaurant,,77c5bda3-5c8c-43c5-a5b3-c8c11ca32119
+8e36db1b-eaeb-4f6c-84c9-9ee6c9ffbf11,nearest,0.8983125501638771,0.0,0.8983125501638771,needs_review,,behavioral_or_mental_health_clinic,,a9df6e20-748f-4579-986d-c11e75b4b9aa
+b99ad47c-93b9-4a92-9e50-1e3223420576,nearest,0.8981146971099339,0.0,0.8981146971099339,needs_review,,restaurant,,333be737-29b6-41bd-a7ab-e7105dc7dab3
+de0ec74f-5301-494d-a375-155932b4772b,nearest,0.8973961844773548,0.0,0.8973961844773548,needs_review,,design_service,,d98662be-dd3b-4094-ab83-0c5161fad122
+a4a0f180-e3c6-43b8-8bcd-03ce829ced88,nearest,0.897039520130702,0.0,0.897039520130702,needs_review,,hotel,,dc14e56c-b94e-45f5-9981-3dd7f172591d
+15ca1a64-8927-44e5-a6c2-f372284d4a15,nearest,0.8960965637752352,0.0,0.8960965637752352,needs_review,,personal_or_beauty_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+46055790-65fa-4c48-a95a-3e1bc9d79177,nearest,0.8959747861731583,0.0,0.8959747861731583,needs_review,,behavioral_or_mental_health_clinic,,b03f4c64-6e55-4e26-8e85-11b40becefe2
+01a4b4f9-3bc2-44a6-b1f3-cdf4367b696f,nearest,0.8959035161342722,0.0,0.8959035161342722,needs_review,"{'common': None, 'primary': 'Moxy Boulder', 'rules': None}",restaurant,,341b56e2-52a3-4839-8176-0dc01b22b35e
+129df07e-e46a-4522-95b5-93b72d63340e,nearest,0.8955683774067126,0.0,0.8955683774067126,needs_review,,professional_service,,10f83958-2b31-49c9-8d63-00b60bc63a78
+d36da633-6790-4533-b84f-f7598383eab7,nearest,0.8955446973141398,0.0,0.8955446973141398,needs_review,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+bb049f6a-d797-4999-97fe-549a3c092666,nearest,0.8955446973141398,0.0,0.8955446973141398,needs_review,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+06042b6b-4467-4c55-aecc-ab3c6fc787e0,nearest,0.8955446973141398,0.0,0.8955446973141398,needs_review,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+a96b385d-5f87-456d-8415-6c6d346eb46f,nearest,0.8955446973141398,0.0,0.8955446973141398,needs_review,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+c18bc44f-c0c4-40ab-99df-689df8217d0f,nearest,0.8955446973141398,0.0,0.8955446973141398,needs_review,,personal_or_beauty_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+8155d939-8bca-420c-8507-a10a8b8e0d85,nearest,0.8955446973141398,0.0,0.8955446973141398,needs_review,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+f7eaaed2-cce5-484a-9c17-3327a9f40dd7,nearest,0.8955446973141398,0.0,0.8955446973141398,needs_review,,home_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+ebd05b7b-6fdd-4029-8bca-592301ccd71a,nearest,0.8955446973141398,0.0,0.8955446973141398,needs_review,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+8c464351-8fdc-445c-a47b-f2dc66728462,nearest,0.8955446973141398,0.0,0.8955446973141398,needs_review,,technical_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+e8f7af4f-bd4f-4d37-bbc4-8af61f7aeb09,nearest,0.8955446973141398,0.0,0.8955446973141398,needs_review,,financial_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+d6d3e812-a706-45a9-bb1c-09f811b0294d,nearest,0.8954112360223317,0.0,0.8954112360223317,needs_review,,complementary_and_alternative_medicine,,b03f4c64-6e55-4e26-8e85-11b40becefe2
+ed579091-451c-44e1-973b-f857f2dd33d4,nearest,0.8951807660498132,0.0,0.8951807660498132,needs_review,,real_estate_service,,a632b160-01f2-4ace-885a-3ca62f79b8fd
+f45ffcaa-b4bc-4aea-b97a-616c0d24ebe7,nearest,0.8950485006760976,0.0,0.8950485006760976,needs_review,,restaurant,,b045bba2-8f24-47c0-b811-a4855fe2dbc7
+0386970a-c5bb-45e5-9af1-3f47d6dbeae6,nearest,0.8940706654201286,0.0,0.8940706654201286,needs_review,,bank_or_credit_union,,092c2ae2-3496-419e-baf7-2df0f0ce5b01
+7270a5a7-3581-48ba-8263-3a7b1ca12afd,nearest,0.8938229213969899,0.0,0.8938229213969899,needs_review,,cafe,,f1a95338-62db-420c-aa7d-415bd2346b72
+0bd51552-47f0-49ba-8a22-40fb17371da6,nearest,0.8936445982262915,0.0,0.8936445982262915,needs_review,,financial_service,,0cf7c965-abcd-4cf4-a239-ae53482c33d2
+d2d7d30d-568c-4ad8-a2a3-a312de16f604,nearest,0.8933354487399477,0.0,0.8933354487399477,needs_review,,complementary_and_alternative_medicine,,25cb7fa8-adf9-452e-bd36-26563be132ff
+9e5d7935-a6e2-46d9-b5e0-65261c425e22,nearest,0.8926253491313154,0.0,0.8926253491313154,needs_review,,specialized_health_care,,30b64469-b835-463b-99f9-be9654442788
+c0273163-008f-4139-b47d-e844c7de756e,nearest,0.8925041199085788,0.0,0.8925041199085788,needs_review,,corporate_or_business_office,,99a7504f-b210-48bf-b7e2-8c7af62291e2
+62b00b7f-b340-431d-a385-96999720b822,nearest,0.8921252434140244,0.0,0.8921252434140244,needs_review,,behavioral_or_mental_health_clinic,,b03f4c64-6e55-4e26-8e85-11b40becefe2
+6bf5574e-b390-493c-9969-3d938f26e428,nearest,0.8919693416119184,0.0,0.8919693416119184,needs_review,,restaurant,,11277e15-abde-4ebe-9932-1136995d0bcc
+1c68ed22-2d19-421b-8839-91dc9f36d9fa,nearest,0.8919693416119184,0.0,0.8919693416119184,needs_review,,restaurant,,11277e15-abde-4ebe-9932-1136995d0bcc
+89833650-2955-437e-9f38-3d7dc0633731,nearest,0.8919693416119184,0.0,0.8919693416119184,needs_review,,personal_or_beauty_service,,11277e15-abde-4ebe-9932-1136995d0bcc
+0b1ce5a4-0de6-4b8a-8af5-05012bc96e56,nearest,0.8919693416119184,0.0,0.8919693416119184,needs_review,,restaurant,,11277e15-abde-4ebe-9932-1136995d0bcc
+d0d783c0-70af-42dd-b3e6-87543107bcac,nearest,0.8917270801612209,0.0,0.8917270801612209,needs_review,,professional_service,,95b64492-0eb9-40ab-8e94-b998289fb906
+3d57ebca-1880-4627-a623-19224d3892a9,nearest,0.8909923829382591,0.0,0.8909923829382591,needs_review,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+59ac0261-9dc6-43fc-8e76-d851b4dfa31e,nearest,0.8907279699987476,0.0,0.8907279699987476,needs_review,,home_service,,11277e15-abde-4ebe-9932-1136995d0bcc
+d55514e5-9640-4ad2-8eea-3d5d9d708d6d,nearest,0.8907279699987476,0.0,0.8907279699987476,needs_review,,restaurant,,11277e15-abde-4ebe-9932-1136995d0bcc
+94eddbf0-05cf-4aee-a2f2-e622a0e36a0d,nearest,0.8905971670388388,0.0,0.8905971670388388,needs_review,"{'common': None, 'primary': 'Evans Scholars', 'rules': None}",social_or_community_service,,4e9d5b90-5014-4bf7-b9dc-c25454c71bde
+e8b7cef8-e572-4f97-a085-71bd81f3a3be,nearest,0.890174654527403,0.0,0.890174654527403,needs_review,,attorney_or_law_firm,,a3f8e922-5d89-4472-89f3-d09fca32fe05
+610a50c0-ac8d-48f0-b63c-67718fd7ce0f,nearest,0.890174654527403,0.0,0.890174654527403,needs_review,,professional_service,,a3f8e922-5d89-4472-89f3-d09fca32fe05
+e3e56965-2c26-43f9-aec7-77dec57a4ba0,nearest,0.890174654527403,0.0,0.890174654527403,needs_review,,attorney_or_law_firm,,a3f8e922-5d89-4472-89f3-d09fca32fe05
+127560ab-663b-4feb-9ced-22dfcba44a49,nearest,0.890174654527403,0.0,0.890174654527403,needs_review,,professional_service,,a3f8e922-5d89-4472-89f3-d09fca32fe05
+adf30b5c-9df2-49fa-9a7b-9004df349b0c,nearest,0.8892377040291759,0.0,0.8892377040291759,needs_review,,real_estate_service,,7fef8d65-84a3-4c02-a7a9-5d83db0ae3c4
+843545aa-d32f-4b7b-9ae9-f88ce2f02323,nearest,0.889232444108792,0.0,0.889232444108792,needs_review,"{'common': None, 'primary': 'Cox Corner', 'rules': None}",dental_clinic,,41af104e-e8d1-4471-a00e-14a77d35aefc
+0f11c5ee-e106-4dee-be83-008cd77d6e6f,nearest,0.8887345492148169,0.0,0.8887345492148169,needs_review,,food_and_beverage_store,,b03f4c64-6e55-4e26-8e85-11b40becefe2
+35389abb-be99-41d8-9f88-547225fd2fe3,nearest,0.8885330305926348,0.0,0.8885330305926348,needs_review,"{'common': None, 'primary': '11th & Walnut', 'rules': None}",design_service,,ba34aed9-5fff-4433-ac45-9f76873012f6
+566ba00b-3716-49a7-9325-168c72471ece,nearest,0.888518266631956,0.0,0.888518266631956,needs_review,,restaurant,,cb676a2a-a8b2-4550-a23a-61911ea03979
+3b9c40d3-1d0a-4414-85fc-4e165075a365,nearest,0.8883679352402192,0.0,0.8883679352402192,needs_review,,restaurant,,c226521d-74ff-4c1d-9108-a0a8be8080fe
+d86192ad-b8e0-4a48-9ed0-5dcccfe7c5ca,nearest,0.8880343403954271,0.0,0.8880343403954271,needs_review,,sporting_goods_store,,a1315fad-c9f4-4402-aabb-5b48074ac82f
+43c2dfe2-0e5b-4815-ac01-a66b390723f2,nearest,0.8865032489213983,0.0,0.8865032489213983,needs_review,,complementary_and_alternative_medicine,,582a8726-ea2f-4b68-84f0-7264e16856db
+48205360-7af5-4051-af12-c7a0e13f4fc5,nearest,0.8864800014262685,0.0,0.8864800014262685,needs_review,"{'common': None, 'primary': 'Mecha', 'rules': None}",fitness_studio,,6384a931-86f9-451b-93f8-ccaf79f40126
+0dcf189f-0b15-4175-990b-649a3bb3ac27,nearest,0.8862136506665629,0.0,0.8862136506665629,needs_review,,personal_or_beauty_service,,07290cc6-afd4-4f36-b2b1-b12f44975888
+87eb5440-86bc-449e-8f9a-cc5fefdcc23b,nearest,0.8859820091304708,0.0,0.8859820091304708,needs_review,,personal_or_beauty_service,,df2e93be-bd06-494c-8c04-986998303161
+05dd075d-f407-42b1-92f0-571c61567449,nearest,0.8856458629101178,0.0,0.8856458629101178,needs_review,,fashion_and_apparel_store,,bc52c1b9-b81b-43c5-b284-bff0cdd14419
+cd610261-4249-4096-b2c0-ec90b591b4da,nearest,0.8853471534209069,0.0,0.8853471534209069,needs_review,,behavioral_or_mental_health_clinic,,e0ba99cc-4a81-4c12-8e79-af04d6d215a3
+c5c77264-d3f7-47d9-a126-39b494f80734,nearest,0.8845886048653295,0.0,0.8845886048653295,needs_review,"{'common': None, 'primary': 'Unity Church', 'rules': None}",flowers_and_gifts_store,,af6a1693-dae4-4fe5-b616-96c26a5f7934
+39121697-afe4-44e4-9e79-b58209c7a2b3,nearest,0.8839915781485929,0.0,0.8839915781485929,needs_review,"{'common': None, 'primary': 'Downtown Boulder Station', 'rules': None}",real_estate_service,,aa55948c-594f-42f1-a552-008a0fab7f5c
+ecb38bc7-b405-458e-a4a6-3c15b0c63fcc,nearest,0.8839557342819989,0.0,0.8839557342819989,needs_review,,behavioral_or_mental_health_clinic,,a0b94c0a-0c12-4a06-8ba9-330259373f91
+f0194486-464b-45b4-aed1-04357217fd6f,nearest,0.8831592383613938,0.0,0.8831592383613938,needs_review,,behavioral_or_mental_health_clinic,,a9ea1b43-350f-4aef-955a-2f7f9679af95
+11d2c5bc-371e-4643-9f8c-ea6a2d1f18af,nearest,0.8824104897235563,0.0,0.8824104897235563,needs_review,,outpatient_care_facility,,2b379bcd-2b9c-414f-8280-d267c2dfe55b
+ce6fc131-55e3-4fde-9661-d2c73ff2ce18,nearest,0.882049631398171,0.0,0.882049631398171,needs_review,"{'common': None, 'primary': 'McGuckin Hardware', 'rules': None}",real_estate_service,,7df8065c-1fcc-4aa8-a874-1f7dfb38fcf3
+312c20c3-a3c6-4818-803b-5d7e97df3d51,nearest,0.8819431693677542,0.0,0.8819431693677542,needs_review,,casual_eatery,,67797069-8ea7-4f97-8280-4ab9392d1bdf
+07dc565d-fe8d-4075-bccd-932dcd500425,nearest,0.8815086258422652,0.0,0.8815086258422652,needs_review,"{'common': None, 'primary': 'The Farmstand', 'rules': None}",coffee_shop,,5fe6b475-7553-40be-b514-e9b7f95146ca
+12bbe923-b945-46c6-b992-deefac2626e5,nearest,0.8813059254469824,0.0,0.8813059254469824,needs_review,,fitness_studio,,b064b9de-e057-4219-a032-c13422e1a321
+bc684f5f-d161-4036-a2d0-8962fa573464,nearest,0.8812138294562333,0.0,0.8812138294562333,needs_review,,casual_eatery,,b7e0d738-62c6-4d03-8d61-284a4fb47ca6
+7e645a47-d3a9-4f5d-9a45-bdf83168a748,nearest,0.8809427871760808,0.0,0.8809427871760808,needs_review,,fashion_and_apparel_store,,df2e93be-bd06-494c-8c04-986998303161
+6037e1de-49df-4411-86e3-efd937a62ce1,nearest,0.8806905066591784,0.0,0.8806905066591784,needs_review,,flowers_and_gifts_store,,a8cc9f11-c980-46a5-9b84-c7c21c68ccb4
+0bc3f576-9949-49dc-ad3b-0baa6fb101b8,nearest,0.8803547608775553,0.0,0.8803547608775553,needs_review,,bar,,a1f7a19f-97d9-472f-a360-8719381746e6
+5e8cc26c-a4f1-40c4-adfb-83931f4c7e46,nearest,0.8800049474403647,0.0,0.8800049474403647,needs_review,"{'common': None, 'primary': 'Flatirons Theater', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'Flatirons Theater', 'variant': 'alternate'}],
+      dtype=object)}",food_and_beverage_store,,e91e750a-dfad-4b3d-88c8-2e93ad599b67
+94fef194-a442-4806-93cf-b577979385c3,nearest,0.8795928154567487,0.0,0.8795928154567487,needs_review,,fashion_and_apparel_store,,c59f7234-3dc9-4819-823c-ee6ac5c09761
+7590f733-a784-4382-a7f3-00bd03f85f36,nearest,0.8787422217759091,0.0,0.8787422217759091,needs_review,,home_service,,e60811b5-cc6b-42a3-81e4-2dbe11e02928
+134f727e-102d-46a3-b2d4-a5317fcd3923,nearest,0.8784549966823341,0.0,0.8784549966823341,needs_review,,restaurant,,b03f4c64-6e55-4e26-8e85-11b40becefe2
+45dc9781-a31a-4c3d-9058-844c8bbc8833,nearest,0.8783711871254717,0.0,0.8783711871254717,needs_review,"{'common': None, 'primary': 'McGuckin Hardware', 'rules': None}",technical_service,,7df8065c-1fcc-4aa8-a874-1f7dfb38fcf3
+5e72487d-9637-47c1-9ff6-92c6bd665c48,nearest,0.8782695039810698,0.0,0.8782695039810698,needs_review,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+6d5deacb-f06a-470c-98ca-8fea4fbff321,nearest,0.8768968869617491,0.0,0.8768968869617491,needs_review,,design_service,,45f0d5f3-65c1-4b40-ad42-16e153dce28b
+b9034662-c0e2-400f-8b0f-f6d34024b563,nearest,0.8765791127137007,0.0,0.8765791127137007,needs_review,,restaurant,,ebcc7be6-0dfc-4a10-9aea-9f92088424fd
+fe19a912-6f65-4a01-a32d-40f73060b628,nearest,0.8763795908243164,0.0,0.8763795908243164,needs_review,,restaurant,,b045bba2-8f24-47c0-b811-a4855fe2dbc7
+32a1f33c-933a-4446-94f1-3915d039bc6c,nearest,0.8762921603411044,0.0,0.8762921603411044,needs_review,,complementary_and_alternative_medicine,,0e43f10f-1aec-486a-a5ca-a8d8ed780a26
+7c73a7b0-6e15-46a4-9c3e-660e16dc6f10,nearest,0.8760299079349574,0.0,0.8760299079349574,needs_review,,personal_or_beauty_service,,34349e71-5ebd-40fd-8c1f-e9c7cf229a8d
+9a9bae6d-bb88-498c-bc40-5284b6ef6b1a,nearest,0.8758484631465925,0.0,0.8758484631465925,needs_review,"{'common': None, 'primary': 'Yamashiro Orthodontics', 'rules': None}",dental_clinic,,09a5207c-0484-4da5-b073-56fd0196a4cd
+9288a1a5-9e55-4ecb-9604-c4549aee6204,nearest,0.8754275426042819,0.0,0.8754275426042819,needs_review,,complementary_and_alternative_medicine,,b03f4c64-6e55-4e26-8e85-11b40becefe2
+432a1166-b966-4451-9fb4-5014b540b07b,nearest,0.8749234276731683,0.0,0.8749234276731683,needs_review,,complementary_and_alternative_medicine,,5a05d28a-6f1d-4fb1-844e-e168187f1634
+d310326f-68c2-4944-998f-09fd3f3a19e3,nearest,0.8747343954634266,0.0,0.8747343954634266,needs_review,,attorney_or_law_firm,,35858da5-8d22-469e-8911-142e9b5d3e1f
+540c740f-ad1a-4de9-96a4-840037fa28c6,nearest,0.8728425697363666,0.0,0.8728425697363666,needs_review,,coffee_shop,,87867130-e50d-4687-95d4-4670a8648d9d
+5652e666-81bd-4c29-8edc-48b0fb025efe,nearest,0.8725927062817804,0.0,0.8725927062817804,needs_review,,personal_or_beauty_service,,f9646459-ebac-47a4-b4cd-8064e4110570
+dcbf93d8-08bd-43e5-8db9-35e9656719e1,nearest,0.8721099584212119,0.0,0.8721099584212119,needs_review,,real_estate_service,,7fef8d65-84a3-4c02-a7a9-5d83db0ae3c4
+bd571165-9001-4f89-a963-2a9f2e89d8c1,nearest,0.8715981456898099,0.0,0.8715981456898099,needs_review,,casual_eatery,,d1c10e71-06fe-43dc-ad87-04bb191711ca
+e17a005d-ea7b-4e06-91a8-78ab064dc24f,nearest,0.871502790201875,0.0,0.871502790201875,needs_review,,financial_service,,cd7d7cba-97dd-4bfb-86b9-28f0e95b0107
+a716bff7-9391-41e1-bdd7-d4cc144e747d,nearest,0.8705419245781555,0.0,0.8705419245781555,needs_review,,complementary_and_alternative_medicine,,05f16e55-22cf-4e80-bdfa-b131a6b6c44a
+44363351-741f-48e6-bae7-9bb5df7507a1,nearest,0.8703239351863215,0.0,0.8703239351863215,needs_review,"{'common': None, 'primary': 'Boulder Marriott', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'Boulder Marriott', 'variant': 'alternate'}],
+      dtype=object)}",personal_or_beauty_service,,e40ea9dd-9f6c-4fb6-a814-a283d4cc1d05
+eda764ad-65e9-45d6-bae9-4edb4868a984,nearest,0.8696678469210113,0.0,0.8696678469210113,needs_review,"{'common': None, 'primary': 'Harbeck-Bergheim House', 'rules': None}",social_or_community_service,,979ca0c8-7d0a-4ab6-b58c-99efff8d2454
+b3674f6a-d058-4750-a3da-d893bf7ed845,nearest,0.8695005882729564,0.0,0.8695005882729564,needs_review,,personal_or_beauty_service,,9bd3f3ed-c4fa-4aa0-8692-5cd297955459
+29d9fa65-15c3-444c-950b-6ffe80b49342,nearest,0.868949417718054,0.0,0.868949417718054,needs_review,,home_service,,25cb7fa8-adf9-452e-bd36-26563be132ff
+59d52c9c-a43d-4924-aa2b-2441a7fb7b0e,nearest,0.8688709568708481,0.0,0.8688709568708481,needs_review,,restaurant,,3487b4e5-a148-4e9f-8994-c4977cb364fe
+d209c0e2-d47e-4ebf-b520-43fd6f3dccd2,nearest,0.8681106473970361,0.0,0.8681106473970361,needs_review,,restaurant,,2c5ad161-b881-4998-8a4c-cfecd3d4dc25
+c7501317-bcaf-4a34-903f-b0c221775335,nearest,0.8681001929169618,0.0,0.8681001929169618,needs_review,"{'common': None, 'primary': 'Boulder Community Hospital', 'rules': None}",outpatient_care_facility,,cc97253f-7a3c-4bfb-abbc-10c7420886ea
+11e4259a-a529-4b04-afad-bedc0a1fc776,nearest,0.8680616560424835,0.0,0.8680616560424835,needs_review,,home_service,,466e653f-f300-4023-bd92-f155c1ff4292
+c48fe199-bca4-4fb8-b2ea-dab3c3b7470a,nearest,0.8674734390301637,0.0,0.8674734390301637,needs_review,,restaurant,,a8dc7d42-c7f1-46c2-930b-9bfd6dfc065b
+fdd836e3-fc36-49a4-97dd-8ee419d55f34,nearest,0.8650821565006553,0.0,0.8650821565006553,needs_review,,attorney_or_law_firm,,3736e021-3abf-4a34-b51e-401434ebc8ed
+9cc1003c-11dc-437a-bae6-3c36e68726c7,nearest,0.8650667706136196,0.0,0.8650667706136196,needs_review,,restaurant,,b6ed0fe3-7216-47a7-b7b2-3b36dbc1dc69
+22f09b5b-f03b-4d15-a057-f99b0aa148b5,nearest,0.864503042068647,0.0,0.864503042068647,needs_review,,professional_service,,9e350c93-41e6-4082-a762-dec2f8582956
+28b13055-9257-4868-804f-09021981974e,nearest,0.86438243374298,0.0,0.86438243374298,needs_review,"{'common': None, 'primary': 'Sewall Hall', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'SWLL', 'variant': 'short'}],
+      dtype=object)}",college_university,,590ec315-d2e9-4825-a5c8-b0ec33ca0126
+7fb86abb-a1cb-4297-a21e-821c0354e019,nearest,0.86437017569074,0.0,0.86437017569074,needs_review,"{'common': None, 'primary': 'Downtown Boulder Information', 'rules': None}",government_office,,59de038f-1d93-4498-87ba-5084b9dea2bb
+72e2443a-eed6-4438-8b14-4dff7c5facf2,nearest,0.8642207708939867,0.0,0.8642207708939867,needs_review,,restaurant,,d1c10e71-06fe-43dc-ad87-04bb191711ca
+fcf8b1e2-a718-4047-89a6-6130d0fe3098,nearest,0.8634523743311975,0.0,0.8634523743311975,needs_review,,restaurant,,b7e0d738-62c6-4d03-8d61-284a4fb47ca6
+37aefb41-193d-45ef-b98f-fd224645b31b,nearest,0.8631476287213062,0.0,0.8631476287213062,needs_review,,technical_service,,b403e323-1ec4-4a43-8e18-e310f58bbeb0
+f145ea2c-d2e6-495f-b377-6eb382d0200a,nearest,0.8630305743260003,0.0,0.8630305743260003,needs_review,,college_university,,938ab22f-c9d2-4655-95d4-0bb1605acfa2
+b01ca1c9-4a3c-4212-865f-8d8bad1cbf6b,nearest,0.8627801377290512,0.0,0.8627801377290512,needs_review,,behavioral_or_mental_health_clinic,,b403e323-1ec4-4a43-8e18-e310f58bbeb0
+decd4178-e467-47cd-a0d4-01fa83a9c21e,nearest,0.8626836804436606,0.0,0.8626836804436606,needs_review,,restaurant,,162ec042-dcd0-4ab5-9f95-01cba22390a5
+b0cffc18-5790-4841-a25f-f25cd4a8c79c,nearest,0.8623951914593563,0.0,0.8623951914593563,needs_review,,home_service,,df061e0c-4261-48ac-818a-e44c73858227
+0e580f91-ad60-4b38-97ce-3dad6d1c8bf7,nearest,0.8622824915291837,0.0,0.8622824915291837,needs_review,,restaurant,,a72e0699-a295-447a-9027-bc9de5967e75
+cc35a1af-c30b-45ec-873a-f91fc700a8a7,nearest,0.8622416914018715,0.0,0.8622416914018715,needs_review,,personal_or_beauty_service,,076d7af6-e2f1-4d4a-a376-acde983186ce
+41679101-2dbd-4db5-b0aa-bccd7014c2f5,nearest,0.8621871840001116,0.0,0.8621871840001116,needs_review,,art_gallery,,ce6cf299-1796-4cb7-82a6-5d2dface3d38
+22393f66-a3c5-4c18-9c37-838130246fec,nearest,0.8621669260999778,0.0,0.8621669260999778,needs_review,,fashion_and_apparel_store,,092c2ae2-3496-419e-baf7-2df0f0ce5b01
+73aad198-2958-48bc-a4d9-90450d9bfa65,nearest,0.8621225041061036,0.0,0.8621225041061036,needs_review,,home_service,,be1c0aaf-3b66-484e-bed1-b644789d844e
+ed93004d-34bf-44c9-9c38-9dc534a7df6a,nearest,0.8616395513290843,0.0,0.8616395513290843,needs_review,"{'common': None, 'primary': 'St Julien Hotel & Spa', 'rules': None}",restaurant,,145a4637-9496-483d-aedf-2534caa1302f
+f048f353-501e-42d2-aa1e-63111222fb01,nearest,0.8607727641809362,0.0,0.8607727641809362,needs_review,,social_or_community_service,,a45bfbe4-2efc-4852-925d-1a88fcfc940e
+cccbc627-e268-4619-972a-b140f72fd666,nearest,0.8598621901901856,0.0,0.8598621901901856,needs_review,,coffee_shop,,465fa66c-83db-45e7-be3d-4194d04f1198
+dd78d796-9928-417c-8580-b28d1312d810,nearest,0.8593043993417281,0.0,0.8593043993417281,needs_review,,home_service,,99a7504f-b210-48bf-b7e2-8c7af62291e2
+22a49fe9-3006-427b-a518-c50a7b1837a3,nearest,0.8591260894427962,0.0,0.8591260894427962,needs_review,,behavioral_or_mental_health_clinic,,8ec9fbee-7a7b-4c21-acbf-3f4cb579774d
+f7f7293b-422a-416d-b618-46c8468ad871,nearest,0.8588936262852442,0.0,0.8588936262852442,needs_review,,bar,,4a015a32-d2c7-4c0d-9367-25a314e71c4a
+0cc6754b-a348-457c-9b22-d5a85c2d6f31,nearest,0.8578375629536585,0.0,0.8578375629536585,needs_review,"{'common': None, 'primary': 'Rollnick Building', 'rules': None}",dental_clinic,,6c0aa798-286b-4cce-b783-dd8f5fc9971e
+5220b4da-ea72-4f4f-afae-7faa910a01ea,nearest,0.8578257903213677,0.0,0.8578257903213677,needs_review,,personal_or_beauty_service,,8693000c-1eb6-4ea8-87d6-665cba915142
+8641df4d-96c9-4b8f-a477-41edafb47bed,nearest,0.8563866221145195,0.0,0.8563866221145195,needs_review,,wellness_service,,82146120-e55d-4548-a95c-a53c75aec19f
+35df6f82-9031-4142-8750-4e9e955d2355,nearest,0.855897635848547,0.0,0.855897635848547,needs_review,,complementary_and_alternative_medicine,,e0ba99cc-4a81-4c12-8e79-af04d6d215a3
+7371b250-c5d3-455d-b27f-0e01331a045e,nearest,0.8546086248425633,0.0,0.8546086248425633,needs_review,,professional_service,,092c2ae2-3496-419e-baf7-2df0f0ce5b01
+dc88df87-81d7-43d2-b4eb-8d5165e8bcbc,nearest,0.8544810705008146,0.0,0.8544810705008146,needs_review,,dental_clinic,,06e76d2b-1730-4e85-b27b-efc244d5c788
+eb343343-aeee-4472-a980-9cbef79f113a,nearest,0.8541645387583301,0.0,0.8541645387583301,needs_review,,fast_food_restaurant,,1ca28b6a-458c-4cca-bf27-6236a8dc009e
+d384b77a-88c9-420b-ab00-939b4eb9d416,nearest,0.8540574604641251,0.0,0.8540574604641251,needs_review,,personal_or_beauty_service,,e7b91934-ad78-47e3-ae5b-aa38de580c62
+a3942770-1897-46af-809c-ba2d4ec19c15,nearest,0.853618606986031,0.0,0.853618606986031,needs_review,,complementary_and_alternative_medicine,,076d7af6-e2f1-4d4a-a376-acde983186ce
+171afe60-220b-4713-8103-ad40c2fc83ca,nearest,0.8532767640255177,0.0,0.8532767640255177,needs_review,,casual_eatery,,3d99033b-f919-40d1-be3c-49b0f6817151
+bb732db7-de2b-4765-8913-9a2e514193bd,nearest,0.8528862715953713,0.0,0.8528862715953713,needs_review,,wellness_service,,b03f4c64-6e55-4e26-8e85-11b40becefe2
+2944cc1e-a3a7-4883-b409-180ae505992a,nearest,0.8528615705802218,0.0,0.8528615705802218,needs_review,,home_service,,53af0a1c-cecb-4e58-abe2-fb56f9c1b1d7
+0b5f5fe7-537a-451f-863d-0e3378ff7118,nearest,0.8520575396804635,0.0,0.8520575396804635,needs_review,,personal_or_beauty_service,,25cb7fa8-adf9-452e-bd36-26563be132ff
+cf1761ee-430f-4803-a44b-bd925c517eac,nearest,0.8509863323572063,0.0,0.8509863323572063,needs_review,,restaurant,,333be737-29b6-41bd-a7ab-e7105dc7dab3
+4502959e-8237-465d-a74f-73f3e6ca8870,nearest,0.8508519621711694,0.0,0.8508519621711694,needs_review,,fashion_and_apparel_store,,c59f7234-3dc9-4819-823c-ee6ac5c09761
+8661baa9-7002-4293-b5a8-40ebbbcd22e9,nearest,0.8507615565173954,0.0,0.8507615565173954,needs_review,,restaurant,,67d160f0-bf81-43cb-8226-662a6e7a7808
+10b5dc64-3b3e-48a7-b60a-92b65cdb3928,nearest,0.8500142597810975,0.0,0.8500142597810975,needs_review,,behavioral_or_mental_health_clinic,,a45bfbe4-2efc-4852-925d-1a88fcfc940e
+4f14265d-a714-43df-9347-7c1d34cec9a8,nearest,0.8498275772652584,0.0,0.8498275772652584,needs_review,,flowers_and_gifts_store,,d9c80490-b056-4c50-8861-bd341e2e71c7
+eed5706e-34da-49f2-bb9b-1cb6fa1eab78,nearest,0.8497413741835298,0.0,0.8497413741835298,needs_review,,casual_eatery,,9bd3f3ed-c4fa-4aa0-8692-5cd297955459
+cd3196ba-2b43-4372-9034-d985e566d2ae,nearest,0.848743436467888,0.0,0.848743436467888,needs_review,"{'common': None, 'primary': 'Cox Corner', 'rules': None}",dental_clinic,,41af104e-e8d1-4471-a00e-14a77d35aefc
+1644083f-924d-464d-92d4-a35d19c077ad,nearest,0.8486385214162806,0.0,0.8486385214162806,needs_review,,casual_eatery,,711275e1-7db7-446a-8040-3fec5230b1e3
+576dfb59-4d65-423e-a5e7-473cff51ef37,nearest,0.8485949512215436,0.0,0.8485949512215436,needs_review,,casual_eatery,,b045bba2-8f24-47c0-b811-a4855fe2dbc7
+9c079d31-46c0-4ecd-b80f-f56aa11f2a61,nearest,0.8483608597793262,0.0,0.8483608597793262,needs_review,,wellness_service,,a9472c71-023a-4ac5-8f03-1340c8aa8bdf
+c0b574d0-a17a-45ba-95d6-5714f012c882,nearest,0.8482000301548202,0.0,0.8482000301548202,needs_review,,complementary_and_alternative_medicine,,e68e3c02-a456-4eff-9223-58185df0629d
+9174dc7c-1981-4c19-832c-548dd0e18d28,nearest,0.8478022935030012,0.0,0.8478022935030012,needs_review,,specialized_health_care,,0f43659b-2ae3-4d07-9b15-419c2a9479ba
+3d016a7a-dfce-4bdf-a4af-9a26508e39e7,nearest,0.8470938582563252,0.0,0.8470938582563252,needs_review,,attorney_or_law_firm,,07290cc6-afd4-4f36-b2b1-b12f44975888
+3f80906e-6458-4ca0-a0e5-3ea2ecbf1ee9,nearest,0.8459213843600039,0.0,0.8459213843600039,needs_review,,behavioral_or_mental_health_clinic,,a0b94c0a-0c12-4a06-8ba9-330259373f91
+d9777a1d-017a-48e4-9aeb-4e167274b5aa,nearest,0.8457382030264873,0.0,0.8457382030264873,needs_review,,bar,,4a015a32-d2c7-4c0d-9367-25a314e71c4a
+ee7ee5e1-5612-4e43-9739-cb5db1a6a20c,nearest,0.8454568060020564,0.0,0.8454568060020564,needs_review,,professional_service,,333be737-29b6-41bd-a7ab-e7105dc7dab3
+0e29e989-218a-467a-bdc3-3ee93b4ce058,nearest,0.844839741822659,0.0,0.844839741822659,needs_review,"{'common': None, 'primary': 'Muenzinger Psychology', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'MUEN', 'variant': 'short'}],
+      dtype=object)}",event_venue,,5037fb67-beca-4f8c-baed-b6413a718779
+5e05802f-2efa-49a7-96c3-c367418d6ee1,nearest,0.8442467315372872,0.0,0.8442467315372872,needs_review,,restaurant,,a3f8e922-5d89-4472-89f3-d09fca32fe05
+cf97a586-0ca3-4f85-a819-f1f8cbaec098,nearest,0.8430242516415163,0.0,0.8430242516415163,needs_review,,restaurant,,67eea4b6-aaec-4f33-bbdf-7128f35a4c7a
+aa7b68fc-02d5-43fc-8fc2-9b42d3d0477d,nearest,0.8427991585212712,0.0,0.8427991585212712,needs_review,,home_service,,6bf9d300-d51d-428d-b923-519fc0f90351
+77760a03-4c38-46f2-a031-08f891ede885,nearest,0.8419295574377376,0.0,0.8419295574377376,needs_review,,restaurant,,0cfd8a16-1c35-4c34-a100-9201483b2cee
+970b33fd-f50d-421f-8937-8d34f37d4ee1,nearest,0.8416126621388763,0.0,0.8416126621388763,needs_review,,fashion_and_apparel_store,,c8f12868-e6bd-4ff0-88f6-08fc36c8cbd6
+4bd1bc31-9e43-49ee-9303-ee4ff48b29c5,nearest,0.8413400680286367,0.0,0.8413400680286367,needs_review,,media_service,,b7e0d738-62c6-4d03-8d61-284a4fb47ca6
+6610e954-cfbf-43da-9bca-7dd3e1167bd0,nearest,0.8411593974172686,0.0,0.8411593974172686,needs_review,,fashion_and_apparel_store,,afc1e1eb-fb64-4da5-8545-554cdab02b5e
+97cc5c0f-47ff-4644-9987-b8fa6bfafdea,nearest,0.8409194062742448,0.0,0.8409194062742448,needs_review,"{'common': None, 'primary': 'McKenna Languages', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'MKNA', 'variant': 'short'}],
+      dtype=object)}",college_university,,8b6a8ca6-354c-4899-871b-d77a9511646e
+bb2efb2f-2c82-45c8-86c3-39b5c53ee4f9,nearest,0.840590641582199,0.0,0.840590641582199,needs_review,,cafe,,87322f55-be84-4bf4-8582-17d979622abf
+06be1b1f-a9a0-4b97-8ded-af1dfc7a0df0,nearest,0.8403713191745981,0.0,0.8403713191745981,needs_review,,personal_or_beauty_service,,e4d316bb-2976-4b38-aa7d-1b83b65d8962
+296a1633-a722-4fed-bcb6-f1df7f6e6773,nearest,0.8403713191745981,0.0,0.8403713191745981,needs_review,,fitness_studio,,e4d316bb-2976-4b38-aa7d-1b83b65d8962
+00f85052-f675-472d-a1db-960ce2995e7d,nearest,0.8401791077391526,0.0,0.8401791077391526,needs_review,"{'common': None, 'primary': 'Gelato Boy', 'rules': None}",sporting_goods_store,,f910024b-e0f8-4886-b0ed-c57b5022d29d
+e5eb8cf3-6b02-4e96-9b9e-dd4d1cc32955,nearest,0.8399123897529632,0.0,0.8399123897529632,needs_review,"{'common': None, 'primary': 'Bohemian Biergarten', 'rules': None}",casual_eatery,,24e847b1-2aa8-4e5e-8bcc-523b188e7a68
+a05502ec-b703-47b7-b147-6067f24fb6fd,nearest,0.839675884843112,0.0,0.839675884843112,needs_review,,restaurant,,ae74b8e7-da95-4fa0-826d-afc334f8588e
+6eee3a81-3ed1-4133-9601-488307946be3,nearest,0.8392908826341574,0.0,0.8392908826341574,needs_review,,attorney_or_law_firm,,35338088-d5cd-4808-a850-949b3e61338d
+2659b38d-bf1b-4096-8f97-007963f4218a,nearest,0.8391034372088819,0.0,0.8391034372088819,needs_review,,social_or_community_service,,b863f77f-bea1-429a-b68e-ba4625991003
+a2ae7a72-23d2-4703-83d4-e6284f6f0c2d,nearest,0.8378435145865297,0.0,0.8378435145865297,needs_review,"{'common': None, 'primary': 'Environmental Health and Safety Center', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'EHSC', 'variant': 'short'}],
+      dtype=object)}",college_university,,494e1902-441a-4026-be1f-75a957b6eeb8
+113e2e39-7dcd-4259-b830-43e538b2adf7,nearest,0.837376132004533,0.0,0.837376132004533,needs_review,"{'common': None, 'primary': ""Guiry's"", 'rules': None}",hardware_home_and_garden_store,,7d66bc80-c453-4db5-8104-0137716cc4eb
+b31b52b3-7ca0-4ba2-ada7-9f0c3b52327f,nearest,0.837324094994369,0.0,0.837324094994369,needs_review,,social_or_community_service,,dbbf1d18-2bd1-4469-ad2b-fe7ad24edd62
+450e0955-e2cd-491c-ba21-af17a36dfb59,nearest,0.836193197943833,0.0,0.836193197943833,needs_review,,cafe,,a3f8e922-5d89-4472-89f3-d09fca32fe05
+10823b33-eeca-4b36-9b0d-5c00284c0031,nearest,0.8361310718477107,0.0,0.8361310718477107,needs_review,,personal_or_beauty_service,,a6199265-7513-48d2-a89b-a4e7ecf39985
+4167f978-46f7-4683-ac8f-12a975a65617,nearest,0.8361038095233071,0.0,0.8361038095233071,needs_review,,home_service,,9260e084-141b-4206-8952-c7e0830e989f
+2333ad8b-a340-43cb-81b4-b0ca538dd629,nearest,0.8343529753891656,0.0,0.8343529753891656,needs_review,"{'common': None, 'primary': 'Muenzinger Psychology', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'MUEN', 'variant': 'short'}],
+      dtype=object)}",movie_theater,,5037fb67-beca-4f8c-baed-b6413a718779
+66d1ce6a-4917-4053-915a-82a0d6fc1c29,nearest,0.8343161282978744,0.0,0.8343161282978744,needs_review,,coffee_shop,,35084252-373f-40cb-b70d-b1efbbda4271
+c24bcd64-083d-4811-a1eb-a886dc60cb5f,nearest,0.8335857397849172,0.0,0.8335857397849172,needs_review,,fashion_and_apparel_store,,333be737-29b6-41bd-a7ab-e7105dc7dab3
+7ff538dc-ca56-4fb8-a0f1-c58428f07d45,nearest,0.8331757335332106,0.0,0.8331757335332106,needs_review,"{'common': None, 'primary': 'University Memorial Center', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'UMC', 'variant': 'short'}],
+      dtype=object)}",college_university,,283c1f49-37f1-4585-a216-d58e6ec2a0d2
+81337bf8-d4b9-40fd-82e3-bbd677c71318,nearest,0.8330713804160974,0.0,0.8330713804160974,needs_review,,real_estate_service,,9aa12952-4644-496a-80bb-9cc09ee41a47
+6c00b92a-3594-41bd-8ec1-c06f782dd32e,nearest,0.8313459601801378,0.0,0.8313459601801378,needs_review,,financial_service,,fbff7a60-b4ac-4348-8dab-812a4f2bf63f
+9b406b9b-9225-4649-88cd-950162b6f413,nearest,0.8299773665231701,0.0,0.8299773665231701,needs_review,,restaurant,,4a015a32-d2c7-4c0d-9367-25a314e71c4a
+4dffc34f-ae27-4ea3-b96f-0e0838927b11,nearest,0.8297789041237351,0.0,0.8297789041237351,needs_review,,corporate_or_business_office,,daba4a38-5e11-48f0-b234-5d64756aa31f
+44cd74ec-711e-4d96-a8bf-b9ddca4d7291,nearest,0.8296817640383094,0.0,0.8296817640383094,needs_review,,sporting_goods_store,,cd80a38c-fe83-40e1-a008-056878a517a2
+10df3260-ca7a-4daf-b868-a76b897ec615,nearest,0.8291381992930069,0.0,0.8291381992930069,needs_review,,restaurant,,465fa66c-83db-45e7-be3d-4194d04f1198
+6024a766-14da-4b5e-9213-e88deaf52772,nearest,0.8288365438814838,0.0,0.8288365438814838,needs_review,,attorney_or_law_firm,,3736e021-3abf-4a34-b51e-401434ebc8ed
+88c79840-f285-4724-b96d-915f770826f8,nearest,0.8287678661791974,0.0,0.8287678661791974,needs_review,,attorney_or_law_firm,,3736e021-3abf-4a34-b51e-401434ebc8ed
+544e5106-b66d-470c-a4a7-8eaf58a401d3,nearest,0.828597662507602,0.0,0.828597662507602,needs_review,,complementary_and_alternative_medicine,,e6024589-fc2f-4e09-ae90-3b6c5035c312
+e9ad7861-df29-4709-a30f-5bef08408e4d,nearest,0.8280447710664065,0.0,0.8280447710664065,needs_review,,fashion_and_apparel_store,,f3af002c-6c1c-471b-8f7c-07784e7c5a94
+42da9ae2-20bb-40cf-bb00-658e0f8139e5,nearest,0.8280098173485579,0.0,0.8280098173485579,needs_review,"{'common': None, 'primary': 'The Post Brewing Co.', 'rules': None}",restaurant,,816c76e7-521e-415e-9acd-16ce6d7e91e5
+12999796-dc6e-4dd6-a901-f497e747b156,nearest,0.8273488232666614,0.0,0.8273488232666614,needs_review,"{'common': None, 'primary': 'Cox Corner', 'rules': None}",complementary_and_alternative_medicine,,41af104e-e8d1-4471-a00e-14a77d35aefc
+c3f3035c-1bb7-4c86-8e15-737b1c4a0037,nearest,0.8257579253791039,0.0,0.8257579253791039,needs_review,,casual_eatery,,be1c0aaf-3b66-484e-bed1-b644789d844e
+749cd2fb-09bc-48c4-b3bf-889785929192,nearest,0.8256696177405339,0.0,0.8256696177405339,needs_review,"{'common': None, 'primary': 'Ryan Wellness Center', 'rules': None}",complementary_and_alternative_medicine,,04846946-d315-45bc-8dad-ed0ff4e8e6c3
+ff5c1efb-ad0d-4d1a-8afc-4fa7a3ec2f63,nearest,0.8242257377838319,0.0,0.8242257377838319,needs_review,,home_service,,dd272e23-5a79-4fa3-a47b-dd88d97b6c14
+ade028ca-2e4e-46fb-95f9-0927ef89343f,nearest,0.8232493710783007,0.0,0.8232493710783007,needs_review,,complementary_and_alternative_medicine,,7a90da62-a7fe-436f-ae7d-9cdd8d93a87c
+81008ce3-d8ee-4224-8b35-2cffae56a391,nearest,0.822021618949369,0.0,0.822021618949369,needs_review,,professional_service,,7d5beac1-7c53-4ae3-83e9-982aa270f886
+f11f7de6-3818-479d-a7fd-0e41a8f92c6d,nearest,0.8213676978413127,0.0,0.8213676978413127,needs_review,,design_service,,ce6cf299-1796-4cb7-82a6-5d2dface3d38
+6ca489d5-87a0-48d1-b935-448d11a4be68,nearest,0.8208292506527082,0.0,0.8208292506527082,needs_review,,complementary_and_alternative_medicine,,7c724ede-a94d-45d0-b511-50f29d18fe89
+fc23c0f2-ed2b-4cb3-89d8-18e9645b24cc,nearest,0.8206414225836637,0.0,0.8206414225836637,needs_review,,attorney_or_law_firm,,04e6b6d5-66be-4120-837c-0b0d4f9d4f76
+91d55b99-c7c0-47d6-8ad2-93ec27b30d50,nearest,0.8202582136957826,0.0,0.8202582136957826,needs_review,,wellness_service,,49220068-c9b4-4365-a734-57585674d58c
+186b76ef-152f-4521-912c-63120472ba17,nearest,0.8199540842388103,0.0,0.8199540842388103,needs_review,,sporting_goods_store,,56983a84-fcd2-49f1-9036-ca38d3b0fce1
+d58852f7-a9ec-4679-8791-619a69740bfa,nearest,0.8190368994469518,0.0,0.8190368994469518,needs_review,,real_estate_service,,4961fa1a-af5b-498f-b07e-2a034465817f
+1f574ded-3aca-423b-aef9-2770b86aad89,nearest,0.8190194028268376,0.0,0.8190194028268376,needs_review,,restaurant,,2f6fcc8c-6d40-482c-985b-1d646f1e606a
+6e732e35-f333-48d1-99c3-55dd62688805,nearest,0.818236619326798,0.0,0.818236619326798,needs_review,"{'common': None, 'primary': 'Ryan Wellness Center', 'rules': None}",hospital,,04846946-d315-45bc-8dad-ed0ff4e8e6c3
+72441527-3143-413a-9e98-c51f76a9a0d4,nearest,0.8173214937622708,0.0,0.8173214937622708,needs_review,,fitness_studio,,9c4d81ee-abb2-4d98-8997-13b65089a0ca
+ece396ad-931b-433a-91a0-680581dec76e,nearest,0.817309219365527,0.0,0.817309219365527,needs_review,,fashion_and_apparel_store,,f9646459-ebac-47a4-b4cd-8064e4110570
+95490b76-321e-491c-8288-18dc2ec661ff,nearest,0.815629432789045,0.0,0.815629432789045,needs_review,,fashion_and_apparel_store,,2cc16a91-b185-4689-a4a6-51f8bb34f08d
+45bbbd10-52d2-4243-bf38-14b7a0c29502,nearest,0.8155803730871385,0.0,0.8155803730871385,needs_review,"{'common': None, 'primary': 'Mathematics', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'MATH', 'variant': 'short'}],
+      dtype=object)}",library,,e6602ecf-2487-4169-9bdd-3817cda6fcb2
+766ce3ba-9e19-4cdc-9ac5-6c995543b0ab,nearest,0.8137218585970648,0.0,0.8137218585970648,needs_review,,real_estate_service,,e4d316bb-2976-4b38-aa7d-1b83b65d8962
+39c158c8-a0de-4b37-be09-d591cfc8169e,nearest,0.8127846019727698,0.0,0.8127846019727698,needs_review,,home_service,,55cf2028-bee1-45fa-a205-08adc3aa8d6c
+6efc301e-7589-4d89-b77a-52a82f90ef5a,nearest,0.8121541570997304,0.0,0.8121541570997304,needs_review,"{'common': None, 'primary': 'Hellems Arts and Sciences', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'HLMS', 'variant': 'short'}],
+      dtype=object)}",college_university,,4ee168d1-1c61-4434-8cd1-f2c7fad647b3
+cc9de997-411c-463c-9659-5b40203f6ac8,nearest,0.8114697780014861,0.0,0.8114697780014861,needs_review,,casual_eatery,,7575e6f4-c0d9-48cd-9735-67f1005fe1ba
+7636d99c-89df-4ed6-85c8-d58276008f96,nearest,0.8106881414635231,0.0,0.8106881414635231,needs_review,"{'common': None, 'primary': 'Boulder Marriott', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'Boulder Marriott', 'variant': 'alternate'}],
+      dtype=object)}",restaurant,,e40ea9dd-9f6c-4fb6-a814-a283d4cc1d05
+ff07a5ce-6f8b-447a-8033-6126efa70cb8,nearest,0.8102792912373115,0.0,0.8102792912373115,needs_review,,professional_service,,994f228d-9e91-487a-b9f4-8a93b4aa1d0c
+d6b35ff9-9998-4585-983d-0f025dc4a7ad,nearest,0.8093199478856185,0.0,0.8093199478856185,needs_review,,professional_service,,bddbe1f2-d509-4783-8592-e7878320a0b5
+0433b147-a896-4daf-861b-a0e9db9020a3,nearest,0.8082590727421264,0.0,0.8082590727421264,needs_review,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+42e39938-b034-4237-bc14-eaed1d6df9e3,nearest,0.8060387541621388,0.0,0.8060387541621388,needs_review,,bank_or_credit_union,,fa2f0590-3acb-4237-beba-e749faecf24a
+bef9c5b3-9a6e-4191-bfba-db26463fe6e4,nearest,0.8056031200505124,0.0,0.8056031200505124,needs_review,,restaurant,,04e6b6d5-66be-4120-837c-0b0d4f9d4f76
+11589b08-27b4-43f0-ac07-e82b166ee3d6,nearest,0.8050697239770803,0.0,0.8050697239770803,needs_review,"{'common': None, 'primary': 'Alpine Modern Cafe', 'rules': None}",cafe,,e463b470-9195-42a1-a607-4074f91b5df9
+d0e905ef-98c6-4be5-a1e9-8a342a1604f4,nearest,0.8038165747944374,0.0,0.8038165747944374,needs_review,"{'common': None, 'primary': '11th & Spruce', 'rules': None}",real_estate_service,,be4baf02-2cd5-4783-8914-fd0f69c1de3b
+d770ce8e-9e7b-4354-a8db-d71f1f93393f,nearest,0.8032272336103826,0.0,0.8032272336103826,needs_review,,complementary_and_alternative_medicine,,25cb7fa8-adf9-452e-bd36-26563be132ff
+b9a2868b-40fd-498d-81f0-a5924e526dae,nearest,0.8026407851337078,0.0,0.8026407851337078,needs_review,,real_estate_service,,40c1a6be-3b0e-48b9-97c2-01ce4559d6f0
+5c99bee6-39c7-4ef4-8b67-c077ccc1eb56,nearest,0.8020989490240922,0.0,0.8020989490240922,needs_review,,real_estate_service,,6b8fe0f6-74e6-465d-88d0-1cfd2f0438a1
+307d79fe-2363-46c9-941b-f5b7f5726509,nearest,0.8006491330423366,0.0,0.8006491330423366,needs_review,,design_service,,b64dc737-f797-43fa-98f8-8fffa62c2338
+0b95049d-f101-4cac-a2f2-fd3e3ba0d378,nearest,0.8001452333913971,0.0,0.8001452333913971,needs_review,,home_service,,f2da1026-b847-421e-8da4-5de13e838a80
+e3739edc-4df5-4629-8eb8-9d9ba9f4d48d,nearest,0.8001070500933853,0.0,0.8001070500933853,needs_review,"{'common': None, 'primary': '11th & Spruce', 'rules': None}",personal_or_beauty_service,,be4baf02-2cd5-4783-8914-fd0f69c1de3b
+48e26243-b5d5-4d3e-9dff-dd235d259445,nearest,0.7987761180930744,0.0,0.7987761180930744,needs_review,,restaurant,,5463dd1a-ca58-42c9-b710-f79ceb13c8cf
+fa7f89d1-b12e-4001-8e9c-b2d0bc294f46,nearest,0.7985618980701268,0.0,0.7985618980701268,needs_review,,behavioral_or_mental_health_clinic,,fe1931da-13d7-4d4b-a719-e94afa265391
+dc66c428-f4e2-4dfc-a347-ca5cfca9369e,nearest,0.7984762465320815,0.0,0.7984762465320815,needs_review,,social_or_community_service,,4ea7d7bd-6986-44b2-902d-b7ae15e5ce08
+93327a11-504a-466b-b8c3-eef62886ba3e,nearest,0.7981251548637643,0.0,0.7981251548637643,needs_review,,real_estate_service,,d6d8b7c7-4e84-42c7-8f11-5ebbf60eda80
+65855071-a5a8-434d-956c-4000ef010205,nearest,0.7974630197730015,0.0,0.7974630197730015,needs_review,,fashion_and_apparel_store,,6cf6ba7b-4258-44dc-85f7-7c6ac3d89893
+15cd42e1-03b9-4bdf-9889-4efe553fb757,nearest,0.7969786182494405,0.0,0.7969786182494405,needs_review,,technical_service,,cd7d7cba-97dd-4bfb-86b9-28f0e95b0107
+e8b05f59-6c6b-4f6a-996e-525820eab142,nearest,0.7967935148155499,0.0,0.7967935148155499,needs_review,,personal_or_beauty_service,,55cf2028-bee1-45fa-a205-08adc3aa8d6c
+a7f74fad-52ec-4d41-a8c1-aa9cedc96d40,nearest,0.7965725521405493,0.0,0.7965725521405493,needs_review,,fashion_and_apparel_store,,2f6fcc8c-6d40-482c-985b-1d646f1e606a
+0c042d48-52be-43c3-84be-a2ad08cbedff,nearest,0.7959424982242846,0.0,0.7959424982242846,needs_review,,fashion_and_apparel_store,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+d8ed7384-351f-4a6f-b1f7-785a0e192fc3,nearest,0.7956803883031585,0.0,0.7956803883031585,needs_review,"{'common': None, 'primary': 'Boulder Theater', 'rules': None}",real_estate_service,,9022e165-3bc1-48c6-a382-4cfc8d5eb9fe
+f5d8eaab-d7ee-402c-aada-124e3f5a6f65,nearest,0.7954707646857053,0.0,0.7954707646857053,needs_review,"{'common': None, 'primary': 'Theta Chi Fraternity', 'rules': None}",social_or_community_service,,1898f5b7-5500-4ae7-bf15-652d4869c25e
+88e15d20-70e5-48c1-9a9d-96edf5be0394,nearest,0.7939355001950117,0.0,0.7939355001950117,needs_review,"{'common': None, 'primary': ""Sherpa's"", 'rules': None}",restaurant,,02d6315b-afe4-4d8f-9695-0639f786552f
+dbb770b1-1c57-459e-87e1-2910463b826e,nearest,0.7937641934978638,0.0,0.7937641934978638,needs_review,,wellness_service,,7f82cf7e-5389-4c9c-8d46-10466589b54d
+27aab27a-bcb1-436c-96a2-43a380867315,nearest,0.7930436595115161,0.0,0.7930436595115161,needs_review,,complementary_and_alternative_medicine,,b03f4c64-6e55-4e26-8e85-11b40becefe2
+819eb71b-e5d0-4308-b8a3-52d1564c35b1,nearest,0.7917125838026893,0.0,0.7917125838026893,needs_review,,casual_eatery,,c226521d-74ff-4c1d-9108-a0a8be8080fe
+71d4b896-1ec3-4f3f-9f91-1e0344f337e7,nearest,0.7911481328976767,0.0,0.7911481328976767,needs_review,,technical_service,,9c53e2a8-c5c3-4b86-8a1b-45345c208ede
+44737858-d7c3-4ce2-b416-192b3bdd4555,nearest,0.7909541599907454,0.0,0.7909541599907454,needs_review,,fashion_and_apparel_store,,91aa9e92-6092-4dce-b0bf-d449b0906220
+442ed5d7-0e52-4afa-9dda-3b31940d7689,nearest,0.790936841671047,0.0,0.790936841671047,needs_review,,professional_service,,4b1be148-974f-434b-8ed9-49f05a05c875
+d8da7ffe-a45a-44c1-8cf6-759449198dad,nearest,0.7907259289538469,0.0,0.7907259289538469,needs_review,,attorney_or_law_firm,,5758580b-3292-4957-a4bd-984cde5a758d
+2fd4b2be-8829-4d53-820e-3770cb1d11f9,nearest,0.7902967678420584,0.0,0.7902967678420584,needs_review,,social_or_community_service,,5758580b-3292-4957-a4bd-984cde5a758d
+46b33350-dba6-44e0-b2d7-b42bd99d7b92,nearest,0.7883566100642443,0.0,0.7883566100642443,needs_review,,behavioral_or_mental_health_clinic,,7c724ede-a94d-45d0-b511-50f29d18fe89
+780373c0-d14e-4b37-ace1-499fc49e5ade,nearest,0.7883299357809839,0.0,0.7883299357809839,needs_review,,design_service,,f1dba74f-9f93-4ddc-a042-c84ae722ed41
+3a2c0620-61d6-4f9f-a532-cebbfaa79d53,nearest,0.7880862629886614,0.0,0.7880862629886614,needs_review,,personal_or_beauty_service,,f7842e11-e746-4e1f-8cc9-80d04b621e56
+56f0223d-d6f2-4b5d-8432-4f9e75a46d1a,nearest,0.7880114456188934,0.0,0.7880114456188934,needs_review,"{'common': None, 'primary': 'Good Times', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'Good Times Burgers & Frozen Custard', 'variant': 'official'}],
+      dtype=object)}",restaurant,,b6a7d61c-78d8-4989-a040-1fa8f998ec40
+00c90d78-ad70-49d0-a4d2-85ac46fbe7a1,nearest,0.7873365821584288,0.0,0.7873365821584288,needs_review,"{'common': None, 'primary': 'Basecamp Boulder', 'rules': None}",hotel,,721a1c2e-76eb-44a8-a8ee-903a378821fd
+cc44c046-bac7-46de-bbd2-109553713444,nearest,0.786140814275641,0.0,0.786140814275641,needs_review,,fashion_and_apparel_store,,be1c0aaf-3b66-484e-bed1-b644789d844e
+d821c20d-d41c-4a94-a96a-a9bff20bc78d,nearest,0.7854699479582252,0.0,0.7854699479582252,needs_review,,restaurant,,3a43fed4-32af-4f51-bef5-0457ce641e64
+b874a16e-884c-4ddd-9d0d-5af7c6950386,nearest,0.784812295312556,0.0,0.784812295312556,needs_review,,financial_service,,5758580b-3292-4957-a4bd-984cde5a758d
+b83dcb4a-914c-4c52-afd1-f5b352da64b2,nearest,0.7844398717879075,0.0,0.7844398717879075,needs_review,,corporate_or_business_office,,cd80a38c-fe83-40e1-a008-056878a517a2
+640a7246-05b7-4343-8177-365196ba9e4e,nearest,0.784334958186711,0.0,0.784334958186711,needs_review,,casual_eatery,,5463dd1a-ca58-42c9-b710-f79ceb13c8cf
+ada08d7c-5436-4000-86be-cec7d16d1a62,nearest,0.7840172669723666,0.0,0.7840172669723666,needs_review,,financial_service,,5758580b-3292-4957-a4bd-984cde5a758d
+02ee6eab-ceec-45dd-ae3f-3ea2e0663542,nearest,0.7839025099824011,0.0,0.7839025099824011,needs_review,,wellness_service,,55cf2028-bee1-45fa-a205-08adc3aa8d6c
+04e884ed-81b7-4bed-9123-84d391f1c22d,nearest,0.7824436789664168,0.0,0.7824436789664168,needs_review,,design_service,,91aa9e92-6092-4dce-b0bf-d449b0906220
+80a7f610-6213-4a3c-9b86-80a8cd189c34,nearest,0.7821593944408447,0.0,0.7821593944408447,needs_review,,restaurant,,cb676a2a-a8b2-4550-a23a-61911ea03979
+ad174422-5bba-4764-a2b4-89a3cdab6d99,nearest,0.7810183530106232,0.0,0.7810183530106232,needs_review,,technical_service,,b0abfadd-1afa-4a8e-9d1f-a8a5f3fb8f74
+d057382d-85e5-4d86-be20-9eda83210a77,nearest,0.7808424846092166,0.0,0.7808424846092166,needs_review,,restaurant,,0cfd8a16-1c35-4c34-a100-9201483b2cee
+6117cfb6-2ed5-45cd-b582-c208a9b8d146,nearest,0.7796007967778633,0.0,0.7796007967778633,needs_review,"{'common': None, 'primary': 'McGuckin Hardware', 'rules': None}",restaurant,,7df8065c-1fcc-4aa8-a874-1f7dfb38fcf3
+d44afb63-dfab-4a19-9b74-c0bfe8079cfa,nearest,0.7793500768801869,0.0,0.7793500768801869,needs_review,"{'common': None, 'primary': 'Alpha Phi', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'ΑΦ', 'variant': 'short'}],
+      dtype=object)}",social_or_community_service,,b41d8f25-6e13-4e8a-9251-6e560c7a5355
+6de04fd2-7d2b-4e78-b48d-9e87556083e9,nearest,0.7786943797699739,0.0,0.7786943797699739,needs_review,,food_and_beverage_store,,49220068-c9b4-4365-a734-57585674d58c
+13140cbd-a626-43e6-8f27-7e8861aab0e5,nearest,0.7784153742278762,0.0,0.7784153742278762,needs_review,,food_and_beverage_store,,9620206f-f89d-4674-bf20-8b738f24db2a
+f511728d-4a35-41a1-87f3-f1b4cc108577,nearest,0.7779863118641561,0.0,0.7779863118641561,needs_review,,design_service,,f805a38b-3e13-4412-ba48-ff734fd2c306
+1b197c26-07e6-4a88-a4f4-5f2e02c0672f,nearest,0.7775914187503233,0.0,0.7775914187503233,needs_review,"{'common': None, 'primary': 'Melissa A. Cohen Insurance Agency, Inc.', 'rules': None}",complementary_and_alternative_medicine,,a5000fe1-c7b6-47e3-8614-d9aefa231876
+b6908878-93e2-4430-a489-12c209d43f43,nearest,0.7767305285647509,0.0,0.7767305285647509,needs_review,,social_or_community_service,,bbf1d65b-2f5b-429b-b5be-28ebdc7ea58b
+2d34b278-042f-4e34-b541-27688b30babd,nearest,0.7764199105623522,0.0,0.7764199105623522,needs_review,,financial_service,,941a23e2-61d7-4bf2-a22c-19617a6f232d
+e6e51dd7-8444-430d-9fd2-fdc3b728479a,nearest,0.776373291258766,0.0,0.776373291258766,needs_review,,hardware_home_and_garden_store,,d081ad58-959d-4f45-92fd-809fee186b5c
+9604bab8-3471-4cb5-bb2d-7792122af18d,nearest,0.77610744498263,0.0,0.77610744498263,needs_review,,restaurant,,ebcc7be6-0dfc-4a10-9aea-9f92088424fd
+7fc788ab-7c45-4e99-bbef-ba160864cd85,nearest,0.7749769725627822,0.0,0.7749769725627822,needs_review,"{'common': None, 'primary': 'University Admin Center', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'UCTR', 'variant': 'short'}],
+      dtype=object)}",behavioral_or_mental_health_clinic,,5ee6ef3f-d585-4162-9c86-acb8902b6286
+80cc1575-d874-4c98-93de-1a1fb4cd0ea9,nearest,0.7727407732792306,0.0,0.7727407732792306,needs_review,,financial_service,,4d262697-de6e-454b-9d1e-ad25d233727e
+10d5bf21-7e8a-47ef-9ca8-a4df4bd7d71c,nearest,0.7722761765801058,0.0,0.7722761765801058,needs_review,,art_gallery,,f9646459-ebac-47a4-b4cd-8064e4110570
+e41aced5-370f-47fc-a844-7e4451265b06,nearest,0.7719860557826015,0.0,0.7719860557826015,needs_review,,professional_service,,ec8a674b-27ec-4906-b830-10bc1a5c4cfb
+5bb6da35-81cb-451f-b2f8-10fe032f4a57,nearest,0.768481110441469,0.0,0.768481110441469,needs_review,"{'common': None, 'primary': 'The Whiterock Building', 'rules': None}",professional_service,,4a953110-4b90-4de3-ba65-3c85cfc64eef
+0a98f234-96f0-4410-b382-5ed7da8dec22,nearest,0.7681964927319657,0.0,0.7681964927319657,needs_review,,restaurant,,f61c4184-d69c-4fc7-b873-1d42d8b69c8e
+6ca6fa51-e8fe-4b94-b932-d142f9382cc4,nearest,0.768012255997462,0.0,0.768012255997462,needs_review,,behavioral_or_mental_health_clinic,,7f82cf7e-5389-4c9c-8d46-10466589b54d
+97bc6fd4-7cc9-450d-9201-175f0fa2fca5,nearest,0.7671453888256539,0.0,0.7671453888256539,needs_review,,attorney_or_law_firm,,5758580b-3292-4957-a4bd-984cde5a758d
+5da695d2-3ee5-41b0-ae41-d73e4159ee5f,nearest,0.7667995225631313,0.0,0.7667995225631313,needs_review,,professional_service,,de734e72-c798-4835-84d1-abf64a1946fb
+bd5c2a43-2cfc-4c21-932e-743ab9f64ac6,nearest,0.7656287873076961,0.0,0.7656287873076961,needs_review,"{'common': None, 'primary': 'Koenig Alumni Center', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'ALUM', 'variant': 'short'}],
+      dtype=object)}",social_or_community_service,,16078111-54d2-4ad7-af27-7f50fb0616f5
+7e94dc2d-11aa-4d55-af82-d30bc70cd33a,nearest,0.762538272630706,0.0,0.762538272630706,needs_review,,social_or_community_service,,3614bf8a-5e8f-41e0-8d5f-7a28c05adb30
+40ea188c-3c2a-4a08-a18f-cc27f35ea095,nearest,0.7606674996280859,0.0,0.7606674996280859,needs_review,,specialized_health_care,,732d8fb7-e916-4ad0-a388-a792d6309d9f
+e09fb681-0917-4fc5-bccb-d17453873d23,nearest,0.759726094390092,0.0,0.759726094390092,needs_review,,coffee_shop,,e6ca7522-53d7-4842-a190-287b28b224f6
+a5e50901-f77c-43e0-bafb-92c20408777a,nearest,0.759411564718085,0.0,0.759411564718085,needs_review,,fashion_and_apparel_store,,a8cc9f11-c980-46a5-9b84-c7c21c68ccb4
+c9ca5aed-75ba-463d-95d8-e477bf9b8cb6,nearest,0.7587959168880176,0.0,0.7587959168880176,needs_review,,corporate_or_business_office,,f9935b34-4c8b-4988-9745-95c98cafe168
+debba37e-730b-4d8f-a795-ab82c4f56fb2,nearest,0.7586833135966864,0.0,0.7586833135966864,needs_review,"{'common': None, 'primary': 'Ryan Wellness Center', 'rules': None}",complementary_and_alternative_medicine,,04846946-d315-45bc-8dad-ed0ff4e8e6c3
+0a964266-4eab-4de8-a527-52c9abaa010c,nearest,0.7580019119080115,0.0,0.7580019119080115,needs_review,,media_service,,4d2be9bb-ea45-4b55-9011-eda7c57f415d
+b8e83328-26e8-4e8c-9976-61b0acb0a219,nearest,0.75604399039378,0.0,0.75604399039378,needs_review,,food_and_beverage_store,,0333da50-ea4d-4862-83eb-d4a851f0a690
+365e711d-0079-499f-b857-07e2784c193e,nearest,0.7555230121605968,0.0,0.7555230121605968,needs_review,,wellness_service,,7f82cf7e-5389-4c9c-8d46-10466589b54d
+6316517c-05f6-469b-932c-a731c12e953c,nearest,0.7532454651425867,0.0,0.7532454651425867,needs_review,,real_estate_service,,40c1a6be-3b0e-48b9-97c2-01ce4559d6f0
+3afadb51-8da9-4211-8bf3-dc7cf2c79870,nearest,0.7525049229518234,0.0,0.7525049229518234,needs_review,,home_service,,e90545ba-f8ba-445c-af25-d565f95ba4a1
+388f2a11-6ce0-45ff-b6c4-69ea1cf95bf1,nearest,0.7507588795815548,0.0,0.7507588795815548,needs_review,,financial_service,,78c308a4-306e-4f0c-bd16-7e1d858d661d
+bde910db-f250-4507-9148-ebfa7972ecdc,nearest,0.7491409199816159,0.0,0.7491409199816159,needs_review,"{'common': None, 'primary': 'University Memorial Center', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'UMC', 'variant': 'short'}],
+      dtype=object)}",restaurant,,283c1f49-37f1-4585-a216-d58e6ec2a0d2
+d7969e3d-2258-4560-9d76-d52ee0d07a62,nearest,0.7484181935024165,0.0,0.7484181935024165,needs_review,,art_gallery,,a9e1cc82-e147-4256-88eb-78be4aea3000
+c63d7ade-55e9-41c2-9fcf-3ee83e0e0447,nearest,0.7476590709013322,0.0,0.7476590709013322,needs_review,,restaurant,,9c4d81ee-abb2-4d98-8997-13b65089a0ca
+d9d4c57a-bd8b-4c79-b2c0-7b61904feeec,nearest,0.7460038843783707,0.0,0.7460038843783707,needs_review,,restaurant,,ebcc7be6-0dfc-4a10-9aea-9f92088424fd
+b0d1667c-03af-4fab-8d69-e5caac877ffa,nearest,0.7455355342088505,0.0,0.7455355342088505,needs_review,,real_estate_service,,8446715a-88b5-48eb-aac7-3610117aa07b
+07ab01fc-fc9d-47c2-b467-c07aae519095,nearest,0.7430393130424521,0.0,0.7430393130424521,needs_review,,restaurant,,0c8e1eef-a471-47c7-befd-a5c0b4f71e90
+856b3808-77a7-40e1-ba91-c2dfe33317da,nearest,0.7422197919397128,0.0,0.7422197919397128,needs_review,,complementary_and_alternative_medicine,,25cb7fa8-adf9-452e-bd36-26563be132ff
+fd94247f-ee77-4416-9268-b0a977605a83,nearest,0.7417819661888874,0.0,0.7417819661888874,needs_review,"{'common': None, 'primary': 'Gold Biosciences Building', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'GOLD', 'variant': 'short'}],
+      dtype=object)}",college_university,,e05126fd-dd68-451e-9deb-5c686fd0373a
+3532c4a9-dc67-44fe-b2ed-f856673413e6,nearest,0.741479560085823,0.0,0.741479560085823,needs_review,"{'common': None, 'primary': 'Boulder Chamber and Visitor Center', 'rules': None}",government_office,,df981511-07de-4456-9427-4821fe802ba9
+06ea72c8-cd18-40b2-9562-f1f44b16f4a9,nearest,0.7413434431067337,0.0,0.7413434431067337,needs_review,,flowers_and_gifts_store,,f882fcbd-3eea-4bf9-b21a-90aa7c63581e
+4846b108-ccda-4c00-aeaf-4dcba6d58062,nearest,0.7400631938664239,0.0,0.7400631938664239,needs_review,,casual_eatery,,b7e0d738-62c6-4d03-8d61-284a4fb47ca6
+36f5bd2f-b959-493d-b37d-83e7201b1cdb,nearest,0.734574831951833,0.0,0.734574831951833,needs_review,,attorney_or_law_firm,,6c30df94-a81e-4f61-b05c-f5087093cdce
+72a1579d-e3ca-4aad-96bd-1677fbc2f04b,nearest,0.7341431194837253,0.0,0.7341431194837253,needs_review,,personal_or_beauty_service,,718f4030-0622-4356-bb3c-46eb1ba73ccc
+5a3e568e-45a9-42c4-9962-dda99d1ee2d2,nearest,0.7311430414906364,0.0,0.7311430414906364,needs_review,,technical_service,,11d15d05-8d41-4df7-bf7f-7bd0a65afa27
+85c11d5d-ef85-4fe2-bf87-4c29eca276f2,nearest,0.7296577538064596,0.0,0.7296577538064596,needs_review,,dental_clinic,,2fb5ec3a-a8da-43a5-88fe-43df9fcac827
+ac233d02-2600-487d-82f0-36b00e257cee,nearest,0.729563760773974,0.0,0.729563760773974,needs_review,,financial_service,,9bfa65a9-9d38-4aa8-876b-dc2d1d5eaace
+f93d611b-277e-4f8b-8b15-1fee76248990,nearest,0.729563760773974,0.0,0.729563760773974,needs_review,,home_service,,9bfa65a9-9d38-4aa8-876b-dc2d1d5eaace
+5733b414-9fb9-4689-a532-40d61ba114a1,nearest,0.7289601885268235,0.0,0.7289601885268235,needs_review,,sporting_goods_store,,213255c2-d375-4b5b-8c0c-290593267711
+fd5aeb58-507f-41ca-9467-dda9156f0453,nearest,0.7241258831602735,0.0,0.7241258831602735,needs_review,"{'common': None, 'primary': 'Alpha Phi Delta', 'rules': None}",social_or_community_service,,155b7cd9-f929-4e1d-8d76-d991717faec6
+09ded86c-8193-4fa9-ad12-6c60b8ce631d,nearest,0.723972913581967,0.0,0.723972913581967,needs_review,,dental_clinic,,58ef53e5-db69-487c-b953-4ec1d08ac198
+041f153d-eee2-4402-8292-53f9b14186be,nearest,0.7235239732464568,0.0,0.7235239732464568,needs_review,,complementary_and_alternative_medicine,,3f9d5130-63ce-4cc9-9674-8e3ebd45aaf5
+6f644123-7fd3-4c90-89de-90e6897967c0,nearest,0.7232204564205074,0.0,0.7232204564205074,needs_review,,complementary_and_alternative_medicine,,10349c26-0653-45eb-9fc8-97c53d18fc57
+ac04d4e0-dd8e-4c54-b36b-66e8ad30bf37,nearest,0.7220036250283999,0.0,0.7220036250283999,needs_review,,social_or_community_service,,6524ff8d-b0a3-4565-bb66-ffe0c2fab187
+6fc4a704-6612-4f37-8f42-22c64c1ee638,nearest,0.7219616184340141,0.0,0.7219616184340141,needs_review,,attorney_or_law_firm,,3f3ffaae-bdf1-4460-97f8-8709608acacc
+69359f19-c64b-4ba5-9b06-e91a66eb8a54,nearest,0.7213106444420765,0.0,0.7213106444420765,needs_review,,specialized_health_care,,35e34fa7-1257-4af0-89f3-034af2c2e538
+a8aaefbe-9a37-43cf-b014-c97d14e94e1b,nearest,0.7198588102308712,0.0,0.7198588102308712,needs_review,"{'common': None, 'primary': 'CU Art Museum', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'CUAM', 'variant': 'short'}],
+      dtype=object)}",museum,,0589a0b7-e06e-4a63-b56f-7294e277a689
+5ae8b760-c003-4389-910b-8a45570591dc,nearest,0.7195705758408908,0.0,0.7195705758408908,needs_review,"{'common': None, 'primary': 'Old Main', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'MAIN', 'variant': 'short'}],
+      dtype=object)}",college_university,,27175a45-6e91-4e6f-a400-30d085c7ef20
+78a30cef-012f-486f-a793-8a9102662ee9,nearest,0.7186835839996915,0.0,0.7186835839996915,needs_review,,bar,,d65439c4-415a-440c-b9c1-a0aff666ab3f
+75b30994-ce8c-45d6-a8fb-888b2e7e96fa,nearest,0.7165161230468493,0.0,0.7165161230468493,needs_review,,corporate_or_business_office,,f9935b34-4c8b-4988-9745-95c98cafe168
+09ee1191-9689-42ab-b284-a1f3547e22f8,nearest,0.7149898295185044,0.0,0.7149898295185044,needs_review,,attorney_or_law_firm,,c346a8ec-647b-42e7-837c-81c7d5c4908b
+bbd3646e-50a9-4fba-ac2d-ae0164717d06,nearest,0.712830174958893,0.0,0.712830174958893,needs_review,,complementary_and_alternative_medicine,,e59e0e68-16f7-4834-b2e8-7aae0078459c
+01a7a964-4dc0-4c15-82ed-429207231cc5,nearest,0.706214295280911,0.0,0.706214295280911,needs_review,"{'common': None, 'primary': 'Continuing Education Building', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'CEDU', 'variant': 'short'}],
+      dtype=object)}",college_university,,fe664295-6d35-4371-8e1b-e73585fad7a9
+3179c07f-4d6d-44bf-b79c-9261fc292bbd,nearest,0.7053998095831371,0.0,0.7053998095831371,needs_review,"{'common': None, 'primary': 'Athens Court A4', 'rules': None}",college_university,,8a7f2d3f-8e7d-4593-93f4-1abba1b6a338
+d88a8c79-80e1-480a-ba9a-edeba4345b6e,nearest,0.7042648531635843,0.0,0.7042648531635843,needs_review,"{'common': None, 'primary': 'Rollnick Building', 'rules': None}",casual_eatery,,6c0aa798-286b-4cce-b783-dd8f5fc9971e
+3527806b-2e68-4d4d-be23-c8b9f80c17b2,nearest,0.7033479349739455,0.0,0.7033479349739455,needs_review,"{'common': None, 'primary': 'Wulsin Hall', 'rules': None}",library,,4c390ed9-9d80-4d44-a972-afa5bca69469
+deec7b4a-c15a-4a2f-a1da-16bae9787ebc,nearest,0.7023815186493055,0.0,0.7023815186493055,needs_review,"{'common': None, 'primary': 'Lesser House', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'LESS', 'variant': 'short'}],
+      dtype=object)}",college_university,,f4517d6e-4429-4198-9082-e33520ac41f0
+2ac6046b-d74a-45cf-9e59-951795e5e792,nearest,0.6984485987827812,0.0,0.6984485987827812,needs_review,,restaurant,,c226521d-74ff-4c1d-9108-a0a8be8080fe
+fe58fb64-34e8-4587-ab9b-3abc6596517d,nearest,0.6946632076556286,0.0,0.6946632076556286,needs_review,,hospital,,f65368a4-1277-40ed-bc28-ea02c19918d2
+dc33aed8-1e95-4dab-b78f-cae83e6c0df5,nearest,0.693835529250455,0.0,0.693835529250455,needs_review,,professional_service,,bddbe1f2-d509-4783-8592-e7878320a0b5
+78ddb16a-4ee4-41d3-a272-adc6eafe7280,nearest,0.6923574279164456,0.0,0.6923574279164456,needs_review,"{'common': None, 'primary': ""Ruthie's Boardwalk Social"", 'rules': None}",casual_eatery,,4f18ed6b-1bd5-47d8-a382-51fd75af128d
+5b3c811c-16fd-471f-9d77-0a177169a8df,nearest,0.6911427630584785,0.0,0.6911427630584785,needs_review,"{'common': None, 'primary': 'Gelato Boy', 'rules': None}",casual_eatery,,f910024b-e0f8-4886-b0ed-c57b5022d29d
+6ca88aeb-f687-4294-959d-3a4df605ceaf,nearest,0.6883347106406136,0.0,0.6883347106406136,needs_review,,casual_eatery,,0c8e1eef-a471-47c7-befd-a5c0b4f71e90
+cf790959-a7a9-4211-85d1-9897d9c9b566,nearest,0.6879947398276872,0.0,0.6879947398276872,needs_review,,outpatient_care_facility,,f1dba74f-9f93-4ddc-a042-c84ae722ed41
+88f9058b-5e4f-499a-8f09-0e3d42e689ff,nearest,0.6877166184550122,0.0,0.6877166184550122,needs_review,,fashion_and_apparel_store,,a5b1e449-215a-4dfb-a182-2f8fd496085a
+e0d6e0b5-08b5-4ee8-9800-693cbdcf1a48,nearest,0.6873333015879988,0.0,0.6873333015879988,needs_review,,attorney_or_law_firm,,4d2be9bb-ea45-4b55-9011-eda7c57f415d
+4ae4868b-69fc-40b6-87ac-7a90b2c39b42,nearest,0.6838499193940681,0.0,0.6838499193940681,needs_review,,real_estate_service,,6555bb8b-0785-49d3-b9b7-f892a700a0ad
+52e63c89-dc94-4db0-94a8-df537fd09777,nearest,0.6834636061539318,0.0,0.6834636061539318,needs_review,,bank_or_credit_union,,9356c272-111c-4eea-9404-c425a16b94b6
+bc3ecedd-9530-4fcb-88f3-cf555a3f06cf,nearest,0.6833893537559974,0.0,0.6833893537559974,needs_review,,real_estate_service,,e4d316bb-2976-4b38-aa7d-1b83b65d8962
+a232e1dd-4210-4a71-888f-c3cc77fdf138,nearest,0.6812123756118149,0.0,0.6812123756118149,needs_review,"{'common': None, 'primary': 'Boulder Marriott', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'Boulder Marriott', 'variant': 'alternate'}],
+      dtype=object)}",personal_or_beauty_service,,e40ea9dd-9f6c-4fb6-a814-a283d4cc1d05
+071c3781-65ba-40a5-a561-d39f42d110ac,nearest,0.679265445214994,0.0,0.679265445214994,needs_review,"{'common': None, 'primary': 'Walgreens', 'rules': None}",fashion_and_apparel_store,,8fc5fb64-762f-4b87-8979-d183379f6df2
+86f2022a-8825-458a-a4ea-2e806d3ad978,nearest,0.67921720175633,0.0,0.67921720175633,needs_review,"{'common': None, 'primary': 'Indoor Practice Facility and Parking Garage', 'rules': None}",sporting_goods_store,,c13c4a7e-4fa2-4324-a2a3-173ee7eb65d1
+5af1c09c-027c-45d8-9d81-c0bbfb439619,nearest,0.6740728798297851,0.0,0.6740728798297851,needs_review,,media_service,,cf0e90ec-dbc4-466f-91aa-25bb639c03bf
+644cc5d4-90f6-4003-a615-941d76ec5450,nearest,0.6722509701225436,0.0,0.6722509701225436,needs_review,"{'common': None, 'primary': 'Champions Center', 'rules': None}",specialized_health_care,,ef562463-d57c-4267-a213-f9ef2379086a
+ae08c4c7-dfea-41ec-8bbe-3d50b6e6537b,nearest,0.6722509701225436,0.0,0.6722509701225436,needs_review,"{'common': None, 'primary': 'Champions Center', 'rules': None}",specialized_health_care,,ef562463-d57c-4267-a213-f9ef2379086a
+3689fc4f-460a-4205-a581-8a8e7d82accb,nearest,0.6722509701225436,0.0,0.6722509701225436,needs_review,"{'common': None, 'primary': 'Champions Center', 'rules': None}",outpatient_care_facility,,ef562463-d57c-4267-a213-f9ef2379086a
+d4cdc0ae-05ef-462f-8f3b-89c21cfd64da,nearest,0.6722509701225436,0.0,0.6722509701225436,needs_review,"{'common': None, 'primary': 'Champions Center', 'rules': None}",specialized_health_care,,ef562463-d57c-4267-a213-f9ef2379086a
+b1b8e69d-350a-4ffc-8440-675d024ec034,nearest,0.6665712789016982,0.0,0.6665712789016982,needs_review,"{'common': None, 'primary': 'Old Main', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'MAIN', 'variant': 'short'}],
+      dtype=object)}",college_university,,27175a45-6e91-4e6f-a400-30d085c7ef20
+679d799f-b310-4393-87c2-1b2c8a7c9f70,nearest,0.6647454738450854,0.0,0.6647454738450854,needs_review,"{'common': None, 'primary': 'Gelato Boy', 'rules': None}",restaurant,,f910024b-e0f8-4886-b0ed-c57b5022d29d
+ac27ca0c-89c2-4799-8008-c79e9ae7ecbe,nearest,0.6612167346540989,0.0,0.6612167346540989,needs_review,,home_service,,a4099567-0469-4b11-87c5-c72eae301d89
+549bfd71-032f-4e0c-ad57-6da48f29c7b2,nearest,0.6608796165291563,0.0,0.6608796165291563,needs_review,,restaurant,,f1dba74f-9f93-4ddc-a042-c84ae722ed41
+22f72e36-8967-464c-a09c-b0f8cfd2d0a7,nearest,0.6572271455969247,0.0,0.6572271455969247,needs_review,,home_service,,c9073cdc-0448-458e-9964-a2e6a344ecf8
+298dd6cd-5881-4980-ba1b-1415051779b6,nearest,0.6564862217258703,0.0,0.6564862217258703,needs_review,,restaurant,,5a1dbb17-972e-4966-b564-7f89e666140d
+1d7b7b61-5e97-4ac0-8d2d-057658380a32,nearest,0.6548641237053713,0.0,0.6548641237053713,needs_review,,restaurant,,a4099567-0469-4b11-87c5-c72eae301d89
+2d5898fe-7d91-43c2-bbdf-571262e60b43,nearest,0.6531578835862706,0.0,0.6531578835862706,needs_review,"{'common': None, 'primary': 'Rollnick Building', 'rules': None}",behavioral_or_mental_health_clinic,,6c0aa798-286b-4cce-b783-dd8f5fc9971e
+f0951133-237b-4b35-95b2-f2aed7c03377,nearest,0.6520525770251514,0.0,0.6520525770251514,needs_review,,restaurant,,bc52c1b9-b81b-43c5-b284-bff0cdd14419
+6e2be07b-0662-4a25-bd70-6fa1571f4c3c,nearest,0.6511792450028584,0.0,0.6511792450028584,needs_review,"{'common': None, 'primary': 'Boulder Marriott', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'Boulder Marriott', 'variant': 'alternate'}],
+      dtype=object)}",personal_or_beauty_service,,e40ea9dd-9f6c-4fb6-a814-a283d4cc1d05
+09edda4a-8e34-4e7e-89d3-8889c1b3dd24,nearest,0.6478046317526496,0.0,0.6478046317526496,needs_review,,behavioral_or_mental_health_clinic,,a24610db-bfab-479c-b31b-67c3c677e904
+9e955d6f-83a3-4fb0-88e2-a7f725ecf885,nearest,0.6474421199397802,0.0,0.6474421199397802,needs_review,,fitness_studio,,05176007-c214-4563-a113-8111f3189c9a
+87d331fd-dda5-4c0d-923c-0e47412835ef,nearest,0.6467074241999224,0.0,0.6467074241999224,needs_review,,bar,,c226521d-74ff-4c1d-9108-a0a8be8080fe
+0d6938f1-e0eb-4480-ae6f-b57a89a53e5f,nearest,0.6461461860587997,0.0,0.6461461860587997,needs_review,,real_estate_service,,a24610db-bfab-479c-b31b-67c3c677e904
+1f43ef2b-6245-4355-9cae-2a575d93be65,nearest,0.6461461860587997,0.0,0.6461461860587997,needs_review,,real_estate_service,,a24610db-bfab-479c-b31b-67c3c677e904
+59a8486b-6aaf-45b6-9963-fc6b2c25f468,nearest,0.645718604528553,0.0,0.645718604528553,needs_review,"{'common': None, 'primary': 'Center for Community (C4C)', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'C4C', 'variant': 'short'}],
+      dtype=object)}",cafe,,192c496a-f1ef-4541-9a03-6b7852f7a1e8
+6a5f785a-48c8-4c1f-bc2e-9f560d84fe0c,nearest,0.6423401484295962,0.0,0.6423401484295962,needs_review,"{'common': None, 'primary': 'The Center for Academic Success and Engagement', 'rules': None}",college_university,,0c14822a-16e8-45d3-a185-9a80aa9ffc47
+cce67e33-be25-4643-b89a-32ce5acdd03f,nearest,0.641077501438118,0.0,0.641077501438118,needs_review,,fashion_and_apparel_store,,a632b160-01f2-4ace-885a-3ca62f79b8fd
+87f6dbd8-254c-490b-9769-a4a59e8ea67f,nearest,0.640646986287907,0.0,0.640646986287907,needs_review,,bank_or_credit_union,,9bfa65a9-9d38-4aa8-876b-dc2d1d5eaace
+123da590-1928-4027-aa1c-a80880484eda,nearest,0.640589357360235,0.0,0.640589357360235,needs_review,"{'common': None, 'primary': 'Natural Grocers', 'rules': None}",food_and_beverage_store,,315d6431-e018-4ac6-bf45-f1358daa27ec
+423fac82-678e-495c-bc8b-4dc9312b794d,nearest,0.6404525533730043,0.0,0.6404525533730043,needs_review,"{'common': None, 'primary': 'Kappa Kappa Gamma', 'rules': None}",social_or_community_service,,25dcec36-b2c0-4ff1-b61c-e1ce535e45c4
+eef27d97-6b89-47c6-811b-83c5e3b552e2,nearest,0.6388868038593981,0.0,0.6388868038593981,needs_review,,personal_or_beauty_service,,48bcfdea-e8d9-496b-9a14-b8e6e0ecf2d1
+c9d79ce0-390c-466c-aee9-e9f35df6442d,nearest,0.6383091566076795,0.0,0.6383091566076795,needs_review,,home_service,,b045bba2-8f24-47c0-b811-a4855fe2dbc7
+61546d28-7c70-469c-97d1-4afc98e06a43,nearest,0.6366560237153057,0.0,0.6366560237153057,needs_review,,restaurant,,c226521d-74ff-4c1d-9108-a0a8be8080fe
+5b84dcae-eb96-4b0b-9765-3234972dd673,nearest,0.6355972640170009,0.0,0.6355972640170009,needs_review,"{'common': None, 'primary': 'Boulder Marriott', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'Boulder Marriott', 'variant': 'alternate'}],
+      dtype=object)}",personal_or_beauty_service,,e40ea9dd-9f6c-4fb6-a814-a283d4cc1d05
+566b5445-80bd-4689-aa46-8929e74a2c9f,nearest,0.6338677245420612,0.0,0.6338677245420612,needs_review,,dental_clinic,,0f43659b-2ae3-4d07-9b15-419c2a9479ba
+d228c12f-750c-4803-bafc-540c3dcd3752,nearest,0.6301822323701858,0.0,0.6301822323701858,needs_review,"{'common': None, 'primary': 'Basketball & Volleyball Practice Facility', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'BVPF', 'variant': 'short'}],
+      dtype=object)}",college_university,,6a29f8a9-a8d3-412c-9d6b-9682f2e8c296
+77dbf61d-e5aa-4305-a70d-74fa2a938f14,nearest,0.6289411341298834,0.0,0.6289411341298834,needs_review,,technical_service,,a24610db-bfab-479c-b31b-67c3c677e904
+6e4362d1-4ce0-4ca5-931d-22bf05d6e53d,nearest,0.6286398941781606,0.0,0.6286398941781606,needs_review,,bank_or_credit_union,,07290cc6-afd4-4f36-b2b1-b12f44975888
+f49c35b0-67c5-40ed-84dc-fb6cb0a77e36,nearest,0.6280214328764873,0.0,0.6280214328764873,needs_review,,real_estate_service,,7fef8d65-84a3-4c02-a7a9-5d83db0ae3c4
+73028683-aac7-4a27-80e0-1e7d87e7b132,nearest,0.6280214328764873,0.0,0.6280214328764873,needs_review,,real_estate_service,,7fef8d65-84a3-4c02-a7a9-5d83db0ae3c4
+42fd144a-07a1-44a9-9799-49c1e7c56084,nearest,0.6280214328764873,0.0,0.6280214328764873,needs_review,,real_estate_service,,7fef8d65-84a3-4c02-a7a9-5d83db0ae3c4
+9b4616bb-665f-4ca1-82ab-f5d2f37e0d09,nearest,0.6267680232779903,0.0,0.6267680232779903,needs_review,,fashion_and_apparel_store,,dad7e216-fa8b-4a99-8c4b-5e732564df60
+a9c0be73-8626-4f87-8ebc-76978d8f07b7,nearest,0.6244478879828734,0.0,0.6244478879828734,needs_review,,bank_or_credit_union,,954cb30c-1eb3-41e2-b7b0-f6640a4c3595
+07e7d4d2-f0ed-44a7-864b-85a623466303,nearest,0.6242354075254242,0.0,0.6242354075254242,needs_review,,dental_clinic,,8024874d-2fc1-41dc-a083-708a3a14d024
+f41cf971-2dc5-4cf0-8541-0da8b9eb28f8,nearest,0.6214249380304728,0.0,0.6214249380304728,needs_review,,real_estate_service,,7575e6f4-c0d9-48cd-9735-67f1005fe1ba
+17ec684f-4195-45ad-b3a0-dea6e9534967,nearest,0.619214785885179,0.0,0.619214785885179,needs_review,,wellness_service,,77a4f62b-9109-419c-aec2-3532a682bdce
+47aad376-f080-42a5-a0e7-8b44b92a9bac,nearest,0.618530180019758,0.0,0.618530180019758,needs_review,"{'common': None, 'primary': 'Muenzinger Psychology', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'MUEN', 'variant': 'short'}],
+      dtype=object)}",food_and_beverage_store,,5037fb67-beca-4f8c-baed-b6413a718779
+0b7d5abd-f900-4a03-ba5b-ce4a140a035e,nearest,0.6158502171907726,0.0,0.6158502171907726,needs_review,,design_service,,f1dba74f-9f93-4ddc-a042-c84ae722ed41
+6b8550da-1fb9-45ff-af26-48426558344e,nearest,0.6156043669001733,0.0,0.6156043669001733,needs_review,"{'common': None, 'primary': 'The Dairy Arts Center', 'rules': None}",art_gallery,,c212226a-93d9-4e4d-a04d-e9da1c72ab82
+568c5672-8edd-4311-b646-c26fb725eedb,nearest,0.6128970093506816,0.0,0.6128970093506816,needs_review,,restaurant,,99a7504f-b210-48bf-b7e2-8c7af62291e2
+d2e7738f-7cbb-41fe-973a-5a2cd9d75151,nearest,0.6102451145788312,0.0,0.6102451145788312,needs_review,,restaurant,,711275e1-7db7-446a-8040-3fec5230b1e3
+a03e1a79-8d0f-4812-8481-be658e3b621f,nearest,0.6101141298793286,0.0,0.6101141298793286,needs_review,,sporting_goods_store,,a4099567-0469-4b11-87c5-c72eae301d89
+1d775987-0f0f-4911-9dd0-671cbe96f108,nearest,0.6092048426990582,0.0,0.6092048426990582,needs_review,,financial_service,,af520217-2701-46e1-b6ac-e0304eec409a
+fbecc3ac-d4c1-41db-b45e-1287300d54ee,nearest,0.6042577857168334,0.0,0.6042577857168334,needs_review,,casual_eatery,,38474080-fc95-4f41-8a92-ad6ec737581f
+33457867-8770-4da0-993b-808c770b707b,nearest,0.6032911172239501,0.0,0.6032911172239501,needs_review,"{'common': None, 'primary': 'St Julien Hotel & Spa', 'rules': None}",corporate_or_business_office,,145a4637-9496-483d-aedf-2534caa1302f
+688bd35f-1893-4efb-8e7d-b4a23e95fa38,nearest,0.6024591239278355,0.0,0.6024591239278355,needs_review,"{'common': None, 'primary': 'Chemistry and Applied Mathematics', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'CHAP', 'variant': 'short'}],
+      dtype=object)}",restaurant,,c55a9a42-1442-4e29-8330-90a9744c0fbf
+e0f07ba4-8ae5-4135-9096-611f2a8f2a9b,nearest,0.6006483684831283,0.0,0.6006483684831283,needs_review,"{'common': None, 'primary': 'Reed Hall', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'REED', 'variant': 'short'}],
+      dtype=object)}",college_university,,a882fd7e-45ad-4559-b327-8e768199f3f7
+e760c8dc-a3a0-43b7-af40-27b4c4b4f874,nearest,0.5998781659907513,0.0,0.5998781659907513,likely_wrong,,event_venue,,05176007-c214-4563-a113-8111f3189c9a
+38409519-4726-4216-9778-d39da6dd7149,nearest,0.5987665197662893,0.0,0.5987665197662893,likely_wrong,,restaurant,,b613f725-038a-477a-978f-dd82d0ce0750
+65895c5e-985a-4bb0-9af5-1b19571c1bcc,nearest,0.5980062567712495,0.0,0.5980062567712495,likely_wrong,,restaurant,,6cf6ba7b-4258-44dc-85f7-7c6ac3d89893
+7a3ea61f-3911-4903-a942-f7cca7129b4a,nearest,0.595724295625512,0.0,0.595724295625512,likely_wrong,,dental_clinic,,8024874d-2fc1-41dc-a083-708a3a14d024
+220b9492-2ff2-48eb-8fe8-20737a78a541,nearest,0.5945224306264298,0.0,0.5945224306264298,likely_wrong,"{'common': None, 'primary': 'Boulder Marriott', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'Boulder Marriott', 'variant': 'alternate'}],
+      dtype=object)}",hotel,,e40ea9dd-9f6c-4fb6-a814-a283d4cc1d05
+a0152362-50a9-4105-a835-fdd89a25d372,nearest,0.5927619163439278,0.0,0.5927619163439278,likely_wrong,,behavioral_or_mental_health_clinic,,c71ebe4d-23aa-4364-b8af-3506707abb8c
+dcb33dbd-ae5c-49af-b07f-d52bd763af65,nearest,0.5925661637629844,0.0,0.5925661637629844,likely_wrong,,professional_service,,ddc48c10-d11a-4361-ad2c-ff06aa087884
+20d4fa30-d867-40fe-b3c1-2d00818f4e41,nearest,0.591468066733694,0.0,0.591468066733694,likely_wrong,"{'common': None, 'primary': 'University Memorial Center', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'UMC', 'variant': 'short'}],
+      dtype=object)}",social_or_community_service,,283c1f49-37f1-4585-a216-d58e6ec2a0d2
+7fd0e016-44bd-43a1-b8e3-684fef012424,nearest,0.5912130426742135,0.0,0.5912130426742135,likely_wrong,,behavioral_or_mental_health_clinic,,c71ebe4d-23aa-4364-b8af-3506707abb8c
+51fb2e45-806c-4331-a916-d54d8b7a4d96,nearest,0.5912033336107987,0.0,0.5912033336107987,likely_wrong,,home_service,,93d0b1e4-b037-48e5-b191-b991f9a6b96f
+91924834-28d6-408a-afae-326d29ea544e,nearest,0.5908950818578804,0.0,0.5908950818578804,likely_wrong,,fashion_and_apparel_store,,bc52c1b9-b81b-43c5-b284-bff0cdd14419
+171c80f5-620d-402d-9cd5-3327245a9c8f,nearest,0.5895838046799267,0.0,0.5895838046799267,likely_wrong,,dental_clinic,,8024874d-2fc1-41dc-a083-708a3a14d024
+680dbe80-e692-4c28-86ae-cee90955c59c,nearest,0.5860727858857129,0.0,0.5860727858857129,likely_wrong,,restaurant,,3173068c-451c-43c4-b115-71f7cdd7342c
+8cb00f2f-2b78-4635-843b-79ae03049171,nearest,0.58437162245083,0.0,0.58437162245083,likely_wrong,,sporting_goods_store,,588efafd-a0a0-4f88-85fe-15bf79faf64b
+221466c6-67a5-4974-80a0-d17d285bde1a,nearest,0.583987213548024,0.0,0.583987213548024,likely_wrong,,restaurant,,bc52c1b9-b81b-43c5-b284-bff0cdd14419
+b8e61519-8e24-4ffc-a6cf-17140c7e556f,nearest,0.5829549282950276,0.0,0.5829549282950276,likely_wrong,,financial_service,,a2bd44d6-25be-429a-887d-ff17b3885c07
+10903b08-cacd-4379-bc9b-eb6a2a1148f9,nearest,0.5828543527968155,0.0,0.5828543527968155,likely_wrong,,coffee_shop,,91aa9e92-6092-4dce-b0bf-d449b0906220
+d1477e8a-20e0-40e6-b00e-9223d9a940da,nearest,0.5796888296922638,0.0,0.5796888296922638,likely_wrong,,social_or_community_service,,3f3ffaae-bdf1-4460-97f8-8709608acacc
+d9855a31-9f96-4d58-b29a-4d43e4929678,nearest,0.579333980463535,0.0,0.579333980463535,likely_wrong,,fashion_and_apparel_store,,954cb30c-1eb3-41e2-b7b0-f6640a4c3595
+742c0a40-4d39-4e9e-a43d-94c93951fff1,nearest,0.5791148331135768,0.0,0.5791148331135768,likely_wrong,,outpatient_care_facility,,b403e323-1ec4-4a43-8e18-e310f58bbeb0
+0ee31097-6602-4673-acfe-72b7b2ee36c6,nearest,0.5754912506941159,0.0,0.5754912506941159,likely_wrong,,restaurant,,dad7e216-fa8b-4a99-8c4b-5e732564df60
+7df1b773-4509-4738-b4da-2b04857683ee,nearest,0.5745847827154198,0.0,0.5745847827154198,likely_wrong,,bank_or_credit_union,,6cf6ba7b-4258-44dc-85f7-7c6ac3d89893
+2c060e9f-6c6f-4341-9bd8-b221fb65fc67,nearest,0.5712760567550663,0.0,0.5712760567550663,likely_wrong,"{'common': None, 'primary': 'University Memorial Center', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'UMC', 'variant': 'short'}],
+      dtype=object)}",bank_or_credit_union,,283c1f49-37f1-4585-a216-d58e6ec2a0d2
+71e13b66-2011-4848-ac16-a6701c4e2789,nearest,0.5712760567550663,0.0,0.5712760567550663,likely_wrong,"{'common': None, 'primary': 'University Memorial Center', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'UMC', 'variant': 'short'}],
+      dtype=object)}",fast_food_restaurant,,283c1f49-37f1-4585-a216-d58e6ec2a0d2
+9a1ac52d-0d4a-4f44-ab55-2ea55e7917b2,nearest,0.5712760567550663,0.0,0.5712760567550663,likely_wrong,"{'common': None, 'primary': 'University Memorial Center', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'UMC', 'variant': 'short'}],
+      dtype=object)}",bank_or_credit_union,,283c1f49-37f1-4585-a216-d58e6ec2a0d2
+e4dedf12-8da9-438f-9ed2-18af2f163548,nearest,0.5672474138276571,0.0,0.5672474138276571,likely_wrong,,personal_or_beauty_service,,03a578c6-4bea-4110-911c-d854222c7322
+dbd48bc9-db4d-48bc-9efe-1a51881f6c78,nearest,0.5650480186869884,0.0,0.5650480186869884,likely_wrong,"{'common': None, 'primary': 'Residence Inn Boulder Canyon Boulevard', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'Residence Inn by Marriott', 'variant': 'official'}],
+      dtype=object)}",bank_or_credit_union,,dc412f9d-8de3-4508-9e39-bbc65fa83050
+430a9fd3-de29-4b4d-8717-2430afef4aa2,nearest,0.5623356923971121,0.0,0.5623356923971121,likely_wrong,,professional_service,,9356c272-111c-4eea-9404-c425a16b94b6
+2e41bbad-da31-447f-a29d-6ce338cf081f,nearest,0.5611822090631449,0.0,0.5611822090631449,likely_wrong,,financial_service,,36e53743-f5e7-4b68-a95d-62339c67de2e
+c43d1011-e4dd-46b4-ac87-a1422e12617b,nearest,0.5550615990291303,0.0,0.5550615990291303,likely_wrong,,outpatient_care_facility,,d6abf3d6-c539-4a94-b634-782718fd443b
+4217ea0a-fe40-4874-985c-cf585c98eb0b,nearest,0.5468377041941184,0.0,0.5468377041941184,likely_wrong,"{'common': None, 'primary': 'Circle K', 'rules': None}",financial_service,,368f819c-e5ee-475e-98db-1780065b8ee1
+1c1e8d02-81bb-4e6c-917e-4266f2660881,nearest,0.5467573783214138,0.0,0.5467573783214138,likely_wrong,"{'common': None, 'primary': 'Natural Grocers', 'rules': None}",restaurant,,315d6431-e018-4ac6-bf45-f1358daa27ec
+4e4eea61-e6a8-4f44-9ca7-b10a3730479f,nearest,0.5428564536801521,0.0,0.5428564536801521,likely_wrong,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+7050966c-6b0e-4738-9b20-b8d70f274be4,nearest,0.5427024208954707,0.0,0.5427024208954707,likely_wrong,"{'common': None, 'primary': 'Folsom Field', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'STAD', 'variant': 'short'}],
+      dtype=object)}",college_university,,a52c9241-a2e8-401e-9ae6-031a4c29b289
+950d0c6a-61a1-43dc-a1dc-980282c5f41f,nearest,0.5419995850238002,0.0,0.5419995850238002,likely_wrong,,behavioral_or_mental_health_clinic,,f98d9b9e-4a46-4cdd-b9ab-f097ee5d6dc2
+34ed29e6-e8c0-4a7c-bec6-81783dfded9f,nearest,0.540304968876088,0.0,0.540304968876088,likely_wrong,,college_university,,93fb8f49-3de9-420b-846c-6f63764f93d5
+801c22ee-281f-4006-bfb5-583063140c5e,nearest,0.5401549243875976,0.0,0.5401549243875976,likely_wrong,,specialized_health_care,,9cde1dfb-d6a3-47a0-8f4f-669ae0d1fb3b
+891de8ab-bef4-4103-ad3c-dc2af596c8c8,nearest,0.5393817834972541,0.0,0.5393817834972541,likely_wrong,,complementary_and_alternative_medicine,,9565f54b-9147-454e-89b8-4078bfecd0fc
+8c38ef52-6f05-4e8f-90b2-a4fd31cdd83a,nearest,0.5384998397257219,0.0,0.5384998397257219,likely_wrong,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+bac4a5f1-0bb4-4473-97c9-319d7936f449,nearest,0.5377265481446786,0.0,0.5377265481446786,likely_wrong,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+a3300763-232d-4d44-b115-4051c703fa04,nearest,0.5358309046285019,0.0,0.5358309046285019,likely_wrong,"{'common': None, 'primary': '11th & Spruce', 'rules': None}",fashion_and_apparel_store,,be4baf02-2cd5-4783-8914-fd0f69c1de3b
+afae9cea-51a0-4272-aeb0-7e21b5ccc653,nearest,0.5311876677707834,0.0,0.5311876677707834,likely_wrong,,restaurant,,78c308a4-306e-4f0c-bd16-7e1d858d661d
+d948009d-f2f2-4a94-9d98-d0592552404d,nearest,0.5310198537269184,0.0,0.5310198537269184,likely_wrong,"{'common': None, 'primary': 'Pearl & 15th', 'rules': None}",financial_service,,2773d6b2-4c80-4cac-a21b-16293b89f6f4
+1a01e004-513c-443a-9d9e-6396093e38c8,nearest,0.5310198537269184,0.0,0.5310198537269184,likely_wrong,"{'common': None, 'primary': 'Pearl & 15th', 'rules': None}",attorney_or_law_firm,,2773d6b2-4c80-4cac-a21b-16293b89f6f4
+d2f448b8-0859-4a26-9b68-f6a109a50499,nearest,0.5310198537269184,0.0,0.5310198537269184,likely_wrong,"{'common': None, 'primary': 'Pearl & 15th', 'rules': None}",attorney_or_law_firm,,2773d6b2-4c80-4cac-a21b-16293b89f6f4
+eb57fe67-a302-46fe-8323-a84cca9301a0,nearest,0.5295452074346245,0.0,0.5295452074346245,likely_wrong,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+ee2a00fb-9a47-41f1-ba0b-6c6d2a60b1e9,nearest,0.5268583354110197,0.0,0.5268583354110197,likely_wrong,"{'common': None, 'primary': '11th & Spruce', 'rules': None}",wellness_service,,be4baf02-2cd5-4783-8914-fd0f69c1de3b
+e8a15eea-8c6d-4779-86d0-9df9c26fa0af,nearest,0.5257933424514127,0.0,0.5257933424514127,likely_wrong,,design_service,,07290cc6-afd4-4f36-b2b1-b12f44975888
+d2b3d576-80de-4edb-a2ca-16b30784e4e0,nearest,0.5250327049252405,0.0,0.5250327049252405,likely_wrong,"{'common': None, 'primary': 'Boulder Marriott', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'Boulder Marriott', 'variant': 'alternate'}],
+      dtype=object)}",restaurant,,e40ea9dd-9f6c-4fb6-a814-a283d4cc1d05
+1bcd10d1-edf8-4f5f-81b3-2bdeae4c4a47,nearest,0.5250327049252405,0.0,0.5250327049252405,likely_wrong,"{'common': None, 'primary': 'Boulder Marriott', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'Boulder Marriott', 'variant': 'alternate'}],
+      dtype=object)}",event_venue,,e40ea9dd-9f6c-4fb6-a814-a283d4cc1d05
+25818ad1-3b00-4957-8b2c-05ffb71599e0,nearest,0.5250202638105943,0.0,0.5250202638105943,likely_wrong,"{'common': None, 'primary': 'Old Main', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'MAIN', 'variant': 'short'}],
+      dtype=object)}",college_university,,27175a45-6e91-4e6f-a400-30d085c7ef20
+117bf354-57e6-4209-9891-68d2bf43e069,nearest,0.5220470982518253,0.0,0.5220470982518253,likely_wrong,"{'common': None, 'primary': 'Boulder Public Library - Main Branch', 'rules': None}",movie_theater,,b4674090-59dc-41f5-b2a9-4dab77f1fd58
+3ca036ea-2370-4dfb-8e8f-e26c82f7f6cd,nearest,0.5198633631863355,0.0,0.5198633631863355,likely_wrong,"{'common': None, 'primary': 'Municipal Building', 'rules': None}",government_office,,332d6626-1264-45f2-801c-eea9ca0845de
+4f3ed1ef-fe2c-493c-9bb0-00c07e74b551,nearest,0.5155202739071347,0.0,0.5155202739071347,likely_wrong,,government_office,,2d2417ba-eb2a-4a33-bf4f-a6f84880104f
+d5c41c71-adc1-45ca-89af-8c0ef8fb32a9,nearest,0.5129585673421097,0.0,0.5129585673421097,likely_wrong,"{'common': None, 'primary': 'Municipal Building', 'rules': None}",government_office,,332d6626-1264-45f2-801c-eea9ca0845de
+917c41a7-83c4-459a-bd33-7257435a181d,nearest,0.5020408291059546,0.0,0.5020408291059546,likely_wrong,,behavioral_or_mental_health_clinic,,3cba4499-12e8-4fb3-b468-7618af63bbea
+bae862ba-38e9-4077-9340-b17ecf679b44,nearest,0.5014067950896968,0.0,0.5014067950896968,likely_wrong,,convenience_store,,90c189f1-dbef-4fac-a4dc-b51d71c96025
+f087330f-903d-44a1-819a-7ad1852e56db,nearest,0.490409861190926,0.0,0.490409861190926,likely_wrong,,personal_or_beauty_service,,e4d316bb-2976-4b38-aa7d-1b83b65d8962
+b929bff1-a7be-4182-bb59-37de1940836d,nearest,0.4803162912096516,0.0,0.4803162912096516,likely_wrong,,financial_service,,3adf2f00-3eb4-4cf4-bdba-7e4871d4ceb4
+7b707fed-6cb2-4d4d-af08-8ca6f5a52233,nearest,0.47846626862302566,0.0,0.47846626862302566,likely_wrong,,restaurant,,348740c2-d4cd-4e8a-97bb-58990a0baae4
+da812a3c-ec0c-41dd-85a8-a4f313db5160,nearest,0.4770863345920814,0.0,0.4770863345920814,likely_wrong,"{'common': None, 'primary': 'Yamashiro Orthodontics', 'rules': None}",dental_clinic,,09a5207c-0484-4da5-b073-56fd0196a4cd
+3ee4d514-8394-4aa1-918b-62c0d6b4a517,nearest,0.4752696817297345,0.0,0.4752696817297345,likely_wrong,"{'common': None, 'primary': 'Kellcourt Building', 'rules': None}",complementary_and_alternative_medicine,,4023c94f-2300-4b41-9f0f-f849249edc0e
+542bf46e-c90a-4fb8-80dd-c86b47ae7b6d,nearest,0.47351455529847486,0.0,0.47351455529847486,likely_wrong,"{'common': None, 'primary': 'Koenig Alumni Center', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'ALUM', 'variant': 'short'}],
+      dtype=object)}",college_university,,16078111-54d2-4ad7-af27-7f50fb0616f5
+01b77310-da2b-40a5-b03f-8133ff9ddf5d,nearest,0.47081727064830703,0.0,0.47081727064830703,likely_wrong,,financial_service,,6aacc65c-4c08-4939-8878-24f957303b80
+9a08baef-46dc-4f75-a948-ee1de8515ac2,nearest,0.4667054022379753,0.0,0.4667054022379753,likely_wrong,"{'common': None, 'primary': 'United States Post Office', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'Officer Eric H. Talley Post Office Building', 'variant': 'official'},
+       {'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'USPS', 'variant': 'short'}],
+      dtype=object)}",financial_service,,4caf8c8b-d725-4229-94fe-efca202a6b9c
+4522caa2-ae9f-4c73-9452-58264f0622a0,nearest,0.46544546760860817,0.0,0.46544546760860817,likely_wrong,"{'common': None, 'primary': 'Evans Scholars', 'rules': None}",social_or_community_service,,4e9d5b90-5014-4bf7-b9dc-c25454c71bde
+782e93ba-290e-42cd-bc62-6a61b50abe07,nearest,0.4650208588349315,0.0,0.4650208588349315,likely_wrong,,home_service,,85fc328e-1ab0-44a0-a34c-4eed3f511a37
+dfd91575-0d4b-453a-8ebd-12e786dfcf66,nearest,0.4643310300308763,0.0,0.4643310300308763,likely_wrong,,financial_service,,af3612fc-9ec0-444d-a591-5132551c1c1d
+0c5c52fa-353d-422d-8082-ff599149ec6b,nearest,0.45897044902603945,0.0,0.45897044902603945,likely_wrong,,complementary_and_alternative_medicine,,a9df6e20-748f-4579-986d-c11e75b4b9aa
+918b6caa-686e-403e-8b28-b5c1946da3af,nearest,0.4577067368588351,0.0,0.4577067368588351,likely_wrong,,real_estate_service,,40c1a6be-3b0e-48b9-97c2-01ce4559d6f0
+71224ac2-826a-4f9a-827b-b522ebd98b3b,nearest,0.4577067368588351,0.0,0.4577067368588351,likely_wrong,,home_service,,40c1a6be-3b0e-48b9-97c2-01ce4559d6f0
+ebb3cad0-a69a-4d17-b9cf-09cecd05dcf9,nearest,0.4571809346319238,0.0,0.4571809346319238,likely_wrong,,fashion_and_apparel_store,,f1dba74f-9f93-4ddc-a042-c84ae722ed41
+0cc5d0e8-6d89-48e8-93cb-2968b9f0fea4,nearest,0.4571809346319238,0.0,0.4571809346319238,likely_wrong,,financial_service,,f1dba74f-9f93-4ddc-a042-c84ae722ed41
+fee1595d-cc72-408e-bd20-37f0fab93e80,nearest,0.4571809346319238,0.0,0.4571809346319238,likely_wrong,,fashion_and_apparel_store,,f1dba74f-9f93-4ddc-a042-c84ae722ed41
+d821fb5f-69f0-4216-9f11-530bbc1d581d,nearest,0.45529168440317114,0.0,0.45529168440317114,likely_wrong,,financial_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+37690a87-36b4-4114-9c7c-fd393f0f52ec,nearest,0.45509154288572096,0.0,0.45509154288572096,likely_wrong,,fashion_and_apparel_store,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+8fa32671-fd77-4d50-bfe1-06c966ad6fba,nearest,0.4338593242873986,0.0,0.4338593242873986,likely_wrong,,college_university,,90e3757d-33f1-47ab-af53-b1c59a07e507
+9f7cbc67-4ec0-4164-ad43-ed3d0235bb1e,nearest,0.43369303264604986,0.0,0.43369303264604986,likely_wrong,,behavioral_or_mental_health_clinic,,6b8fe0f6-74e6-465d-88d0-1cfd2f0438a1
+e0122fe2-219b-49aa-899a-d1d555a5b9e7,nearest,0.43369303264604986,0.0,0.43369303264604986,likely_wrong,,bank_or_credit_union,,6b8fe0f6-74e6-465d-88d0-1cfd2f0438a1
+3d217261-115e-47ec-8b5d-4def51299abd,nearest,0.43369303264604986,0.0,0.43369303264604986,likely_wrong,,technical_service,,6b8fe0f6-74e6-465d-88d0-1cfd2f0438a1
+13a969a7-9f17-418c-b15d-8c2bba625b07,nearest,0.43369303264604986,0.0,0.43369303264604986,likely_wrong,,outpatient_care_facility,,6b8fe0f6-74e6-465d-88d0-1cfd2f0438a1
+6285f84c-472b-486e-b693-4631e2fd06c3,nearest,0.43369303264604986,0.0,0.43369303264604986,likely_wrong,,professional_service,,6b8fe0f6-74e6-465d-88d0-1cfd2f0438a1
+4207a5c8-676a-448d-9d4a-8fad15c1114c,nearest,0.43369303264604986,0.0,0.43369303264604986,likely_wrong,,professional_service,,6b8fe0f6-74e6-465d-88d0-1cfd2f0438a1
+ebbb93aa-dc11-4e3c-afd3-938ce6bdab0d,nearest,0.4267220424145659,0.0,0.4267220424145659,likely_wrong,,attorney_or_law_firm,,72a841d1-e835-4f9a-b5e1-fdabe860288a
+c3ea75ef-c4d6-448e-bb1a-4402deb2889f,nearest,0.4252301949362227,0.0,0.4252301949362227,likely_wrong,"{'common': None, 'primary': 'University Townhouses', 'rules': None}",college_university,,25974a83-0f93-4d21-a597-b34fbcc8f5a8
+176af5cc-7a1c-4399-90d1-5580731fcafc,nearest,0.4252301949362227,0.0,0.4252301949362227,likely_wrong,"{'common': None, 'primary': 'University Townhouses', 'rules': None}",college_university,,25974a83-0f93-4d21-a597-b34fbcc8f5a8
+0a386f19-4a24-40a8-b84d-e107f87a9b64,nearest,0.4221015449555594,0.0,0.4221015449555594,likely_wrong,,bar,,be1c0aaf-3b66-484e-bed1-b644789d844e
+69a63e28-1624-4879-b267-50dd132702e4,nearest,0.4221015449555594,0.0,0.4221015449555594,likely_wrong,,coffee_shop,,be1c0aaf-3b66-484e-bed1-b644789d844e
+ffded9c1-9e52-4d85-9375-31212c32d0f4,nearest,0.4221015449555594,0.0,0.4221015449555594,likely_wrong,,design_service,,be1c0aaf-3b66-484e-bed1-b644789d844e
+11850b8e-d21d-4015-bb3e-56db76ccd9eb,nearest,0.41786929888585356,0.0,0.41786929888585356,likely_wrong,"{'common': None, 'primary': 'Boulder Medical Center', 'rules': None}",outpatient_care_facility,,c210c8b7-4338-4057-ac74-2e9fc250fb17
+39643faf-49ab-48b0-867e-9050b5fbdf28,nearest,0.41786929888585356,0.0,0.41786929888585356,likely_wrong,"{'common': None, 'primary': 'Boulder Medical Center', 'rules': None}",specialized_health_care,,c210c8b7-4338-4057-ac74-2e9fc250fb17
+a53340a0-b66e-4abc-b96a-1b0536d6ac73,nearest,0.41786929888585356,0.0,0.41786929888585356,likely_wrong,"{'common': None, 'primary': 'Boulder Medical Center', 'rules': None}",specialized_health_care,,c210c8b7-4338-4057-ac74-2e9fc250fb17
+69406a79-3e80-4fdc-b4af-c41fa17e321b,nearest,0.41786929888585356,0.0,0.41786929888585356,likely_wrong,"{'common': None, 'primary': 'Boulder Medical Center', 'rules': None}",specialized_health_care,,c210c8b7-4338-4057-ac74-2e9fc250fb17
+0dcc8b3e-e4b6-41d7-b10d-f9247fcc10a5,nearest,0.41786929888585356,0.0,0.41786929888585356,likely_wrong,"{'common': None, 'primary': 'Boulder Medical Center', 'rules': None}",specialized_health_care,,c210c8b7-4338-4057-ac74-2e9fc250fb17
+03068c5d-5611-455f-b677-481064fe0601,nearest,0.41786929888585356,0.0,0.41786929888585356,likely_wrong,"{'common': None, 'primary': 'Boulder Medical Center', 'rules': None}",outpatient_care_facility,,c210c8b7-4338-4057-ac74-2e9fc250fb17
+188dc407-1a1a-4398-8b41-57209d74e0a9,nearest,0.41786929888585356,0.0,0.41786929888585356,likely_wrong,"{'common': None, 'primary': 'Boulder Medical Center', 'rules': None}",specialized_health_care,,c210c8b7-4338-4057-ac74-2e9fc250fb17
+2e122c5d-0ae1-43ee-b908-7d61d821c096,nearest,0.41786929888585356,0.0,0.41786929888585356,likely_wrong,"{'common': None, 'primary': 'Boulder Medical Center', 'rules': None}",specialized_health_care,,c210c8b7-4338-4057-ac74-2e9fc250fb17
+0395f264-433d-4714-886f-de51367684a5,nearest,0.41161737009938226,0.0,0.41161737009938226,likely_wrong,,home_service,,556678b5-0335-48da-bab0-167e0579e38d
+ea06fbdb-54b5-45d0-825f-9ba37fc8f9fc,nearest,0.41131589212398356,0.0,0.41131589212398356,likely_wrong,"{'common': None, 'primary': 'Cristol Chemistry and Biochemistry', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'CHEM', 'variant': 'short'}],
+      dtype=object)}",college_university,,6f235afa-6315-400b-b126-4e84195e796f
+7466bd95-72a6-4e8e-8464-6d71458a93ed,nearest,0.40696507695245665,0.0,0.40696507695245665,likely_wrong,"{'common': None, 'primary': 'Vectra Bank', 'rules': None}",fitness_studio,,b992d24a-b17a-4b42-b6a2-c4b94cbe25c5
+db7d426d-0ecd-4d26-ab0e-6d44f9bb2744,nearest,0.4009991976775339,0.0,0.4009991976775339,likely_wrong,"{'common': None, 'primary': 'Circle K', 'rules': None}",convenience_store,,57901f9d-0385-4219-aaad-8bcc43b4cfb9
+5adcb0b9-561b-49d5-b9bb-d95fb8ecd6d3,nearest,0.4009753586542627,0.0,0.4009753586542627,likely_wrong,,personal_or_beauty_service,,a4099567-0469-4b11-87c5-c72eae301d89
+054a09af-8748-4e6d-9381-8b6d38dbf4ee,nearest,0.4002593980823189,0.0,0.4002593980823189,likely_wrong,,professional_service,,22b2e91c-05f5-4d59-b8f8-8e04ade80ff3
+d49414f6-58ec-4a0e-b6f9-36ed6016c983,nearest,0.39597500439486344,0.0,0.39597500439486344,likely_wrong,"{'common': None, 'primary': 'Vectra Bank', 'rules': None}",fashion_and_apparel_store,,b992d24a-b17a-4b42-b6a2-c4b94cbe25c5
+c1130c71-eda6-4389-a80e-3c8725bbd7a0,nearest,0.39051573863808564,0.0,0.39051573863808564,likely_wrong,,financial_service,,0f43659b-2ae3-4d07-9b15-419c2a9479ba
+acfc850e-2081-41b1-84c7-4d485198f515,nearest,0.3854056105807825,0.0,0.3854056105807825,likely_wrong,,fitness_studio,,47e2f569-9860-4e36-b61a-3d3ffe693a50
+ced9f033-367b-4c6b-94c2-2d8586b68d2a,nearest,0.3793015814421711,0.0,0.3793015814421711,likely_wrong,,home_service,,e9417681-673d-4bfd-aa91-397e14221224
+49eaaf7f-d40f-4e5e-9cc4-ee832c734650,nearest,0.3732520784630903,0.0,0.3732520784630903,likely_wrong,,home_service,,3322630c-d628-4b42-830a-4b97c27dcc20
+fc122921-7933-4034-9464-ef5eedac3d6f,nearest,0.36999359651286856,0.0,0.36999359651286856,likely_wrong,,financial_service,,01215f66-7d49-4a9a-a80d-6139b9187b0f
+4273ae65-d302-42a1-b4cf-c37a830a1646,nearest,0.36999359651286856,0.0,0.36999359651286856,likely_wrong,,financial_service,,01215f66-7d49-4a9a-a80d-6139b9187b0f
+1f60d7c6-8bae-4b7a-be00-b684802a58ec,nearest,0.36609696610443376,0.0,0.36609696610443376,likely_wrong,,bank_or_credit_union,,890c8e9b-d9c0-4cea-ac9a-0430288a0df4
+d02898b5-adde-421a-9d63-411936e2db63,nearest,0.36561551625734223,0.0,0.36561551625734223,likely_wrong,,bank_or_credit_union,,0f43659b-2ae3-4d07-9b15-419c2a9479ba
+6d3642b2-e6bd-4d7e-9a6e-83432c19b25d,nearest,0.3638209234013582,0.0,0.3638209234013582,likely_wrong,"{'common': None, 'primary': 'Circle K', 'rules': None}",bank_or_credit_union,,368f819c-e5ee-475e-98db-1780065b8ee1
+781bdca8-3050-4d2c-9c8f-9138af0364bf,nearest,0.3497717303858401,0.0,0.3497717303858401,likely_wrong,,design_service,,78f21e0e-2859-4e6c-b5a6-8be6abd53b80
+e0a235ca-2379-4aee-9a09-ce5b7d651375,nearest,0.332590582800091,0.0,0.332590582800091,likely_wrong,"{'common': None, 'primary': 'Hast & Company', 'rules': None}",real_estate_service,,623a97c1-6c46-4931-a5fb-e81a36ac4ff0
+bc49c9c8-28f1-4592-b5c6-48fd199fbe18,nearest,0.3285542038565711,0.0,0.3285542038565711,likely_wrong,,dental_clinic,,b2bd48ba-e7d2-451d-abc3-3e29b34027ca
+81232f9a-2ad4-4299-9497-80c8a35526ad,nearest,0.3220586147462742,0.0,0.3220586147462742,likely_wrong,,behavioral_or_mental_health_clinic,,f9ac54cf-b419-4ed8-b8a7-912c654fb75e
+f023866d-a986-4e60-a7f8-409039dfdcc7,nearest,0.31932507566915747,0.0,0.31932507566915747,likely_wrong,"{'common': None, 'primary': 'Limelight Boulder', 'rules': None}",social_or_community_service,,037fb76d-d2db-4da1-b541-37f2669d056a
+400e3197-32b4-4b23-a861-4dda469ed8ed,nearest,0.303062521191368,0.0,0.303062521191368,likely_wrong,,attorney_or_law_firm,,e73badc3-b519-42c3-bdfc-a53c2a5c6b72
+039c1901-dd4b-45a7-b0da-7df3971d02e3,nearest,0.30140306098988956,0.0,0.30140306098988956,likely_wrong,,government_office,,c6c0c3d1-5bd6-41b4-97b2-7a75ec333ac4
+3518c8e0-95c2-4b56-8627-d939d86f40d6,nearest,0.2980640306699901,0.0,0.2980640306699901,likely_wrong,,attorney_or_law_firm,,4d2be9bb-ea45-4b55-9011-eda7c57f415d
+e35c1966-8758-4b2f-847e-0bc4c76d8647,nearest,0.29425728773870674,0.0,0.29425728773870674,likely_wrong,,behavioral_or_mental_health_clinic,,a45bfbe4-2efc-4852-925d-1a88fcfc940e
+af7a724a-b7ab-400b-8679-ac21988c677f,nearest,0.27011397627140754,0.0,0.27011397627140754,likely_wrong,,fashion_and_apparel_store,,c9dd6811-6ce8-4d53-8bad-ae4cfe43766a
+94071a2f-a3d0-4cc4-9ba3-80854fbf7dd1,nearest,0.25962188231778205,0.0,0.25962188231778205,likely_wrong,,design_service,,523972ec-f05e-4a97-8c17-d2cac0537166
+517f607d-cee4-47ef-a58e-26a68fae1f8f,nearest,0.24210381128664715,0.0,0.24210381128664715,likely_wrong,"{'common': None, 'primary': 'Aerospace Wing', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'ECAE', 'variant': 'short'}],
+      dtype=object)}",college_university,,e8f2da79-77ce-4184-bf12-80b62e068fbc
+b6ae9f89-0320-43aa-877d-deb46c8086d7,nearest,0.22980791474380113,0.0,0.22980791474380113,likely_wrong,,specialized_health_care,,de79b492-ca79-4493-90f0-c6c78760866a
+3afbc18e-67a3-4623-91d3-ea1f236940c2,nearest,0.1986313664923839,0.0,0.1986313664923839,likely_wrong,,behavioral_or_mental_health_clinic,,a9df6e20-748f-4579-986d-c11e75b4b9aa
+5c883bfc-5ed2-456c-9cc7-ccb83bf8f47a,nearest,0.18648963505687766,0.0,0.18648963505687766,likely_wrong,"{'common': None, 'primary': 'Flagstaff House', 'rules': None}",movie_theater,,40ef71ba-0b46-48cb-a6a9-80964e6b8996
+292899e5-a7e5-4187-b0cd-aabe907d6dbb,nearest,0.16920961640945942,0.0,0.16920961640945942,likely_wrong,"{'common': None, 'primary': 'Chemistry and Applied Mathematics', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'CHAP', 'variant': 'short'}],
+      dtype=object)}",college_university,,c55a9a42-1442-4e29-8330-90a9744c0fbf
+f97f66e8-78f4-4558-9f11-2d36d0371143,nearest,0.15908014767787726,0.0,0.15908014767787726,likely_wrong,"{'common': None, 'primary': 'The Courtyard', 'rules': None}",financial_service,,e10c0c97-dd19-4132-aa51-654af46606c6
+9797e391-8505-4c6e-a07c-b363e7850dda,nearest,0.14291455309573609,0.0,0.14291455309573609,likely_wrong,,home_service,,3e485acd-f88a-49ee-a3c8-2c228f0f0e12
+e8c4c02c-2d1f-4419-93a2-09d91bdbc82b,nearest,0.08889081848165492,0.0,0.08889081848165492,likely_wrong,,complementary_and_alternative_medicine,,1e342865-6c19-4e8a-8682-6ca9eba30f1c
+be865895-fff8-4c52-9878-92f4b71b5846,nearest,0.08472843846844869,0.0,0.08472843846844869,likely_wrong,,hospital,,7f82cf7e-5389-4c9c-8d46-10466589b54d
+807f28d6-5a94-48fa-9540-859b3c332d86,nearest,0.08343571581590292,0.0,0.08343571581590292,likely_wrong,"{'common': None, 'primary': 'Benson Earth Sciences', 'rules': array([{'between': None, 'language': None, 'perspectives': None, 'side': None, 'value': 'BESC', 'variant': 'short'}],
+      dtype=object)}",technical_service,,b6f2fbbb-4e24-42e8-bb76-f046b8dfaa16
+5672ca18-cc9e-4018-a250-9597248da1b4,nearest,0.061926928788651026,0.0,0.061926928788651026,likely_wrong,,real_estate_service,,fb7b5411-551f-4df4-a279-a4ee9d254c6d
+fd28db84-87b7-444a-8b91-c22e10fd8418,nearest,0.04673351783697832,0.0,0.04673351783697832,likely_wrong,,home_service,,3322630c-d628-4b42-830a-4b97c27dcc20
+55a376d2-819d-4e20-9cc5-de902682f88f,nearest,0.03374454543781036,0.0,0.03374454543781036,likely_wrong,,restaurant,,943c1a84-716f-4e55-9444-4cb531745d42

@@ -32,8 +32,8 @@ REGIONS = {
         "bbox": (-105.2865, 40.0150, -105.2760, 40.0215),
     },
     "louisville": {
-        "label": "Louisville downtown",
-        "bbox": (-85.7650, 38.2460, -85.7480, 38.2585),
+        "label": "Louisville, Colorado downtown",
+        "bbox": (-105.1336847, 39.9750387, -105.127107, 39.9814959),
     },
 }
 
